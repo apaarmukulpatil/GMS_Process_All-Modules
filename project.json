@@ -41,13 +41,6 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "08791042-c77c-400f-b2bd-c5e0cf976fad",
-        "dataVariationFilePath": ".variations\\Input Data_Scheme Master_A9_1_Scheme_Master_1.json",
-        "testCaseType": "TestCase",
-        "fileName": "TestCase_2_Geography_Masters.xaml"
-      },
-      {
         "editingStatus": "Publishable",
         "testCaseId": "843a059a-3902-4e0a-9795-221bea3201eb",
         "dataVariationFilePath": ".variations\\Input Data_Login Page_GMS_Login.json",
@@ -69,18 +62,25 @@
         "fileName": "TestCase10_Scheme Configurator.xaml"
       },
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "f28afe3b-9f89-45e5-9423-53e13b724c4a",
-        "dataVariationFilePath": ".variations\\Input Data_District_Master_A2_1_Zone_Master.json",
+        "editingStatus": "Publishable",
+        "testCaseId": "b5dc426c-915b-4efe-b04d-cd7e3fc7d080",
+        "dataVariationFilePath": ".variations\\Input Data_Geography Masters_A2_Geography_Master.json",
         "testCaseType": "TestCase",
-        "fileName": "TestCase_2_4_District_Master.xaml"
+        "fileName": "TestCase2_Geography Master.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "b05b88be-ff1e-4759-9511-092065f6e7b5",
-        "dataVariationFilePath": ".variations\\Input Data MLI_ORG Master_A8_MliOrgMaster.json",
+        "testCaseId": "61b63c30-91d5-4735-aa72-a8c2a06d3e30",
+        "dataVariationFilePath": ".variations\\Input Data_Scheme Configurator_A10_1_Scheme_Details_1.json",
         "testCaseType": "TestCase",
-        "fileName": "TestCase_8_MLI_Master.xaml"
+        "fileName": "TestCase3_Gender_Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "151b2cb1-0eee-4904-93b7-2f623cd36138",
+        "dataVariationFilePath": ".variations\\Input Data_Company Masters_A2_Geography_Master.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase5_Company_Master.xaml"
       }
     ],
     "modernBehavior": false

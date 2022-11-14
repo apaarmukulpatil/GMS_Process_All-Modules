@@ -7,7 +7,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1135,4017</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1135,4024</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>A6_2_DatePicker_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="54">
@@ -72,14 +72,14 @@
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="1145,3952" sap2010:WorkflowViewState.IdRef="Sequence_13">
+  <Sequence sap:VirtualizedContainerService.HintSize="1145,3959" sap2010:WorkflowViewState.IdRef="Sequence_13">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1103,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;Date Picker Workflow started&quot;]" />
-    <TryCatch sap2010:Annotation.AnnotationText="Get day month and year and select it from date picker." DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1103,3596" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+    <TryCatch sap2010:Annotation.AnnotationText="Get day month and year and select it from date picker." DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="1103,3603" sap2010:WorkflowViewState.IdRef="TryCatch_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -88,13 +88,13 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <TryCatch.Try>
-        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser--UDAAN Window" sap:VirtualizedContainerService.HintSize="1065,3337" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="24300b3f6f9572e14abeceddd5616672" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
+        <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser--UDAAN Window" sap:VirtualizedContainerService.HintSize="1065,3344" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="24300b3f6f9572e14abeceddd5616672" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
           <ui:BrowserScope.Body>
             <ActivityAction x:TypeArguments="x:Object">
               <ActivityAction.Argument>
                 <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
               </ActivityAction.Argument>
-              <Sequence DisplayName="A6_2_DatePicker" sap:VirtualizedContainerService.HintSize="1031,3151" sap2010:WorkflowViewState.IdRef="Sequence_12">
+              <Sequence DisplayName="A6_2_DatePicker" sap:VirtualizedContainerService.HintSize="1031,3158" sap2010:WorkflowViewState.IdRef="Sequence_12">
                 <Sequence.Variables>
                   <Variable x:TypeArguments="x:String" Name="Str_year" />
                 </Sequence.Variables>
@@ -189,14 +189,14 @@
                     </ui:Target>
                   </ui:Click.Target>
                 </ui:Click>
-                <If sap2010:Annotation.AnnotationText="Compare the default year and input for select correct year&#xA;" Condition="[CInt(in_Year) &lt; CInt(Str_year)]" DisplayName="If - check year in default page " sap:VirtualizedContainerService.HintSize="989,1207" sap2010:WorkflowViewState.IdRef="If_2">
+                <If sap2010:Annotation.AnnotationText="Compare the default year and input for select correct year&#xA;" Condition="[CInt(in_Year) &lt; CInt(Str_year)]" DisplayName="If - check year in default page " sap:VirtualizedContainerService.HintSize="988.8,1214.4" sap2010:WorkflowViewState.IdRef="If_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="453,780" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                    <Sequence sap:VirtualizedContainerService.HintSize="452.8,782.4" sap2010:WorkflowViewState.IdRef="Sequence_9">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="x:Boolean" Name="Is_YearExist" />
                       </Sequence.Variables>
@@ -205,7 +205,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:UiElementExists DisplayName="Element Exists -Year" Exists="[Is_YearExist]" sap:VirtualizedContainerService.HintSize="411,106" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
+                      <ui:UiElementExists DisplayName="Element Exists -Year" Exists="[Is_YearExist]" sap:VirtualizedContainerService.HintSize="411.2,107.2" sap2010:WorkflowViewState.IdRef="UiElementExists_5">
                         <ui:UiElementExists.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="5cc0bbfd-2ffa-46df-8304-b3ffff90a1e0" InformativeScreenshot="c64e45a9cb6c2f2a2dc4254c3ddbc5cd" Selector="[String.Format(&quot;&lt;webctrl aaname='*{0}*' tag='SPAN' innertext='*{0}*' /&gt;&quot;, in_Year)]" TimeoutMS="5000">
                             <ui:Target.WaitForReady>
@@ -264,7 +264,7 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <If Condition="[CInt(in_Year) &gt; CInt(Str_year)]" sap:VirtualizedContainerService.HintSize="489,1008" sap2010:WorkflowViewState.IdRef="If_3">
+                    <If Condition="[CInt(in_Year) &gt; CInt(Str_year)]" sap:VirtualizedContainerService.HintSize="488,1011.2" sap2010:WorkflowViewState.IdRef="If_3">
                       <If.Then>
                         <Sequence sap:VirtualizedContainerService.HintSize="452.8,822.4" sap2010:WorkflowViewState.IdRef="Sequence_15">
                           <Sequence.Variables>

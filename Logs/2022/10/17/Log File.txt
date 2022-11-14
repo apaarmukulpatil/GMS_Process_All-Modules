@@ -1,14 +1,24 @@
-17/10/2022 12:38:34 PM : Info : Status is active
-17/10/2022 12:47:25 PM : Info : Status is active
-17/10/2022 12:47:26 PM : Info : Successfully created the record
-17/10/2022 01:09:29 PM : Info : Status is active
-17/10/2022 01:09:30 PM : Info : Successfully created the record
-17/10/2022 02:29:06 PM : Info : gezpp5003qrtIs An Invalid Pan Number
-17/10/2022 02:29:06 PM : Info : 32AACCF8045D1ZMwq Is Not a Valid GST Number
-17/10/2022 02:29:34 PM : Info : Status is active
-17/10/2022 02:49:22 PM : Info : gezpp5003qrtIs An Invalid Pan Number
-17/10/2022 02:49:22 PM : Info : 32AACCF8045D1ZMwq Is Not a Valid GST Number
-17/10/2022 02:49:50 PM : Info : Status is active
-17/10/2022 03:58:37 PM : Info : gezpp5003qrtIs An Invalid Pan Number
-17/10/2022 03:58:37 PM : Info : #32AACCF8045D1Z Is Not a Valid GST Number
-17/10/2022 03:59:05 PM : Info : Status is active
+17/10/2022 03:06:15 PM : Error : Could not find the UI element corresponding to this selector:
+<webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-role-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;app-role-master-form&gt;form&gt;p-dialog&gt;div&gt;div&gt;div&gt;div&gt;button' tag='BUTTON'/>
+
+The closest matches found are:
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;div&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;div&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;thead&gt;tr&gt;th&gt;div&gt;p-columnfilter&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;thead&gt;tr&gt;th&gt;div&gt;p-columnfilter&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;thead&gt;tr&gt;th&gt;div&gt;p-columnfilter&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;thead&gt;tr&gt;th&gt;div&gt;p-columnfilter&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;tbody&gt;tr&gt;td&gt;p-splitbutton&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;tbody&gt;tr&gt;td&gt;p-splitbutton&gt;div&gt;button' tag='BUTTON'/>
+[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;tbody&gt;tr&gt;td&gt;p-splitbutton&gt;div&gt;button' tag='BUTTON'/>
+17/10/2022 03:23:57 PM : Error : GST State Code already exist
+17/10/2022 03:33:32 PM : Error : GST State Code already exist
+17/10/2022 03:36:59 PM : Error : GST State Code already exist
+17/10/2022 03:42:56 PM : Error : GST State Code already exist
+17/10/2022 04:04:32 PM : Error : GST State Code already exist
+17/10/2022 04:14:05 PM : Error : GST State Code already exist
+17/10/2022 04:19:32 PM : Error : GST State Code already exist
+17/10/2022 04:23:03 PM : Error : GST State Code already exist
+17/10/2022 04:25:45 PM : Error : GST State Code already exist
+17/10/2022 06:18:47 PM : Error : GST State Code already exist

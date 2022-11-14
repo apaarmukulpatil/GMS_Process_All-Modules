@@ -1,12 +1,39 @@
-31/10/2022 10:55:28 AM : Info : Successfully created the record
-31/10/2022 02:25:42 PM : Info : Short Name Type Must Be At Least 3 Characters Long And It Should Be AlphaNumerical
-31/10/2022 03:08:54 PM : Info : Short Name Type Must Be At Least 3 Characters Long And It Should Be AlphaNumerical
-31/10/2022 03:10:17 PM : Info : Please Enter Valid IFSC Code
-31/10/2022 03:11:05 PM : Info : Please Enter Valid IFSC Code
-31/10/2022 03:12:30 PM : Info : Please Enter Valid IFSC Code
-31/10/2022 04:10:13 PM : Info : Address Should Be Valid
-31/10/2022 05:13:59 PM : Info : Address Should Be Valid
-31/10/2022 05:32:09 PM : Info : Address Should Be Valid
-31/10/2022 05:32:27 PM : Info : Only Alphanumerics Are Allowed
-31/10/2022 06:09:10 PM : Info : Address Should Be Valid
-31/10/2022 06:09:28 PM : Info : Only Alphanumerics Are Allowed
+31/10/2022 01:10:21 PM : Error : User not given input for Company Master Name
+31/10/2022 01:11:32 PM : Error : User not given input for Company Master Name
+31/10/2022 01:12:07 PM : Error : User not given input for Company Master Name
+31/10/2022 01:12:49 PM : Error : User not given input for Company Master Name
+31/10/2022 01:14:49 PM : Error : Company Name Must Be At Least 3 Characters Long
+31/10/2022 01:15:33 PM : Error : Company Name Must Be At Least 3 Characters Long
+31/10/2022 01:16:48 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 01:17:17 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 01:18:41 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 01:22:28 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 02:11:32 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 02:15:11 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 02:15:48 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 02:35:40 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 02:56:57 PM : Error : User not given input for Company Master Functioning
+31/10/2022 03:05:30 PM : Error : Only Alphabets & Numbers Are Allowed
+31/10/2022 04:01:15 PM : Error : Please Enter Valid Email
+31/10/2022 04:02:50 PM : Error : Please Enter Valid Email
+31/10/2022 04:28:18 PM : Error : Mobile Number Should Be Start With 6 Or 7 Or 8 Or 9,
+31/10/2022 05:04:40 PM : Error : Landline Number should be less than 8
+31/10/2022 05:06:05 PM : Error : Landline Number should be less than 8
+31/10/2022 05:08:28 PM : Error : Landline Number should be less than 8
+31/10/2022 05:34:21 PM : Error : Please Enter Valid-PAN No
+31/10/2022 05:50:00 PM : Error : Please Enter Validate GST No
+31/10/2022 06:36:59 PM : Info : Start Date 12/02/2016
+31/10/2022 06:36:59 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2016
+31/10/2022 06:36:59 PM : Info : 12    FEB    2016
+31/10/2022 06:37:18 PM : Info : End Date 22/12/2015
+31/10/2022 06:37:18 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+31/10/2022 06:39:42 PM : Info : Start Date 12/02/2016
+31/10/2022 06:39:42 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2016
+31/10/2022 06:39:42 PM : Info : 12    FEB    2016
+31/10/2022 06:39:54 PM : Info : End Date 22/12/2015
+31/10/2022 06:39:55 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+31/10/2022 06:41:03 PM : Info : Start Date 12/02/2014
+31/10/2022 06:41:03 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+31/10/2022 06:41:03 PM : Info : 12    FEB    2014
+31/10/2022 06:41:15 PM : Info : End Date 22/12/2015
+31/10/2022 06:41:15 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015

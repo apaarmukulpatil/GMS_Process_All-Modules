@@ -1,15 +1,155 @@
-03/11/2022 10:46:54 AM : Info : Bank Zone Is Disabled
-03/11/2022 10:47:53 AM : Info : Successfully created the record
-03/11/2022 10:48:11 AM : Info : Pincode Not Exists
-03/11/2022 10:48:12 AM : Info : District Not Found
-03/11/2022 10:49:57 AM : Error : Submit Button Disabled
-03/11/2022 11:25:46 AM : Info : Bank Zone Is Disabled
-03/11/2022 11:26:45 AM : Info : Successfully created the record
-03/11/2022 11:27:02 AM : Info : Pincode Not Exists
-03/11/2022 11:27:03 AM : Info : District Not Found
-03/11/2022 11:28:15 AM : Error : Submit Button Disabled
-03/11/2022 11:32:39 AM : Info : Bank Zone Is Disabled
-03/11/2022 11:33:38 AM : Info : Successfully created the record
-03/11/2022 11:33:55 AM : Info : Pincode Not Exists
-03/11/2022 11:33:56 AM : Info : District Not Found
-03/11/2022 11:36:46 AM : Error : Submit Button Disabled
+03/11/2022 01:08:03 PM : Info : Company Master Started
+03/11/2022 01:08:06 PM : Info : Created Build DataTable For Company Master
+03/11/2022 01:08:43 PM : Info : Start Date 22/01/2020
+03/11/2022 01:08:43 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
+03/11/2022 01:08:43 PM : Info : 22    JAN    2020
+03/11/2022 01:08:55 PM : Info : End Date 22/01/2021
+03/11/2022 01:08:55 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
+03/11/2022 01:09:08 PM : Info : Status Is Inactive
+03/11/2022 01:09:13 PM : Error : Email Id already exists
+03/11/2022 01:10:30 PM : Error : Please Enter Validate GST No
+03/11/2022 01:10:33 PM : Info : Start Date 22/01/2020
+03/11/2022 01:10:33 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
+03/11/2022 01:10:33 PM : Info : 22    JAN    2020
+03/11/2022 01:10:51 PM : Error : Error Occured While Creating Company Branch Master String was not recognized as a valid DateTime.
+03/11/2022 01:10:55 PM : Info : Company Master Started
+03/11/2022 01:11:40 PM : Error : Error While Opening Dashboard : Could not find the UI element corresponding to this selector:
+[1] <html app='chrome.exe' title='GMS'/>
+[2] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a&gt;p'/>
+
+Search failed at selector tag:
+[2] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a&gt;p'/>
+
+The closest matches found are:
+[50%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;a'/>
+[50%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;a&gt;span&gt;img'/>
+[50%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;a&gt;span'/>
+[50%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;a&gt;span&gt;img'/>
+[50%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;div&gt;h3'/>
+[50%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;div&gt;ul&gt;li&gt;a'/>
+[50%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;div&gt;ul&gt;li&gt;a&gt;span&gt;img'/>
+[50%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;div&gt;ul&gt;li&gt;a&gt;span'/>
+[37%] <webctrl aaname='User Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;div&gt;ul&gt;li&gt;a'/>
+[37%] <webctrl aaname='User Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;app-new-sidebar&gt;div&gt;ul&gt;li&gt;div&gt;ul&gt;li&gt;a&gt;span&gt;img'/>
+03/11/2022 01:18:04 PM : Info : Company Master Started
+03/11/2022 01:18:06 PM : Info : Created Build DataTable For Company Master
+03/11/2022 01:18:43 PM : Info : Start Date 22/01/2020
+03/11/2022 01:18:43 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
+03/11/2022 01:18:43 PM : Info : 22    JAN    2020
+03/11/2022 01:18:55 PM : Info : End Date 22/01/2021
+03/11/2022 01:18:55 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
+03/11/2022 01:19:08 PM : Info : Status Is Inactive
+03/11/2022 01:19:12 PM : Error : Email Id already exists
+03/11/2022 01:20:15 PM : Error : Please Enter Validate GST No
+03/11/2022 01:20:19 PM : Info : Start Date 22/02/2020
+03/11/2022 01:20:19 PM : Info : Start Date Day : 22 MonthVal : FEByear val: 2020
+03/11/2022 01:20:19 PM : Info : 22    FEB    2020
+03/11/2022 01:24:26 PM : Info : Company Master Started
+03/11/2022 01:24:28 PM : Info : Created Build DataTable For Company Master
+03/11/2022 01:25:05 PM : Info : Start Date 22/01/2020
+03/11/2022 01:25:05 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
+03/11/2022 01:25:05 PM : Info : 22    JAN    2020
+03/11/2022 01:25:18 PM : Info : End Date 22/01/2021
+03/11/2022 01:25:18 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
+03/11/2022 01:25:30 PM : Info : Status Is Inactive
+03/11/2022 01:25:35 PM : Error : Email Id already exists
+03/11/2022 01:26:26 PM : Info : Start Date 22/02/2020
+03/11/2022 01:26:26 PM : Info : Start Date Day : 22 MonthVal : FEByear val: 2020
+03/11/2022 01:26:27 PM : Info : 22    FEB    2020
+03/11/2022 01:27:01 PM : Info : End Date 20/01/2021
+03/11/2022 01:27:01 PM : Info : End Date Day : 20MonthVal : JANyear val: 2021
+03/11/2022 01:28:35 PM : Info : Company Master Started
+03/11/2022 01:28:37 PM : Info : Created Build DataTable For Company Master
+03/11/2022 01:29:14 PM : Info : Start Date 22/01/2020
+03/11/2022 01:29:14 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
+03/11/2022 01:29:14 PM : Info : 22    JAN    2020
+03/11/2022 01:29:26 PM : Info : End Date 22/01/2021
+03/11/2022 01:29:27 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
+03/11/2022 01:29:39 PM : Info : Status Is Inactive
+03/11/2022 01:29:43 PM : Error : Email Id already exists
+03/11/2022 01:30:35 PM : Info : Start Date 22/02/2020
+03/11/2022 01:30:35 PM : Info : Start Date Day : 22 MonthVal : FEByear val: 2020
+03/11/2022 01:30:36 PM : Info : 22    FEB    2020
+03/11/2022 01:30:48 PM : Info : End Date 20/01/2021
+03/11/2022 01:30:48 PM : Info : End Date Day : 20MonthVal : JANyear val: 2021
+03/11/2022 01:30:48 PM : Info : Branch End Date Is Less Than HO End Date
+03/11/2022 01:30:49 PM : Info : Status Is Inactive
+03/11/2022 01:31:42 PM : Error : Submit Button Disabled
+03/11/2022 01:31:51 PM : Info : Company Master Started
+03/11/2022 02:08:11 PM : Info : Company Master Started
+03/11/2022 02:08:13 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:08:50 PM : Info : Start Date 22/01/2020
+03/11/2022 02:08:50 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
+03/11/2022 02:08:50 PM : Info : 22    JAN    2020
+03/11/2022 02:09:02 PM : Info : End Date 22/01/2021
+03/11/2022 02:09:02 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
+03/11/2022 02:09:15 PM : Info : Status Is Inactive
+03/11/2022 02:09:19 PM : Error : Email Id already exists
+03/11/2022 02:09:34 PM : Info : Company Master Started
+03/11/2022 02:09:36 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:10:13 PM : Info : Start Date 12/05/2021
+03/11/2022 02:10:13 PM : Info : Start Date Day : 12 MonthVal : MAYyear val: 2021
+03/11/2022 02:10:13 PM : Info : 12    MAY    2021
+03/11/2022 02:10:25 PM : Info : End Date 12/04/2022
+03/11/2022 02:10:25 PM : Info : End Date Day : 12MonthVal : APRyear val: 2022
+03/11/2022 02:10:38 PM : Info : Status Is Inactive
+03/11/2022 02:10:42 PM : Error : Gst number already exists
+03/11/2022 02:11:52 PM : Info : Company Master Started
+03/11/2022 02:11:54 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:12:36 PM : Info : Start Date 12/06/2021
+03/11/2022 02:12:36 PM : Info : Start Date Day : 12 MonthVal : JUNyear val: 2021
+03/11/2022 02:12:36 PM : Info : 12    JUN    2021
+03/11/2022 02:16:03 PM : Info : Company Master Started
+03/11/2022 02:16:05 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:16:46 PM : Info : Start Date 12/06/2021
+03/11/2022 02:16:46 PM : Info : Start Date Day : 12 MonthVal : JUNyear val: 2021
+03/11/2022 02:16:47 PM : Info : 12    JUN    2021
+03/11/2022 02:22:10 PM : Info : Company Master Started
+03/11/2022 02:22:12 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:38:25 PM : Info : Company Master Started
+03/11/2022 02:38:27 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:39:04 PM : Info : Start Date 22/01/2020
+03/11/2022 02:39:04 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
+03/11/2022 02:39:04 PM : Info : 22    JAN    2020
+03/11/2022 02:39:16 PM : Info : End Date 22/01/2021
+03/11/2022 02:39:17 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
+03/11/2022 02:39:29 PM : Info : Status Is Inactive
+03/11/2022 02:39:34 PM : Error : Gst number already exists
+03/11/2022 02:39:48 PM : Info : Company Master Started
+03/11/2022 02:42:54 PM : Info : Company Master Started
+03/11/2022 02:42:56 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:43:38 PM : Info : Start Date 22/01/2020
+03/11/2022 02:43:39 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
+03/11/2022 02:43:39 PM : Info : 22    JAN    2020
+03/11/2022 02:47:21 PM : Info : Company Master Started
+03/11/2022 02:47:23 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:48:06 PM : Info : Start Date 22/02/2020
+03/11/2022 02:48:06 PM : Info : Start Date Day : 22 MonthVal : FEByear val: 2020
+03/11/2022 02:48:06 PM : Info : 22    FEB    2020
+03/11/2022 02:48:35 PM : Info : End Date 22/12/2020
+03/11/2022 02:48:35 PM : Info : End Date Day : 22MonthVal : DECyear val: 2020
+03/11/2022 02:48:40 PM : Info : Branch End Date Is Less Than HO End Date
+03/11/2022 02:48:41 PM : Info : Status Is Inactive
+03/11/2022 02:54:26 PM : Info : Company Master Started
+03/11/2022 02:54:28 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:55:11 PM : Info : Start Date 22/02/2020
+03/11/2022 02:55:11 PM : Info : Start Date Day : 22 MonthVal : FEByear val: 2020
+03/11/2022 02:55:11 PM : Info : 22    FEB    2020
+03/11/2022 02:55:50 PM : Info : End Date 22/12/2020
+03/11/2022 02:55:50 PM : Info : End Date Day : 22MonthVal : DECyear val: 2020
+03/11/2022 02:58:28 PM : Info : Company Master Started
+03/11/2022 02:58:30 PM : Info : Created Build DataTable For Company Master
+03/11/2022 02:59:12 PM : Info : Start Date 22/02/2020
+03/11/2022 02:59:12 PM : Info : Start Date Day : 22 MonthVal : FEByear val: 2020
+03/11/2022 02:59:12 PM : Info : 22    FEB    2020
+03/11/2022 03:00:25 PM : Info : End Date 22/12/2020
+03/11/2022 03:00:45 PM : Info : End Date Day : 22MonthVal : DECyear val: 2020
+03/11/2022 03:05:16 PM : Info : Company Master Started
+03/11/2022 03:05:18 PM : Info : Created Build DataTable For Company Master
+03/11/2022 03:06:01 PM : Info : Start Date 22/02/2020
+03/11/2022 03:06:01 PM : Info : Start Date Day : 22 MonthVal : FEByear val: 2020
+03/11/2022 03:06:01 PM : Info : 22    FEB    2020
+03/11/2022 03:06:13 PM : Info : End Date 22/12/2020
+03/11/2022 03:06:13 PM : Info : End Date Day : 22MonthVal : DECyear val: 2020
+03/11/2022 03:06:46 PM : Info : Status Is Inactive
+03/11/2022 03:06:51 PM : Error : Company or ShortName already exists

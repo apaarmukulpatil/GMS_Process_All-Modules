@@ -1,0 +1,167 @@
+26/10/2022 10:58:42 AM : Info : Geography Master Started
+26/10/2022 10:58:45 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 10:58:46 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:01:39 AM : Info : Geography Master Started
+26/10/2022 11:01:42 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:01:42 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:04:28 AM : Info : Geography Master Started
+26/10/2022 11:04:30 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:04:31 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:07:06 AM : Info : Geography Master Started
+26/10/2022 11:07:09 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:07:09 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:09:10 AM : Info : Geography Master Started
+26/10/2022 11:09:13 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:09:13 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:09:16 AM :  : Zone Has More Than 3 Letters
+26/10/2022 11:09:19 AM : Info : Zone Is Already In Active State
+26/10/2022 11:12:35 AM : Info : Geography Master Started
+26/10/2022 11:12:37 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:12:38 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:12:41 AM :  : Zone Has More Than 3 Letters
+26/10/2022 11:12:44 AM : Info : Zone Is Already In Active State
+26/10/2022 11:16:05 AM : Info : Geography Master Started
+26/10/2022 11:16:07 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:16:08 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:16:11 AM :  : Zone Has More Than 3 Letters
+26/10/2022 11:16:14 AM : Info : Zone Is Already In Active State
+26/10/2022 11:16:58 AM : Error : Error While Creating Zone Master
+26/10/2022 11:19:24 AM : Info : Geography Master Started
+26/10/2022 11:19:56 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:19:56 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:20:00 AM :  : Zone Has More Than 3 Letters
+26/10/2022 11:20:02 AM : Info : Zone Is Already In Active State
+26/10/2022 11:23:02 AM : Info : Geography Master Started
+26/10/2022 11:23:04 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:23:05 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:23:08 AM :  : Zone Has More Than 3 Letters
+26/10/2022 11:23:11 AM : Info : Zone Is Already In Active State
+26/10/2022 11:52:19 AM : Info : Geography Master Started
+26/10/2022 11:52:22 AM : Info : Created Build DataTable For Geography Master
+26/10/2022 11:52:22 AM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 11:52:25 AM :  : Zone Has More Than 3 Letters
+26/10/2022 11:52:28 AM : Info : Zone Is Already In Active State
+26/10/2022 11:52:31 AM : Info : Zone Created Successfully
+26/10/2022 12:17:35 PM : Info : Geography Master Started
+26/10/2022 12:17:37 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 12:17:37 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 12:17:41 PM :  : Zone Has More Than 3 Letters
+26/10/2022 12:17:43 PM : Info : Zone Is Already In Active State
+26/10/2022 12:17:46 PM : Info : Zone Created Successfully
+26/10/2022 12:17:58 PM : Info : Type the StateName
+26/10/2022 12:18:29 PM : Error : GST State Code already exist
+26/10/2022 02:31:31 PM : Info : Geography Master Started
+26/10/2022 02:31:34 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 02:31:34 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 02:31:38 PM :  : Zone Has More Than 3 Letters
+26/10/2022 02:31:40 PM : Info : Zone Is Already In Active State
+26/10/2022 02:31:43 PM : Info : Zone Created Successfully
+26/10/2022 02:31:56 PM : Info : Type the StateName
+26/10/2022 02:56:09 PM : Info : Geography Master Started
+26/10/2022 02:56:12 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 02:56:12 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 02:56:15 PM :  : Zone Has More Than 3 Letters
+26/10/2022 02:56:18 PM : Info : Zone Is Already In Active State
+26/10/2022 02:56:21 PM : Info : Zone Created Successfully
+26/10/2022 02:56:33 PM : Info : Type the StateName
+26/10/2022 02:58:24 PM : Error : Error Occured While Creating District Type Could not find the UI element corresponding to this selector:
+<webctrl aaname='District Type' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+
+The closest matches found are:
+[83%] <webctrl aaname='Industry Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[80%] <webctrl aaname='Receipts Payments' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[79%] <webctrl aaname='Scheme Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[78%] <webctrl aaname='Application Processing' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[78%] <webctrl aaname='Claims Processing' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[78%] <webctrl aaname='Form Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[77%] <webctrl aaname='Scheme Configurator' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[76%] <webctrl aaname='Geography Master' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[75%] <webctrl aaname='User' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+[71%] <webctrl aaname='MLI' css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-new-dashboard&gt;ul&gt;li&gt;a' tag='A'/>
+26/10/2022 03:01:03 PM : Info : Geography Master Started
+26/10/2022 03:01:05 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 03:01:05 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 03:01:09 PM :  : Zone Has More Than 3 Letters
+26/10/2022 03:01:11 PM : Info : Zone Is Already In Active State
+26/10/2022 03:01:14 PM : Info : Zone Created Successfully
+26/10/2022 03:01:27 PM : Info : Type the StateName
+26/10/2022 03:02:34 PM : Info : District Type Created Successfully
+26/10/2022 03:02:36 PM : Info : Execution Of A2_5_PinCode_Master Started
+26/10/2022 03:03:54 PM : Info : Geography Master Started
+26/10/2022 03:03:56 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 03:03:57 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 03:04:00 PM :  : Zone Has More Than 3 Letters
+26/10/2022 03:04:03 PM : Info : Zone Is Already In Active State
+26/10/2022 04:45:06 PM : Info : Geography Master Started
+26/10/2022 04:45:07 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 04:45:08 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 04:45:09 PM :  : Zone Has More Than 3 Letters
+26/10/2022 04:45:10 PM : Info : Zone Is Already In Active State
+26/10/2022 04:45:11 PM : Info : Zone Created Successfully
+26/10/2022 04:45:21 PM : Info : Type the StateName
+26/10/2022 04:45:27 PM : Error : GST State Code already exist
+26/10/2022 04:45:34 PM : Info : Geography Master Started
+26/10/2022 04:45:35 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 04:45:35 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 04:45:36 PM :  : Zone Has More Than 3 Letters
+26/10/2022 04:45:37 PM : Info : Zone Is Already In Active State
+26/10/2022 04:51:25 PM : Info : Geography Master Started
+26/10/2022 04:51:26 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 04:51:26 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 04:51:28 PM :  : Zone Has More Than 3 Letters
+26/10/2022 04:51:28 PM : Info : Zone Is Already In Active State
+26/10/2022 04:51:29 PM : Info : Zone Created Successfully
+26/10/2022 04:51:36 PM : Info : Type the StateName
+26/10/2022 04:51:42 PM : Error : GST State Code already exist
+26/10/2022 04:51:50 PM : Info : Geography Master Started
+26/10/2022 04:51:51 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 04:51:51 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 04:51:53 PM :  : Zone Has More Than 3 Letters
+26/10/2022 04:51:54 PM : Info : Zone Is Already In Active State
+26/10/2022 04:51:54 PM : Info : Zone Created Successfully
+26/10/2022 04:52:02 PM : Info : Type the StateName
+26/10/2022 04:52:07 PM : Error : GST State Code already exist
+26/10/2022 04:59:06 PM : Info : Geography Master Started
+26/10/2022 04:59:07 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 04:59:08 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 04:59:09 PM :  : Zone Has More Than 3 Letters
+26/10/2022 04:59:10 PM : Info : Zone Is Already In Active State
+26/10/2022 05:00:40 PM : Info : Geography Master Started
+26/10/2022 05:00:41 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 05:00:41 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 05:00:43 PM :  : Zone Has More Than 3 Letters
+26/10/2022 05:00:43 PM : Info : Zone Is Already In Active State
+26/10/2022 05:01:44 PM : Info : Geography Master Started
+26/10/2022 05:01:45 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 05:01:45 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 05:01:47 PM :  : Zone Has More Than 3 Letters
+26/10/2022 05:01:47 PM : Info : Zone Is Already In Active State
+26/10/2022 05:01:48 PM : Info : Zone Created Successfully
+26/10/2022 05:01:55 PM : Info : Type the StateName
+26/10/2022 05:02:01 PM : Error : GST State Code already exist
+26/10/2022 05:02:07 PM : Info : Geography Master Started
+26/10/2022 05:02:08 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 05:02:09 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 05:02:10 PM :  : Zone Has More Than 3 Letters
+26/10/2022 05:02:11 PM : Info : Zone Is Already In Active State
+26/10/2022 05:02:11 PM : Info : Zone Created Successfully
+26/10/2022 05:02:18 PM : Info : Type the StateName
+26/10/2022 05:02:48 PM : Error : Error Occured While Creating District Type District Type must be unique
+26/10/2022 05:16:15 PM : Info : Geography Master Started
+26/10/2022 05:16:17 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 05:16:17 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 05:16:18 PM :  : Zone Has More Than 3 Letters
+26/10/2022 05:16:19 PM : Info : Zone Is Already In Active State
+26/10/2022 05:16:20 PM : Info : Zone Created Successfully
+26/10/2022 05:16:27 PM : Info : Type the StateName
+26/10/2022 05:16:59 PM : Info : District Type Created Successfully
+26/10/2022 05:17:01 PM : Info : Execution Of A2_5_PinCode_Master Started
+26/10/2022 05:17:27 PM : Info : Status is Active
+26/10/2022 05:17:31 PM : Error : Submit Button Disabled
+26/10/2022 05:17:33 PM : Info : Geography Master Successfull
+26/10/2022 05:17:36 PM : Info : Geography Master Started
+26/10/2022 05:17:58 PM : Info : Created Build DataTable For Geography Master
+26/10/2022 05:17:58 PM : Info : Execution Of A2_1_Zone_Master Started
+26/10/2022 05:18:59 PM : Error : Error Occured While Creating Zone Msater Could not find the UI element corresponding to this selector:
+<html app='chrome.exe' title='GMS'/>
+<webctrl aaname='Ok' tag='BUTTON'/>
