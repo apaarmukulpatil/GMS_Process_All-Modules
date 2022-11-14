@@ -811,7 +811,7 @@
                                 <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_20" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                                   <ui:InvokeWorkflowFile.Arguments>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">
-                                      <Literal x:TypeArguments="x:String">Company Master Successfully</Literal>
+                                      <Literal x:TypeArguments="x:String">Company Master Successfull</Literal>
                                     </InArgument>
                                     <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">
                                       <Literal x:TypeArguments="x:String">Info</Literal>
