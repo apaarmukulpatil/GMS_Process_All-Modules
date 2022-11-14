@@ -1,0 +1,830 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="A10_4_NPA_Details" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_NPALockInPeriodFromGuaranteeStart" Type="InArgument(x:String)" />
+    <x:Property Name="out_NPALockInPeriodFromGuaranteeStart" Type="OutArgument(x:String)" />
+    <x:Property Name="in_NPAMarkingLimit" Type="InArgument(x:String)" />
+    <x:Property Name="in_SelectModeOfSchemeLodgement" Type="InArgument(x:String)" />
+    <x:Property Name="out_NPAMarkingLimit" Type="OutArgument(x:String)" />
+    <x:Property Name="out_SelectModeOfSchemeLodgement" Type="OutArgument(x:String)" />
+    <x:Property Name="out_NPADetailsNextButtonDisabled" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="out_NPADetaislMessage" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="out_NPADetailsStatus" Type="OutArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>869,1409</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>A10_4_NPA_Details_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="58">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="A10_4_NPA_Details" sap:VirtualizedContainerService.HintSize="556,1344" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="v_GetTextForNPADetailsMessage" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser For NPA Details" sap:VirtualizedContainerService.HintSize="514,1252" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="8a01440611cb92502530cb4388a7659c" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
+      <ui:BrowserScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do For NPA Details" sap:VirtualizedContainerService.HintSize="480,1106" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <If sap2010:Annotation.AnnotationText="NPA Lock-in Period from Guarantee Start" Condition="[in_NPALockInPeriodFromGuaranteeStart=Nothing]" DisplayName="Check If NPA Lock-in Period from Guarantee Start Is Nothing" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence DisplayName="Nothing" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Not Entered NPA Lock-in Period from Guarantee Start</InArgument>
+                      <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                    </ui:InvokeWorkflowFile.Arguments>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:InvokeWorkflowFile>
+                  <Assign DisplayName="NPA Lock In Period From Guarantee Start" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">[out_NPALockInPeriodFromGuaranteeStart]</OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">["User Has Not Entered NPA Lock-in Period from Guarantee Start"]</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <If Condition="[CInt(in_NPALockInPeriodFromGuaranteeStart.Length)&gt;4]" DisplayName="Check If NPA Lock-in Period from Guarantee Start Contains More Than 3 Digits" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="If_2">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <If.Then>
+                    <Sequence DisplayName="More Than 3 Letters" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Entered More Than 4 Letters In NPA Lock-in Period from Guarantee Start</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
+                      <Assign DisplayName="NPA Lock In Period From Guarantee Start" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[out_NPALockInPeriodFromGuaranteeStart]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["User Has Entered More Than 4 Letters In NPA Lock-in Period from Guarantee Start"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Less Than 3 Letters" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter NPA Lock-in Period from Guarantee Start" EmptyField="True" sap:VirtualizedContainerService.HintSize="333.6,135.2" sap2010:WorkflowViewState.IdRef="TypeInto_1" SimulateType="True" Text="[in_NPALockInPeriodFromGuaranteeStart]">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="95faa25d8db6d0983167c63c8b257b33" Selector="&lt;webctrl tag='LABEL' aaname='NPA Lock-in Period from Guarantee Start' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:TypeInto.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:TypeInto>
+                      <Assign DisplayName="NPA Lock In Period From Guarantee Start" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_3">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[out_NPALockInPeriodFromGuaranteeStart]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">[in_NPALockInPeriodFromGuaranteeStart]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Else>
+                </If>
+              </If.Else>
+            </If>
+            <Sequence sap2010:Annotation.AnnotationText="NPA Marking Limit" DisplayName="NPA Marking Limit" sap:VirtualizedContainerService.HintSize="438,97" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On NPA Marking Limit" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="fa47ea3c-aa7b-4653-9cbe-e05e1026f1ea" InformativeScreenshot="38c87a570ebd868e32cd0aa068a579dc" Selector="&lt;webctrl aaname='NPA Marking Limit' tag='LABEL' /&gt;&lt;nav up='2' /&gt;&lt;webctrl aria-role='button' tag='DIV' aria-label='dropdown trigger' /&gt;" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:Click.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:Click>
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Select NPA Marking Limit" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                <ui:Click.CursorPosition>
+                  <ui:CursorPosition Position="Center">
+                    <ui:CursorPosition.OffsetX>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetX>
+                    <ui:CursorPosition.OffsetY>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:CursorPosition.OffsetY>
+                  </ui:CursorPosition>
+                </ui:Click.CursorPosition>
+                <ui:Click.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="e78d60f3-a8c6-48b9-8ebd-5bcd32588815" InformativeScreenshot="692e427bd8f5f04559371b2371c4d2bc" Selector="[String.Format(&quot;&lt;webctrl aria-role='option' tag='LI' class='p-ripple p-element p-dropdown-item' innertext='{0}' casesensitive:innertext='false' /&gt;&quot;, in_NPAMarkingLimit)]" WaitForReady="COMPLETE">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                  </ui:Target>
+                </ui:Click.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:Click>
+            </Sequence>
+            <Sequence sap2010:Annotation.AnnotationText="Mode Of Scheme Lodgement" DisplayName="Mode Of Scheme Lodgement" sap:VirtualizedContainerService.HintSize="438,97" sap2010:WorkflowViewState.IdRef="Sequence_18">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Name="str_attrbt" />
+                <Variable x:TypeArguments="x:Boolean" Name="b_APIuncheck" />
+                <Variable x:TypeArguments="x:Boolean" Name="sample" />
+                <Variable x:TypeArguments="s:String[]" Name="v_arr_Modes" />
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Assign DisplayName="Array Of Modes" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_12">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="s:String[]">[v_arr_Modes]</OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="s:String[]">[in_SelectModeOfSchemeLodgement.Split(","C)]</InArgument>
+                </Assign.Value>
+              </Assign>
+              <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Uncheck" DisplayName="Uncheck Individual" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Check_1">
+                <ui:Check.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="124dccf1-76ad-4881-9ce0-2f9ff03f4a18" InformativeScreenshot="7a6ac6484ba8fdfebc8cfe433f75be2d" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;&lt;webctrl aaname='Mode Of NPA Lodgement' tag='LABEL' /&gt;&lt;nav up='2' /&gt;&lt;webctrl aaname='Individual' tag='LABEL' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Check.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:Check>
+              <ui:Check AlterIfDisabled="{x:Null}" ContinueOnError="{x:Null}" DelayAfter="{x:Null}" DelayBefore="{x:Null}" Action="Uncheck" DisplayName="Uncheck Bulk" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Check_2">
+                <ui:Check.Target>
+                  <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="124dccf1-76ad-4881-9ce0-2f9ff03f4a18" InformativeScreenshot="7a6ac6484ba8fdfebc8cfe433f75be2d" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;&lt;webctrl aaname='Mode Of NPA Lodgement' tag='LABEL' /&gt;&lt;nav up='2' /&gt;&lt;webctrl aaname='Bulk' tag='LABEL' /&gt;">
+                    <ui:Target.TimeoutMS>
+                      <InArgument x:TypeArguments="x:Int32" />
+                    </ui:Target.TimeoutMS>
+                    <ui:Target.WaitForReady>
+                      <InArgument x:TypeArguments="ui:WaitForReady" />
+                    </ui:Target.WaitForReady>
+                  </ui:Target>
+                </ui:Check.Target>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:Check>
+              <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each For Mode Of Lodgement" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[v_arr_Modes]">
+                <ui:ForEach.Body>
+                  <ActivityAction x:TypeArguments="x:String">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:String" Name="item" />
+                    </ActivityAction.Argument>
+                    <If sap2010:Annotation.AnnotationText="Check uncheck Individual checkbox based on input" Condition="[item.ToString.ToLower.Equals(&quot;individual&quot;)]" DisplayName="If Individual Is True" sap:VirtualizedContainerService.HintSize="677.6,460" sap2010:WorkflowViewState.IdRef="If_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <If.Then>
+                        <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Attach Browser For Individual" sap:VirtualizedContainerService.HintSize="433.6,269.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="DebuggerApi" ScopeGuid="3af12282-2aa0-43a8-8cad-cf6f88e1c33d" Version="V2">
+                          <uix:NApplicationCard.Body>
+                            <ActivityAction x:TypeArguments="x:Object">
+                              <ActivityAction.Argument>
+                                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                              </ActivityAction.Argument>
+                              <uix:NClick ClickType="Single" DisplayName="Click On Checked" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3af12282-2aa0-43a8-8cad-cf6f88e1c33d" Version="V1">
+                                <uix:NClick.Target>
+                                  <uix:TargetAnchorable BrowserURL="http://155.248.242.125:9090/dashboard/scheme-configurator/scheme-details?gms_gl_i=U2FsdGVkX1%2B616ESRCCOrIoPub%2Bz5Q30brq2pd4GS1U%3D&amp;gms_sc=U2FsdGVkX19IRotZxrl2FjeczojSpcVO7CjU6k7INjQNSane0PeuBnkhtRgWDs49&amp;gms_gl_tb=U2FsdGVkX1%2FFVsLapgO%2By5cx%2Bd16nPnuA5gOqkuhfZE%3D" DesignTimeRectangle="842, 516, 20, 20" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl parentname='group1' tag='DIV' class='p-checkbox-box' parentclass='p-checkbox p-component' idx='3' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='p-checkbox-box' parentid='p-tabpanel-10' parentname='group1' tag='DIV' aaname='' /&gt;" Guid="d29d005f-fc61-4cb7-9a13-98d3c2bf5493" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABCSURBVEhLY/hPYzCMLJgzZ87/goICqmCQWTAAtwAkQS2AbNaoBVjBqAUEwagFBMGoBQTBqAUEwTC1gOZVJm3A//8A55R6LdKEew0AAAAASUVORK5CYII=" InformativeScreenshot="5a0a99eaa64fe36219e1b67bdda03d22.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GMS' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                    <uix:TargetAnchorable.Anchors>
+                                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                        <uix:Target DesignTimeRectangle="862, 521, 93, 15" ElementType="Text" FriendlyName="'checked'" FullSelectorArgument="&lt;webctrl aaname='Individual' parentid='p-tabpanel-10' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Individual' parentid='p-tabpanel-10' tag='LABEL' type='' class='' check:innerText='Individual' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGEAAAATCAYAAACA7GNpAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAOCSURBVFhH7ZjdS+NAFMX3Tx5KQIIExEjLEgoiFAm6RYpIF7tYhArGBxcrKyLzoA9Buiz1IZTKRoSwhEIoZ+9k0nYaW9di1ZbtD0Qv83VzzsydwU8gGGPi14J3RNV8YcIHsTBhBliYMANMaEKAJnfR7iThK4haLvhdIINOA86ug8YL541uHZROGoiSeDQR2i5H8zEJp8JbzDmxCdcoshyc+yR8Be3jHNjOtQwCjlLWRv2FHxfwEnJ2nbbEc7ThZBmKN0k4Fd5izlkx4U34T0zwzwow9q/hnRdhLWtgmg5r5wLtrmzv88BR2TChZRg0w0KZ+ykTXFRWCqj/pjnPbRijdvltFbnPNTTF324FxmYdftwg8XkF66uUQ0aDkS+DP6QEGzGGRqG+KdeN6fpwj0tYz+rQSAeRa/HcU8reDJoQC0kfvX7YgB9GiMImnA0dOonbTzzksDUG64D6UM2PQg98Nwdz1VBMUObtUP+MhdOh0hSBbzGYh54Mb4pgWYckkYRXNhlsoXrrI+pGCD1R3kyYK4pgqTESIap6sj3U9x1ce2Gcf9S6gL2s0xy9r5lVE+wLZacQ9w5yrEg9JY2vetwnTGKJ/JiRJhDunj4QXPB4CospxgwJ2kBZZ7Avh1eQeUxqwlOCs3WwLzyJZtWEJ3Vd9OmZkCTd+waF9pE51gR4VZh6GW5S1uJ1tvjAbFXQxHSeLoHUWlub0IRugMZ3Kq0rBgzxk7dRsWnt/rh5NmFE0sNjUybQjXCap919JWT3UF3VUXZlS8wIE9JZPFn7BSaIU6vlq2g8SLujPwG8EzoJ820CRTsMxrf4OlWQNX68CdSD6jzLn8J3y9BXq2SFgipol8ZmDFR+xS0D4rvlXyaIUtZbV5wcE7VW3DCAq+Pm1ATcUWkRl+bPwXvHv6QXEAn0nAnouiQQXa5rWnIiFFKCNg+otFm0g3tL0CvnYosuftWEoI5CxkT5Nrk7ROk5sOhC760boL5BD4hjxaaAcqCSNv8mED4vI0cvJG2Z6uwSPSHpGesePVeOJN4hiavcDX3Su5pE53s5elZq0KmWa0sGipcuainB/MtibL5mGNCpT+GMUx9l3RYZZSR5Ghq0bAXuj5k7Ca9APB2DAOEU/uUxlk6IIKDn5ZNLWqGXR+pwDZDtwfgOU+f9TFgwliETRLC9vZ2EC94LobnQXvzEJ2HBRwL8BYE5M+wGV7iRAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image" />
+                                      </scg:List>
+                                    </uix:TargetAnchorable.Anchors>
+                                  </uix:TargetAnchorable>
+                                </uix:NClick.Target>
+                                <sap:WorkflowViewStateService.ViewState>
+                                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  </scg:Dictionary>
+                                </sap:WorkflowViewStateService.ViewState>
+                              </uix:NClick>
+                            </ActivityAction>
+                          </uix:NApplicationCard.Body>
+                          <uix:NApplicationCard.TargetApp>
+                            <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAALASURBVEhLlZY/aFNRFMaDYmlt0zyTULXWpopO4h8cRbGD4OLQQRDpEsTJqYudOhQc7BgcnByKg5NiFVwUJIKD4mBFUAeHWiqOxgougtfzJe/cntx89730wA/67nv5vvb1fCen4Jzrm0NHjs8Iy0Jrx2D539Dovq/F8sRt9mwMemgR8VNCAyaCUwoDiQfmu0v735cqB68wDQs9FMEpYVFYU4MQa2jZOVT5O5yMN0vVybNM2/8gIokwJ6yqaIyrs9fc9IVL1NCya7j6Z2TP+OOkOlnzhiJQF1asYB5v3r5zK0+fUZMYg8W9P4rlA/dgSEVjnDt/UX7RTk0dPUHFM2GiWTx89CS1c275/gMumoWINEPRGCdPn0mtOtVq/XLJWI0LEwZGxn5uy7Bx525qtVWLt5aoOEMNkTFqELK5+Tu12aq1b+tUnIGswhB5owaWm/MLqYVzGxvf20Za9es3qEEI8glDjCtqYoGJFsxhorX64SM1CMEYhOF0KB6CoGvhtaJ50CxoGq1+BsFoZWIOhhhj1EhB0LUQC5xBALHQ6mcQYNzpWOsxUWzQUbjGOQQQfFt5g0CqM0tFoOubwGKDjv8jXq/OUmCbJ2sQ4BtFHvGGNIth0PMqaxAgg/KIN6TDmwU9r2KDAMNbbntDmkUb9E+fv7SbR2m+eu1BLLRigwAZlNtxQxt0FF6vvW/FwuZhgyA07MmiDbpGwRIKIhZabBAgg3KLG9qgo3Bt74NQcObybPp0p8JBEBpivfBiz1+8bH8Ihb/U3lOsmGIjEg4CXTPahkBEcncZixXLA7uN+njD1BT7TXRTszDhEGxw2GOsR5chEDG8XnRtdPoAZqBgqqAr7bamdF1YRBTG2LK3ZYhtnBkp9NAi4vg26Rl9oRFGV2z5tdBDhpggOr6x1AgNoS3fD/QwCzGr1w4fW2cNkY8r/Aec+ne+oeIc1AAAAABJRU5ErkJggg==" InformativeScreenshot="0ff21491abe84034aad9b5611ac9f21d.png" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;" Url="http://155.248.242.125:9090/dashboard/scheme-configurator/scheme-details?gms_gl_i=U2FsdGVkX19Z%2BIZ%2Bp9n7SjNby%2FWYbyOax2pNuwwiNmE%3D&amp;gms_sc=U2FsdGVkX19uC98evkp70Xnck1AcUoR5PFIn4dYow%2Fy6UVCBG9JkK8HtN1zTVOZA&amp;gms_gl_tb=U2FsdGVkX1%2FENM4TotXAcUhVS5Ba07zGpBIHnEchGec%3D" />
+                          </uix:NApplicationCard.TargetApp>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </uix:NApplicationCard>
+                      </If.Then>
+                      <If.Else>
+                        <If sap2010:Annotation.AnnotationText="Check uncheck Bulk checkbox based on input" Condition="[item.ToString.ToLower.Equals(&quot;bulk&quot;)]" DisplayName="If Bulk Is True" sap:VirtualizedContainerService.HintSize="200,96.8" sap2010:WorkflowViewState.IdRef="If_8">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <If.Then>
+                            <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Attach Browser For Bulk" sap:VirtualizedContainerService.HintSize="433.6,269.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="3af12282-2aa0-43a8-8cad-cf6f88e1c33d" Version="V2">
+                              <uix:NApplicationCard.Body>
+                                <ActivityAction x:TypeArguments="x:Object">
+                                  <ActivityAction.Argument>
+                                    <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                                  </ActivityAction.Argument>
+                                  <uix:NClick ClickType="Single" DisplayName="Click On Unchecked" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="3af12282-2aa0-43a8-8cad-cf6f88e1c33d" Version="V1">
+                                    <uix:NClick.Target>
+                                      <uix:TargetAnchorable BrowserURL="http://155.248.242.125:9090/dashboard/scheme-configurator/scheme-details?gms_gl_i=U2FsdGVkX1%2B616ESRCCOrIoPub%2Bz5Q30brq2pd4GS1U%3D&amp;gms_sc=U2FsdGVkX19IRotZxrl2FjeczojSpcVO7CjU6k7INjQNSane0PeuBnkhtRgWDs49&amp;gms_gl_tb=U2FsdGVkX1%2FFVsLapgO%2By5cx%2Bd16nPnuA5gOqkuhfZE%3D" DesignTimeRectangle="954, 516, 20, 20" FriendlyName="'DIV'" FullSelectorArgument="&lt;webctrl parentname='group1' tag='DIV' class='p-checkbox-box' isleaf='0' idx='4' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='p-checkbox-box' parentid='p-tabpanel-10' parentname='group1' tag='DIV' aaname='' /&gt;" Guid="5f180b01-6a47-4997-8eb2-e83edfc468b4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAABCSURBVEhLY/hPYzCMLJgzZ87/goICqmCQWTAAtwAkQS2AbNaoBVjBqAUEwagFBMGoBQTBqAUEwTC1gOZVJm3A//8A55R6LdKEew0AAAAASUVORK5CYII=" InformativeScreenshot="c8f869ff9c51d771b045bfb8ad2bfb34.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='GMS' /&gt;" SearchSteps="FuzzySelector, Image" Visibility="Interactive" WaitForReadyArgument="Complete">
+                                        <uix:TargetAnchorable.Anchors>
+                                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                            <uix:Target DesignTimeRectangle="974, 521, 56, 15" ElementType="Text" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl aaname='Bulk' parentid='p-tabpanel-10' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Bulk' parentid='p-tabpanel-10' tag='LABEL' type='' class='' check:innerText='Bulk' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADwAAAATCAYAAADMBm6RAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAHNSURBVFhH7ZZLa8JAFEb7k4cQCEECBUUX2ZSCiCChuFJo0Y1dZNNSV0WyUCRIoGQjYmmgkEUoiHy9k4dVFM1oAq31wKA3uRnuybxyBYIxxn/OmsTxInyuXIT38unCsqzNNnbhBYs4QQDelz1H9KQP17Ix/wqDXBETHhlgkgztWltrKmR6rti2EcRpqeB9lU3Mw2AIg1VgvodBrogLr4r8YTHtoSJa8F8WBl3plRia4zi076HV+vDiMMJDv1ZF/yMODwkHLrq3RdSfk2mfDRkIL+APDKiFJuxkDe7Mm8Msr0ntE+ayugz9cZqpLEdcmHK2mnIDc7pW2inCOcpyeL2c9MKlLhzfh7/WpoMmioqOp50yCSmE37gsQ+XBFdsABRAX3hKJcDsa1LYTBUcJq7Qs6ATQVDCdri/DG5mTqTC7G0bBzjwHLXWfMIum8ZJeDI2ySn3lMcqnCy8X8CZd6BJDfRCvOr+PqlREaxKXvPThdHTI0oEpndwLKC6oMEbZK4sLU85WU/jxsbnJeK8GNHoJskZTXdFQfbHQS7tLc2Z0tks6zFkcZwSvl5NOWBQa/YA2tWO+PPMiX+FfyEqY/2k0GmFwznBH7hqO8P8B+AbOd96vLSjwgwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                                          </scg:List>
+                                        </uix:TargetAnchorable.Anchors>
+                                      </uix:TargetAnchorable>
+                                    </uix:NClick.Target>
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                  </uix:NClick>
+                                </ActivityAction>
+                              </uix:NApplicationCard.Body>
+                              <uix:NApplicationCard.TargetApp>
+                                <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAeCAYAAAA/xX6fAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAACxIAAAsSAdLdfvwAAALASURBVEhLlZY/aFNRFMaDYmlt0zyTULXWpopO4h8cRbGD4OLQQRDpEsTJqYudOhQc7BgcnByKg5NiFVwUJIKD4mBFUAeHWiqOxgougtfzJe/cntx89730wA/67nv5vvb1fCen4Jzrm0NHjs8Iy0Jrx2D539Dovq/F8sRt9mwMemgR8VNCAyaCUwoDiQfmu0v735cqB68wDQs9FMEpYVFYU4MQa2jZOVT5O5yMN0vVybNM2/8gIokwJ6yqaIyrs9fc9IVL1NCya7j6Z2TP+OOkOlnzhiJQF1asYB5v3r5zK0+fUZMYg8W9P4rlA/dgSEVjnDt/UX7RTk0dPUHFM2GiWTx89CS1c275/gMumoWINEPRGCdPn0mtOtVq/XLJWI0LEwZGxn5uy7Bx525qtVWLt5aoOEMNkTFqELK5+Tu12aq1b+tUnIGswhB5owaWm/MLqYVzGxvf20Za9es3qEEI8glDjCtqYoGJFsxhorX64SM1CMEYhOF0KB6CoGvhtaJ50CxoGq1+BsFoZWIOhhhj1EhB0LUQC5xBALHQ6mcQYNzpWOsxUWzQUbjGOQQQfFt5g0CqM0tFoOubwGKDjv8jXq/OUmCbJ2sQ4BtFHvGGNIth0PMqaxAgg/KIN6TDmwU9r2KDAMNbbntDmkUb9E+fv7SbR2m+eu1BLLRigwAZlNtxQxt0FF6vvW/FwuZhgyA07MmiDbpGwRIKIhZabBAgg3KLG9qgo3Bt74NQcObybPp0p8JBEBpivfBiz1+8bH8Ihb/U3lOsmGIjEg4CXTPahkBEcncZixXLA7uN+njD1BT7TXRTszDhEGxw2GOsR5chEDG8XnRtdPoAZqBgqqAr7bamdF1YRBTG2LK3ZYhtnBkp9NAi4vg26Rl9oRFGV2z5tdBDhpggOr6x1AgNoS3fD/QwCzGr1w4fW2cNkY8r/Aec+ne+oeIc1AAAAABJRU5ErkJggg==" InformativeScreenshot="0ff21491abe84034aad9b5611ac9f21d.png" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;" Url="http://155.248.242.125:9090/dashboard/scheme-configurator/scheme-details?gms_gl_i=U2FsdGVkX19Z%2BIZ%2Bp9n7SjNby%2FWYbyOax2pNuwwiNmE%3D&amp;gms_sc=U2FsdGVkX19uC98evkp70Xnck1AcUoR5PFIn4dYow%2Fy6UVCBG9JkK8HtN1zTVOZA&amp;gms_gl_tb=U2FsdGVkX1%2FENM4TotXAcUhVS5Ba07zGpBIHnEchGec%3D" />
+                              </uix:NApplicationCard.TargetApp>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </uix:NApplicationCard>
+                          </If.Then>
+                        </If>
+                      </If.Else>
+                    </If>
+                  </ActivityAction>
+                </ui:ForEach.Body>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:ForEach>
+            </Sequence>
+            <TryCatch DisplayName="NPA Details Success Message" sap:VirtualizedContainerService.HintSize="438,607" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch.Try>
+                <Sequence DisplayName="NPA Details Success Message" sap:VirtualizedContainerService.HintSize="376,380" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Next Button" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                    <ui:Click.CursorPosition>
+                      <ui:CursorPosition Position="Center">
+                        <ui:CursorPosition.OffsetX>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetX>
+                        <ui:CursorPosition.OffsetY>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:CursorPosition.OffsetY>
+                      </ui:CursorPosition>
+                    </ui:Click.CursorPosition>
+                    <ui:Click.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="72211910-13d4-4540-b0d0-399f1e2358de" InformativeScreenshot="48c0f26a4c29a582a103c66ec49802e8" Selector="&lt;webctrl aaname='Next' tag='BUTTON' class='p-ripple p-element p-button p-component' innertext='Next' idx='4' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:Click.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:Click>
+                  <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Scheme Detail Message " sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="GetValue_1">
+                    <ui:GetValue.Target>
+                      <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="1d67e913-5e8a-46a9-9e68-3df9ab0ecdc5" InformativeScreenshot="7b7bc62432d2eeaabd2a362e19e12102" Selector="&lt;webctrl css-selector='body&amp;gt;app-root&amp;gt;app-main-template&amp;gt;div&amp;gt;div&amp;gt;app-scheme-details&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p-tabview&amp;gt;div&amp;gt;div&amp;gt;p-tabpanel&amp;gt;div&amp;gt;app-npa-details-form&amp;gt;app-dialogue-popup&amp;gt;p-confirmdialog&amp;gt;div&amp;gt;div&amp;gt;div' parentid='p-tabpanel-*' tag='DIV' parentclass='ng-trigger ng-trigger-animation ng-tns-c* p-dialog p-confirm-dialog p-component ng-star-inserted' class='p-dialog-content ng-tns-c*' isleaf='0' /&gt;" WaitForReady="COMPLETE">
+                        <ui:Target.TimeoutMS>
+                          <InArgument x:TypeArguments="x:Int32" />
+                        </ui:Target.TimeoutMS>
+                      </ui:Target>
+                    </ui:GetValue.Target>
+                    <ui:GetValue.Value>
+                      <OutArgument x:TypeArguments="x:String">[v_GetTextForNPADetailsMessage]</OutArgument>
+                    </ui:GetValue.Value>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </ui:GetValue>
+                  <If Condition="[v_GetTextForNPADetailsMessage.ToLower.Equals(&quot;record successfully added&quot;)]" DisplayName="Check If Scheme Detail Successfully Recorded Or Not" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <If.Then>
+                      <Sequence DisplayName="Successfully Added" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Ok Button" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Click_4" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                          <ui:Click.CursorPosition>
+                            <ui:CursorPosition Position="Center">
+                              <ui:CursorPosition.OffsetX>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetX>
+                              <ui:CursorPosition.OffsetY>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:CursorPosition.OffsetY>
+                            </ui:CursorPosition>
+                          </ui:Click.CursorPosition>
+                          <ui:Click.Target>
+                            <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0df1473c-6f3f-4519-8be1-59acf305a910" InformativeScreenshot="ecccff5291a7055c3601ce11440ccb10" Selector="&lt;webctrl aaname='Ok' tag='BUTTON' class='p-ripple p-element p-button p-component' idx='3' /&gt;" WaitForReady="COMPLETE">
+                              <ui:Target.TimeoutMS>
+                                <InArgument x:TypeArguments="x:Int32" />
+                              </ui:Target.TimeoutMS>
+                            </ui:Target>
+                          </ui:Click.Target>
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </ui:Click>
+                        <Assign DisplayName="NPA Detaisl Message" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:Boolean">[out_NPADetaislMessage]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                        <Assign DisplayName="NPA Details Status" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                          <Assign.To>
+                            <OutArgument x:TypeArguments="x:String">[out_NPADetailsStatus]</OutArgument>
+                          </Assign.To>
+                          <Assign.Value>
+                            <InArgument x:TypeArguments="x:String">Pass</InArgument>
+                          </Assign.Value>
+                        </Assign>
+                      </Sequence>
+                    </If.Then>
+                    <If.Else>
+                      <If Condition="[v_GetTextForNPADetailsMessage.ToLower.Equals(&quot;Record Updated Successfully&quot;)]" DisplayName="Check If Message Is Updated" sap:VirtualizedContainerService.HintSize="200,52.8" sap2010:WorkflowViewState.IdRef="If_10">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <If.Then>
+                          <Sequence DisplayName="Successfully Updated" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Ok Button" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0df1473c-6f3f-4519-8be1-59acf305a910" InformativeScreenshot="ecccff5291a7055c3601ce11440ccb10" Selector="&lt;webctrl aaname='Ok' tag='BUTTON' class='p-ripple p-element p-button p-component' idx='3' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <Assign DisplayName="NPA Detaisl Message" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[out_NPADetaislMessage]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign DisplayName="NPA Detaisl Status" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[out_NPADetailsStatus]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">Pass</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                          </Sequence>
+                        </If.Then>
+                        <If.Else>
+                          <Sequence DisplayName="Already Exists" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                            <sap:WorkflowViewStateService.ViewState>
+                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                              </scg:Dictionary>
+                            </sap:WorkflowViewStateService.ViewState>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Ok Button" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="0df1473c-6f3f-4519-8be1-59acf305a910" InformativeScreenshot="0dae24c168060119ad7cdcf3a834c390" Selector="&lt;webctrl aaname='Ok' tag='BUTTON' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                            <Assign DisplayName="NPA Detaisl Message" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_19">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Boolean">[out_NPADetaislMessage]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <Assign DisplayName="NPA Detaisl Status" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_20">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:String">[out_NPADetailsStatus]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:String">Fail</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Dashboard" sap:VirtualizedContainerService.HintSize="333.6,107.2" sap2010:WorkflowViewState.IdRef="Click_13" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                              <ui:Click.CursorPosition>
+                                <ui:CursorPosition Position="Center">
+                                  <ui:CursorPosition.OffsetX>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetX>
+                                  <ui:CursorPosition.OffsetY>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:CursorPosition.OffsetY>
+                                </ui:CursorPosition>
+                              </ui:Click.CursorPosition>
+                              <ui:Click.Target>
+                                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a042acbc-8774-4f81-9896-69ef322fb61e" InformativeScreenshot="c576d4155d16f869a34dfcb78e404d52" Selector="&lt;webctrl tag='A' aaname='Dashboard' parentclass='new-menu-list' /&gt;" WaitForReady="COMPLETE">
+                                  <ui:Target.TimeoutMS>
+                                    <InArgument x:TypeArguments="x:Int32" />
+                                  </ui:Target.TimeoutMS>
+                                </ui:Target>
+                              </ui:Click.Target>
+                              <sap:WorkflowViewStateService.ViewState>
+                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                                </scg:Dictionary>
+                              </sap:WorkflowViewStateService.ViewState>
+                            </ui:Click>
+                          </Sequence>
+                        </If.Else>
+                      </If>
+                    </If.Else>
+                  </If>
+                </Sequence>
+              </TryCatch.Try>
+              <TryCatch.Catches>
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ActivityAction x:TypeArguments="s:Exception">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Exception - NPA Details Success Message" sap:VirtualizedContainerService.HintSize="304,66" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">Mandatory Fields Has Not Entered By User Hence Doesn't Added The NPA Details SuccessFully</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Error</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
+                      <Assign DisplayName="NPA Details Message" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_8">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[out_NPADetaislMessage]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign DisplayName="NPA Details Status" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_9">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[out_NPADetailsStatus]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">Fail</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <Assign DisplayName="NPA Details Next Button Disabled" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_11">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:Boolean">[out_NPADetailsNextButtonDisabled]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click To Dashboard" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Click_7" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                        <ui:Click.CursorPosition>
+                          <ui:CursorPosition Position="Center">
+                            <ui:CursorPosition.OffsetX>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetX>
+                            <ui:CursorPosition.OffsetY>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:CursorPosition.OffsetY>
+                          </ui:CursorPosition>
+                        </ui:Click.CursorPosition>
+                        <ui:Click.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="4dfbaccf-b1d5-4861-92b4-5cb3f06835d4" InformativeScreenshot="3b550d707c1111d11b308a5ee1c95fda" Selector="&lt;webctrl tag='A' aaname='Dashboard' parentclass='new-menu-list' isleaf='0' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:Click.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:Click>
+                    </Sequence>
+                  </ActivityAction>
+                </Catch>
+              </TryCatch.Catches>
+            </TryCatch>
+          </Sequence>
+        </ActivityAction>
+      </ui:BrowserScope.Body>
+    </ui:BrowserScope>
+  </Sequence>
+</Activity>

@@ -1,0 +1,52 @@
+11/10/2022 04:55:39 PM : Info : Scheme Configurator Started
+11/10/2022 04:55:40 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 05:52:23 PM : Info : Scheme Configurator Started
+11/10/2022 05:52:23 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:03:25 PM : Info : Scheme Configurator Started
+11/10/2022 06:03:25 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:07:30 PM : Info : Scheme Configurator Started
+11/10/2022 06:07:30 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:08:59 PM : Info : Scheme Configurator Started
+11/10/2022 06:08:59 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:12:57 PM : Info : Scheme Configurator Started
+11/10/2022 06:12:57 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:17:12 PM : Info : Scheme Configurator Started
+11/10/2022 06:17:12 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:19:44 PM : Info : Scheme Configurator Started
+11/10/2022 06:19:44 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:25:49 PM : Info : Scheme Configurator Started
+11/10/2022 06:25:49 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:27:55 PM : Info : Scheme Configurator Started
+11/10/2022 06:27:55 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:29:36 PM : Info : Scheme Configurator Started
+11/10/2022 06:29:36 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:30:58 PM : Info : Scheme Configurator Started
+11/10/2022 06:30:59 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:38:09 PM : Info : Scheme Configurator Started
+11/10/2022 06:38:09 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:39:50 PM : Info : Scheme Configurator Started
+11/10/2022 06:39:50 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:41:38 PM : Info : Scheme Configurator Started
+11/10/2022 06:41:38 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:44:35 PM : Info : Scheme Configurator Started
+11/10/2022 06:44:35 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:46:19 PM : Info : Start Date 04/10/2010
+11/10/2022 06:46:19 PM : Info : Start Date Day : 04 MonthVal : OCTyear val: 2010
+11/10/2022 06:46:20 PM : Info : 04    OCT    2010
+11/10/2022 06:51:57 PM : Info : Scheme Configurator Started
+11/10/2022 06:51:58 PM : Info : Created Build DataTable For Scheme Configurator
+11/10/2022 06:52:17 PM : Info : Start Date 04/10/2010
+11/10/2022 06:52:17 PM : Info : Start Date Day : 04 MonthVal : OCTyear val: 2010
+11/10/2022 06:52:17 PM : Info : 04    OCT    2010
+11/10/2022 06:52:39 PM : Info : End Date 19/08/2030
+11/10/2022 06:52:39 PM : Info : End Date Day : 19MonthVal : AUGyear val: 2030
+11/10/2022 06:53:12 PM : Info : Fee Applicability Status Is Already Yes... No Need To Change The Status
+11/10/2022 06:53:13 PM : Info : NPA Marking Applicable Status Is Already Yes... No Need To Change The Status
+11/10/2022 06:53:14 PM : Info : Renewal Fee After NPA Status Is Already Yes... No Need To Change The Status
+11/10/2022 06:53:18 PM : Info : Moratorium Status Is Already Yes... No Need To Change The Status
+11/10/2022 06:53:28 PM : Info : Portfolio Crystallization Required Status Already Is Yes
+11/10/2022 06:54:48 PM : Info : Start Date 09/07/2012
+11/10/2022 06:54:48 PM : Info : Start Date Day : 09 MonthVal : JULyear val: 2012
+11/10/2022 06:55:09 PM : Info : End Date 06/01/2020
+11/10/2022 06:55:10 PM : Info : End Date Day : 06MonthVal : JANyear val: 2020
+11/10/2022 06:57:17 PM : Info : Record successfully Added

@@ -1,0 +1,102 @@
+01/11/2022 10:45:34 AM : Info : Start Date 12/02/2014
+01/11/2022 10:45:34 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 10:45:34 AM : Info : 12    FEB    2014
+01/11/2022 10:45:46 AM : Info : End Date 22/12/2015
+01/11/2022 10:45:46 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 10:45:51 AM : Info : Status Is Inactive
+01/11/2022 10:50:49 AM : Info : Start Date 12/02/2014
+01/11/2022 10:50:49 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 10:50:49 AM : Info : 12    FEB    2014
+01/11/2022 10:51:01 AM : Info : End Date 22/12/2015
+01/11/2022 10:51:01 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 10:51:06 AM : Info : Status Is Inactive
+01/11/2022 10:51:48 AM : Info : Start Date 12/02/2014
+01/11/2022 10:51:48 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 10:51:48 AM : Info : 12    FEB    2014
+01/11/2022 10:52:00 AM : Info : End Date 22/12/2015
+01/11/2022 10:52:00 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 10:52:05 AM : Info : Status Is Inactive
+01/11/2022 10:53:35 AM : Info : Start Date 12/02/2014
+01/11/2022 10:53:35 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 10:53:35 AM : Info : 12    FEB    2014
+01/11/2022 10:53:46 AM : Info : End Date 22/12/2015
+01/11/2022 10:53:46 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 10:53:52 AM : Info : Status Is Inactive
+01/11/2022 11:01:33 AM : Info : Start Date 12/02/2014
+01/11/2022 11:01:33 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 11:01:33 AM : Info : 12    FEB    2014
+01/11/2022 11:01:45 AM : Info : End Date 22/12/2015
+01/11/2022 11:01:45 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 11:01:50 AM : Info : Status Is Inactive
+01/11/2022 11:03:13 AM : Info : Start Date 12/02/2014
+01/11/2022 11:03:13 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 11:03:13 AM : Info : 12    FEB    2014
+01/11/2022 11:03:25 AM : Info : End Date 22/12/2015
+01/11/2022 11:03:25 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 11:03:30 AM : Info : Status Is Inactive
+01/11/2022 11:03:35 AM : Error : Only Alphabets & Numbers Are Allowed
+01/11/2022 11:09:22 AM : Info : Start Date 12/02/2014
+01/11/2022 11:09:22 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 11:09:22 AM : Info : 12    FEB    2014
+01/11/2022 11:09:34 AM : Info : End Date 22/12/2015
+01/11/2022 11:09:34 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 11:09:39 AM : Info : Status Is Inactive
+01/11/2022 11:24:07 AM : Error : AreaCode should be less than 5
+01/11/2022 11:24:12 AM : Info : Start Date 12/02/2014
+01/11/2022 11:24:12 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 11:24:12 AM : Info : 12    FEB    2014
+01/11/2022 11:29:15 AM : Info : Start Date 12/02/2014
+01/11/2022 11:29:15 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 11:29:15 AM : Info : 12    FEB    2014
+01/11/2022 11:29:27 AM : Info : End Date 22/12/2015
+01/11/2022 11:29:27 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 11:29:32 AM : Info : Status Is Inactive
+01/11/2022 11:47:12 AM : Info : Start Date 12/02/2014
+01/11/2022 11:47:13 AM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 11:47:13 AM : Info : 12    FEB    2014
+01/11/2022 11:47:24 AM : Info : End Date 22/12/2015
+01/11/2022 11:47:24 AM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 11:47:29 AM : Info : Status Is Inactive
+01/11/2022 12:37:44 PM : Info : Start Date 12/02/2014
+01/11/2022 12:37:44 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 12:37:44 PM : Info : 12    FEB    2014
+01/11/2022 12:37:56 PM : Info : End Date 22/12/2015
+01/11/2022 12:37:56 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 12:38:01 PM : Info : Status Is Inactive
+01/11/2022 12:46:40 PM : Info : Start Date 12/02/2014
+01/11/2022 12:46:40 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 12:46:40 PM : Info : 12    FEB    2014
+01/11/2022 12:46:52 PM : Info : End Date 22/12/2015
+01/11/2022 12:46:52 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 12:46:57 PM : Info : Status Is Inactive
+01/11/2022 12:51:05 PM : Info : Start Date 12/02/2014
+01/11/2022 12:51:05 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 12:51:05 PM : Info : 12    FEB    2014
+01/11/2022 12:51:17 PM : Info : End Date 22/12/2015
+01/11/2022 12:51:17 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 12:51:22 PM : Info : Status Is Inactive
+01/11/2022 12:53:34 PM : Info : Start Date 12/02/2014
+01/11/2022 12:53:34 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 12:53:34 PM : Info : 12    FEB    2014
+01/11/2022 12:53:53 PM : Info : End Date 22/12/2015
+01/11/2022 12:53:53 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 12:54:05 PM : Info : Status Is Inactive
+01/11/2022 01:03:49 PM : Info : Start Date 12/02/2014
+01/11/2022 01:03:49 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 01:03:49 PM : Info : 12    FEB    2014
+01/11/2022 01:04:01 PM : Info : End Date 22/12/2015
+01/11/2022 01:04:01 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 01:04:06 PM : Info : Status Is Inactive
+01/11/2022 01:15:19 PM : Info : Start Date 12/02/2014
+01/11/2022 01:15:19 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 01:15:19 PM : Info : 12    FEB    2014
+01/11/2022 01:15:31 PM : Info : End Date 22/12/2015
+01/11/2022 01:15:31 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 01:15:36 PM : Info : Status Is Inactive
+01/11/2022 01:17:42 PM : Info : Start Date 12/02/2014
+01/11/2022 01:17:42 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2014
+01/11/2022 01:17:42 PM : Info : 12    FEB    2014
+01/11/2022 01:17:54 PM : Info : End Date 22/12/2015
+01/11/2022 01:17:54 PM : Info : End Date Day : 22MonthVal : DECyear val: 2015
+01/11/2022 01:17:59 PM : Info : Status Is Inactive
+01/11/2022 01:18:07 PM : Error : Company or ShortName already exists

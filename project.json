@@ -1,0 +1,93 @@
+{
+  "name": "GMS Process_Udaan",
+  "description": "Test Automation Project of Guarantee Management System.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.15.0-preview]",
+    "UiPath.System.Activities": "[22.4.4]",
+    "UiPath.Testing.Activities": "[22.4.3]",
+    "UiPath.UIAutomation.Activities": "[22.4.7]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.4.0",
+  "projectVersion": "1.0.119264456",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "843a059a-3902-4e0a-9795-221bea3201eb",
+        "dataVariationFilePath": ".variations\\Input Data_Login Page_GMS_Login.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_1_GMS_Login.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6ada6d01-3b14-4ecb-8580-5478d88b97ab",
+        "dataVariationFilePath": ".variations\\Input Data_Scheme Master_A9_1_Scheme_Master.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_9_Scheme Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "89a3a0a6-e29d-42ac-a0d8-f94396b4e9e7",
+        "dataVariationFilePath": ".variations\\Input Data_Scheme Configurator_A10_1_Scheme_Details.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase10_Scheme Configurator.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b5dc426c-915b-4efe-b04d-cd7e3fc7d080",
+        "dataVariationFilePath": ".variations\\Input Data_Geography Masters_A2_Geography_Master.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase2_Geography Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "61b63c30-91d5-4735-aa72-a8c2a06d3e30",
+        "dataVariationFilePath": ".variations\\Input Data_Scheme Configurator_A10_1_Scheme_Details_1.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase3_Gender_Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "151b2cb1-0eee-4904-93b7-2f623cd36138",
+        "dataVariationFilePath": ".variations\\Input Data_Company Masters_A2_Geography_Master.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase5_Company_Master.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}
