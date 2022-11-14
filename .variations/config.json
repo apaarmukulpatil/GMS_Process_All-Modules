@@ -1,0 +1,28 @@
+{
+  "dataVariationFileInfo": [
+    {
+      "filePath": ".variations\\Input Data_Scheme Master_A9_1_Scheme_Master_1.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\Input Data_Login Page_GMS_Login.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\Input Data_Scheme Master_A9_1_Scheme_Master.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\Input Data_Scheme Configurator_A10_1_Scheme_Details.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\Input Data_District_Master_A2_1_Zone_Master.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\Input Data MLI_ORG Master_A8_MliOrgMaster.json",
+      "dataVariationType": "File"
+    }
+  ]
+}

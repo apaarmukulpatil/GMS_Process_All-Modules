@@ -1,0 +1,12 @@
+31/10/2022 10:55:28 AM : Info : Successfully created the record
+31/10/2022 02:25:42 PM : Info : Short Name Type Must Be At Least 3 Characters Long And It Should Be AlphaNumerical
+31/10/2022 03:08:54 PM : Info : Short Name Type Must Be At Least 3 Characters Long And It Should Be AlphaNumerical
+31/10/2022 03:10:17 PM : Info : Please Enter Valid IFSC Code
+31/10/2022 03:11:05 PM : Info : Please Enter Valid IFSC Code
+31/10/2022 03:12:30 PM : Info : Please Enter Valid IFSC Code
+31/10/2022 04:10:13 PM : Info : Address Should Be Valid
+31/10/2022 05:13:59 PM : Info : Address Should Be Valid
+31/10/2022 05:32:09 PM : Info : Address Should Be Valid
+31/10/2022 05:32:27 PM : Info : Only Alphanumerics Are Allowed
+31/10/2022 06:09:10 PM : Info : Address Should Be Valid
+31/10/2022 06:09:28 PM : Info : Only Alphanumerics Are Allowed

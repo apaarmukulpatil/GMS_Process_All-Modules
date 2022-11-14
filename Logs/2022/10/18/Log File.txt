@@ -1,0 +1,5 @@
+18/10/2022 12:55:39 PM : Info : Status Is Inactive
+18/10/2022 12:57:53 PM : Info : Status Is Inactive
+18/10/2022 12:58:09 PM : Info : Record Already Exists
+18/10/2022 01:10:35 PM : Info : District Name Should Be Alphanumerical
+18/10/2022 01:12:12 PM : Info : Complete The Input Fields

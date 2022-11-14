@@ -1,0 +1,13 @@
+09/11/2022 11:43:01 AM : Info : Bank Zone Is Disabled
+09/11/2022 11:44:01 AM : Info : Successfully created the record
+09/11/2022 11:46:01 AM : Error : Error Occured In MLI HO: Could not find the UI element corresponding to this selector:
+<webctrl innertext=' Add New  ' tag='BUTTON'/>
+
+09/11/2022 11:47:28 AM : Info : Bank Zone Is Disabled
+09/11/2022 11:48:26 AM : Info : Successfully created the record
+09/11/2022 11:49:33 AM : Info : Record with same entry already exists
+09/11/2022 11:50:17 AM : Info : Bank Zone Is Disabled
+09/11/2022 11:51:15 AM : Info : Successfully created the record
+09/11/2022 11:51:32 AM : Info : Pincode Not Exists
+09/11/2022 11:51:33 AM : Info : District Not Found
+09/11/2022 11:52:38 AM : Error : Submit Button Disabled

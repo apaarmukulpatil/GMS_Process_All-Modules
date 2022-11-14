@@ -1,0 +1,44 @@
+20/10/2022 12:56:33 PM : Info : gezpp5003qrtIs An Invalid Pan Number
+20/10/2022 12:56:33 PM : Info : #32AACCF8045D1Z Is Not a Valid GST Number
+20/10/2022 12:56:59 PM : Info : Status is active
+20/10/2022 01:06:07 PM : Info : Status is active
+20/10/2022 01:06:08 PM : Info : Successfully created the record
+20/10/2022 01:16:39 PM : Info : Status is active
+20/10/2022 01:16:40 PM : Info : Successfully created the record
+20/10/2022 01:19:53 PM : Info : Status is active
+20/10/2022 01:19:54 PM : Info : Successfully created the record
+20/10/2022 01:23:16 PM : Info : Status is active
+20/10/2022 01:23:17 PM : Info : Successfully created the record
+20/10/2022 01:31:10 PM : Info : Status is active
+20/10/2022 01:31:41 PM : Info : Successfully created the record
+20/10/2022 02:30:53 PM : Info : Status is active
+20/10/2022 02:31:14 PM : Info : Successfully created the record
+20/10/2022 02:42:54 PM : Info : Status is active
+20/10/2022 02:43:18 PM : Info : Successfully created the record
+20/10/2022 02:51:32 PM : Info : gezpp5003qRTIs An Invalid Pan Number
+20/10/2022 02:51:32 PM : Info : *32AACCF8045D1ZM Is Not a Valid GST Number
+20/10/2022 02:51:58 PM : Info : Status is active
+20/10/2022 03:00:43 PM : Info : gezpp5003qRTIs An Invalid Pan Number
+20/10/2022 03:00:43 PM : Info : *32AACCF8045D1ZM Is Not a Valid GST Number
+20/10/2022 03:01:09 PM : Info : Status is active
+20/10/2022 03:05:59 PM : Info : gezpp5003qRTIs An Invalid Pan Number
+20/10/2022 03:05:59 PM : Info : *32AACCF8045D1ZM Is Not a Valid GST Number
+20/10/2022 03:06:25 PM : Info : Status is active
+20/10/2022 03:09:44 PM : Info : Status is active
+20/10/2022 03:09:45 PM : Info : Successfully created the record
+20/10/2022 03:48:32 PM : Info : Status is active
+20/10/2022 03:48:33 PM : Info : Successfully created the record
+20/10/2022 03:52:14 PM : Info : gezpp5003q56asIs An Invalid Pan Number
+20/10/2022 03:52:14 PM : Info : 32AACCF8045D1ZM@123 Is Not a Valid GST Number
+20/10/2022 03:52:40 PM : Info : Status is active
+20/10/2022 03:53:16 PM : Error : Button Disabled
+20/10/2022 04:00:28 PM : Info : User Has Not Entered The Address
+20/10/2022 04:00:49 PM : Info : User Has Not Entered The City
+20/10/2022 04:00:54 PM : Info : gezpp5003q56asIs An Invalid Pan Number
+20/10/2022 04:00:54 PM : Info : 32AACCF8045D1ZM@123 Is Not a Valid GST Number
+20/10/2022 04:01:19 PM : Info : Status is active
+20/10/2022 04:01:51 PM : Error : Button Disabled
+20/10/2022 05:46:50 PM : Info : Successfully created the record
+20/10/2022 05:53:34 PM : Info : Successfully created the record
+20/10/2022 06:05:23 PM : Error : Button Disabled
+20/10/2022 06:08:09 PM : Info : Successfully created the record

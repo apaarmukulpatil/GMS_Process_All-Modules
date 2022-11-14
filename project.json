@@ -1,0 +1,93 @@
+{
+  "name": "GMS Process_Udaan",
+  "description": "Test Automation Project of Guarantee Management System.",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.15.0-preview]",
+    "UiPath.System.Activities": "[22.4.4]",
+    "UiPath.Testing.Activities": "[22.4.3]",
+    "UiPath.UIAutomation.Activities": "[22.4.7]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "22.4.4.0",
+  "projectVersion": "1.0.119264456",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "08791042-c77c-400f-b2bd-c5e0cf976fad",
+        "dataVariationFilePath": ".variations\\Input Data_Scheme Master_A9_1_Scheme_Master_1.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_2_Geography_Masters.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "843a059a-3902-4e0a-9795-221bea3201eb",
+        "dataVariationFilePath": ".variations\\Input Data_Login Page_GMS_Login.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_1_GMS_Login.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6ada6d01-3b14-4ecb-8580-5478d88b97ab",
+        "dataVariationFilePath": ".variations\\Input Data_Scheme Master_A9_1_Scheme_Master.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_9_Scheme Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "89a3a0a6-e29d-42ac-a0d8-f94396b4e9e7",
+        "dataVariationFilePath": ".variations\\Input Data_Scheme Configurator_A10_1_Scheme_Details.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase10_Scheme Configurator.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "f28afe3b-9f89-45e5-9423-53e13b724c4a",
+        "dataVariationFilePath": ".variations\\Input Data_District_Master_A2_1_Zone_Master.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_2_4_District_Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b05b88be-ff1e-4759-9511-092065f6e7b5",
+        "dataVariationFilePath": ".variations\\Input Data MLI_ORG Master_A8_MliOrgMaster.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_8_MLI_Master.xaml"
+      }
+    ],
+    "modernBehavior": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Legacy"
+}

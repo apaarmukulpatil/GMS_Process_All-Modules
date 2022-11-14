@@ -1,0 +1,24 @@
+01/11/2022 11:17:38 AM : Info : Address Should Be Valid
+01/11/2022 11:17:55 AM : Info : Only Alphanumerics Are Allowed
+01/11/2022 11:17:58 AM : Info : User Has Not Entered The Phone Number
+01/11/2022 11:17:58 AM : Info : User Has Not Entered The Landline STD Code
+01/11/2022 11:17:58 AM : Info : User Has Not Entered The Landline Number
+01/11/2022 11:21:59 AM : Info : Only Alphanumerics Are Allowed
+01/11/2022 12:02:54 PM : Info : Only Alphanumerics Are Allowed
+01/11/2022 12:03:28 PM : Info : User Has Not Entered The Status
+01/11/2022 12:09:40 PM : Info : User Has Not Entered The Status
+01/11/2022 12:25:28 PM : Info : User Has Not Entered The Status
+01/11/2022 01:04:50 PM : Info : User Has Not Entered The Status
+01/11/2022 01:04:51 PM : Info : Record with same entry already exists
+01/11/2022 01:16:20 PM : Info : User Has Not Entered The Status
+01/11/2022 01:16:21 PM : Info : City can contain alphanumeric only
+01/11/2022 05:41:10 PM : Info : Invalid Bank Zone Input Santacruz
+01/11/2022 05:42:52 PM : Error : Button Disabled
+01/11/2022 05:49:13 PM : Info : Invalid Bank Zone Input Santacruz
+01/11/2022 05:50:43 PM : Error : Button Disabled
+01/11/2022 05:57:24 PM : Info : Successfully created the record
+01/11/2022 06:16:06 PM : Info : Successfully created the record
+01/11/2022 06:17:12 PM : Info : Record with same entry already exists
+01/11/2022 06:45:19 PM : Info : Successfully created the record
+01/11/2022 06:48:45 PM : Info : Successfully created the record
+01/11/2022 06:49:51 PM : Info : Record with same entry already exists

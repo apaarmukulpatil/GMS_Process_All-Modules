@@ -1,0 +1,8 @@
+10/11/2022 12:07:52 PM : Info : Bank Zone Is Disabled
+10/11/2022 12:08:51 PM : Info : Successfully created the record
+10/11/2022 12:09:58 PM : Info : Record with same entry already exists
+10/11/2022 12:10:48 PM : Info : Bank Zone Is Disabled
+10/11/2022 12:11:47 PM : Info : Successfully created the record
+10/11/2022 12:12:04 PM : Info : Pincode Not Exists
+10/11/2022 12:12:05 PM : Info : District Not Found
+10/11/2022 12:13:16 PM : Error : Submit Button Disabled

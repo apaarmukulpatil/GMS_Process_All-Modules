@@ -1,0 +1,14 @@
+17/10/2022 12:38:34 PM : Info : Status is active
+17/10/2022 12:47:25 PM : Info : Status is active
+17/10/2022 12:47:26 PM : Info : Successfully created the record
+17/10/2022 01:09:29 PM : Info : Status is active
+17/10/2022 01:09:30 PM : Info : Successfully created the record
+17/10/2022 02:29:06 PM : Info : gezpp5003qrtIs An Invalid Pan Number
+17/10/2022 02:29:06 PM : Info : 32AACCF8045D1ZMwq Is Not a Valid GST Number
+17/10/2022 02:29:34 PM : Info : Status is active
+17/10/2022 02:49:22 PM : Info : gezpp5003qrtIs An Invalid Pan Number
+17/10/2022 02:49:22 PM : Info : 32AACCF8045D1ZMwq Is Not a Valid GST Number
+17/10/2022 02:49:50 PM : Info : Status is active
+17/10/2022 03:58:37 PM : Info : gezpp5003qrtIs An Invalid Pan Number
+17/10/2022 03:58:37 PM : Info : #32AACCF8045D1Z Is Not a Valid GST Number
+17/10/2022 03:59:05 PM : Info : Status is active
