@@ -27,7 +27,8 @@
     "executionType": "Workflow",
     "readyForPiP": false,
     "startsInPiP": false,
-    "mustRestoreAllDependencies": true
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
   },
   "designOptions": {
     "projectProfile": "Developement",
@@ -43,7 +44,7 @@
       {
         "editingStatus": "InProgress",
         "testCaseId": "08791042-c77c-400f-b2bd-c5e0cf976fad",
-        "dataVariationFilePath": ".variations\\Input Data_Scheme Master_A9_1_Scheme_Master_1.json",
+        "dataVariationFilePath": ".variations\\Input Data_Geography Masters_A2_1_Zone_Master.json",
         "testCaseType": "TestCase",
         "fileName": "TestCase_2_Geography_Masters.xaml"
       },
@@ -69,11 +70,11 @@
         "fileName": "TestCase10_Scheme Configurator.xaml"
       },
       {
-        "editingStatus": "Publishable",
-        "testCaseId": "116b68b6-d7ad-40af-a522-bf8bb2043216",
-        "dataVariationFilePath": ".variations\\Input Data_Department Master_A4_User Master.json",
+        "editingStatus": "InProgress",
+        "testCaseId": "7f3d240b-603b-4faa-b7e5-50af772efb45",
+        "dataVariationFilePath": ".variations\\User Master Input Data_Module A6 User Master.json",
         "testCaseType": "TestCase",
-        "fileName": "TestCase_4_User_Master.xaml"
+        "fileName": "TestCase_6_User Master.xaml"
       }
     ],
     "modernBehavior": false

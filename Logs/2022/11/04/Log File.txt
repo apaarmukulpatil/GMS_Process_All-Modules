@@ -1,29 +1,66 @@
-04/11/2022 11:57:24 AM : Info : Bank Zone Is Disabled
-04/11/2022 11:58:23 AM : Info : Successfully created the record
-04/11/2022 11:58:40 AM : Info : Pincode Not Exists
-04/11/2022 11:58:41 AM : Info : District Not Found
-04/11/2022 11:59:54 AM : Error : Submit Button Disabled
-04/11/2022 12:39:28 PM : Info : Bank Zone Is Disabled
-04/11/2022 12:40:27 PM : Info : Successfully created the record
-04/11/2022 12:40:43 PM : Info : Pincode Not Exists
-04/11/2022 12:40:44 PM : Info : District Not Found
-04/11/2022 12:41:54 PM : Error : Submit Button Disabled
-04/11/2022 01:12:07 PM : Info : Bank Zone Is Disabled
-04/11/2022 01:13:06 PM : Info : Successfully created the record
-04/11/2022 01:13:23 PM : Info : Pincode Not Exists
-04/11/2022 01:13:24 PM : Info : District Not Found
-04/11/2022 01:14:33 PM : Error : Submit Button Disabled
-04/11/2022 02:43:04 PM : Info : Bank Zone Is Disabled
-04/11/2022 02:44:03 PM : Info : Successfully created the record
-04/11/2022 02:45:54 PM : Info : Bank Zone Is Disabled
-04/11/2022 02:46:53 PM : Info : Successfully created the record
-04/11/2022 02:47:10 PM : Info : Pincode Not Exists
-04/11/2022 02:47:11 PM : Info : District Not Found
-04/11/2022 02:48:17 PM : Error : Submit Button Disabled
-04/11/2022 04:10:28 PM : Info : Bank Zone Is Disabled
-04/11/2022 04:11:28 PM : Info : Successfully created the record
-04/11/2022 04:11:54 PM : Error : Error Occured In Mli Org The process cannot access the file 'C:\Users\alan.prakash.AISPL\Documents\UiPath\GMS-Process_v1\Output\8.MLI_Master\MLI_Master Report File.xlsx' because it is being used by another process.
-04/11/2022 04:19:57 PM : Info : Bank Zone Is Disabled
-04/11/2022 04:29:49 PM : Info : Bank Zone Is Disabled
-04/11/2022 04:30:48 PM : Info : Successfully created the record
-04/11/2022 04:31:56 PM : Info : Record with same entry already exists
+04/11/2022 05:21:30 PM : Info : User Master Creation Started
+04/11/2022 05:22:28 PM : Info : All RecordsAare Inserted Successfully
+04/11/2022 05:22:47 PM : Info : Start Date 12/04/1996
+04/11/2022 05:22:47 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+04/11/2022 05:24:08 PM : Info : User Master Saved Successfully
+04/11/2022 05:24:14 PM : Info : MLI User Master Report Saved 
+04/11/2022 05:41:39 PM : Info : User Master Creation Started
+04/11/2022 05:42:17 PM : Info : User Role Is Not Available In Dropdown May Be You Have Given The For This User Role Or Not Added User Role
+04/11/2022 05:42:50 PM : Error : Error Occured In Access Master Could not find the UI element corresponding to this selector:
+<webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-role-access-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;app-add-role-access-master&gt;form&gt;p-dialog&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;table' idx='1' tag='TABLE'/>
+<webctrl colName='All ' casesensitive:colName='0' rowName='Track Claims' tableRow='2' tag='LABEL'/>
+
+04/11/2022 05:48:42 PM : Info : User Master Creation Started
+04/11/2022 05:51:45 PM : Info : User Role Is Not Available In Dropdown May Be You Have Given The For This User Role Or Not Added User Role
+04/11/2022 05:55:10 PM : Error : Error Occured In Access Master Could not find the UI element corresponding to this selector:
+<webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-role-access-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;app-add-role-access-master&gt;form&gt;p-dialog&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;table' idx='1' tag='TABLE'/>
+<webctrl colName='All ' casesensitive:colName='0' rowName='Track Claims' tableRow='2' tag='LABEL'/>
+
+04/11/2022 06:01:42 PM : Info : User Master Creation Started
+04/11/2022 06:03:17 PM : Info : User Role Is Not Available In Dropdown May Be You Have Given The For This User Role Or Not Added User Role
+04/11/2022 06:05:25 PM : Error : Error Occured In Access Master Could not find the UI element corresponding to this selector:
+<webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-role-access-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;app-add-role-access-master&gt;form&gt;p-dialog&gt;div&gt;div&gt;div&gt;div&gt;div&gt;div&gt;table' idx='1' tag='TABLE'/>
+<webctrl colName='All ' casesensitive:colName='0' rowName='Track Claims' tableRow='2' tag='LABEL'/>
+
+04/11/2022 06:10:04 PM : Info : User Master Creation Started
+04/11/2022 06:11:27 PM : Info : User Role Is Not Available In Dropdown May Be You Have Given The For This User Role Or Not Added User Role
+04/11/2022 06:13:30 PM : Error : Error Occured In Access Master Could not find the UI element corresponding to this selector:
+[1] <webctrl aaname='Message' tag='SPAN'/>
+[2] <nav up='2'/>
+[3] <webctrl idx='2' tag='SPAN'/>
+
+Search failed at selector tag:
+[1] <webctrl aaname='Message' tag='SPAN'/>
+
+The closest matches found are:
+[75%] <webctrl aaname='State Master' tag='SPAN'/>
+[75%] <webctrl aaname='Reset' tag='SPAN'/>
+[71%] <webctrl aaname='User Master' tag='SPAN'/>
+[71%] <webctrl aaname='Claims Processing' tag='SPAN'/>
+[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
+[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
+[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
+[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
+[68%] <webctrl aaname='MLI Type Master' tag='SPAN'/>
+[68%] <webctrl aaname='User' tag='SPAN'/>
+04/11/2022 06:26:57 PM : Info : User Master Creation Started
+04/11/2022 06:27:37 PM : Info : User Role Is Not Available In Dropdown May Be You Have Given The For This User Role Or Not Added User Role
+04/11/2022 06:29:26 PM : Error : Error Occured In Access Master Could not find the UI element corresponding to this selector:
+[1] <webctrl aaname='Message' tag='SPAN'/>
+[2] <nav up='2'/>
+[3] <webctrl idx='2' tag='SPAN'/>
+
+Search failed at selector tag:
+[1] <webctrl aaname='Message' tag='SPAN'/>
+
+The closest matches found are:
+[75%] <webctrl aaname='State Master' tag='SPAN'/>
+[75%] <webctrl aaname='Reset' tag='SPAN'/>
+[71%] <webctrl aaname='User Master' tag='SPAN'/>
+[71%] <webctrl aaname='Claims Processing' tag='SPAN'/>
+[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
+[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
+[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
+[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
+[68%] <webctrl aaname='MLI Type Master' tag='SPAN'/>
+[68%] <webctrl aaname='User' tag='SPAN'/>

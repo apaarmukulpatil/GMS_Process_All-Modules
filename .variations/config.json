@@ -1,10 +1,6 @@
 {
   "dataVariationFileInfo": [
     {
-      "filePath": ".variations\\Input Data_Scheme Master_A9_1_Scheme_Master_1.json",
-      "dataVariationType": "File"
-    },
-    {
       "filePath": ".variations\\Input Data_Login Page_GMS_Login.json",
       "dataVariationType": "File"
     },
@@ -17,7 +13,11 @@
       "dataVariationType": "File"
     },
     {
-      "filePath": ".variations\\Input Data_Department Master_A4_User Master.json",
+      "filePath": ".variations\\Input Data_Geography Masters_A2_1_Zone_Master.json",
+      "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\User Master Input Data_Module A6 User Master.json",
       "dataVariationType": "File"
     }
   ]

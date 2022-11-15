@@ -1,8 +1,42 @@
-10/11/2022 12:07:52 PM : Info : Bank Zone Is Disabled
-10/11/2022 12:08:51 PM : Info : Successfully created the record
-10/11/2022 12:09:58 PM : Info : Record with same entry already exists
-10/11/2022 12:10:48 PM : Info : Bank Zone Is Disabled
-10/11/2022 12:11:47 PM : Info : Successfully created the record
-10/11/2022 12:12:04 PM : Info : Pincode Not Exists
-10/11/2022 12:12:05 PM : Info : District Not Found
-10/11/2022 12:13:16 PM : Error : Submit Button Disabled
+10/11/2022 12:04:03 PM : Info : User Access And User Master Creation Started
+10/11/2022 12:04:44 PM : Info : User Role Is Not Available In Dropdown May Be You Have Given The Access For This User Role Or Not Added In User Role Master
+10/11/2022 12:06:00 PM : Error : Error Occured While Inserting Access Master Details Could not find the UI element corresponding to this selector:
+[1] <webctrl aaname='Message' tag='SPAN'/>
+[2] <nav up='2'/>
+[3] <webctrl idx='2' tag='SPAN'/>
+
+Search failed at selector tag:
+[1] <webctrl aaname='Message' tag='SPAN'/>
+
+The closest matches found are:
+[75%] <webctrl aaname='State Master' tag='SPAN'/>
+[75%] <webctrl aaname='Reset' tag='SPAN'/>
+[71%] <webctrl aaname='User Master' tag='SPAN'/>
+[71%] <webctrl aaname='Claims Processing' tag='SPAN'/>
+[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
+[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
+[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
+[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
+[68%] <webctrl aaname='MLI Type Master' tag='SPAN'/>
+[68%] <webctrl aaname='User' tag='SPAN'/>
+10/11/2022 02:17:40 PM : Info : User Access And User Master Creation Started
+10/11/2022 02:18:19 PM : Info : User Role Is Not Available In Dropdown May Be You Have Given The Access For This User Role Or Not Added In User Role Master
+10/11/2022 02:19:37 PM : Error : Error Occured While Inserting Access Master Details Could not find the UI element corresponding to this selector:
+[1] <webctrl aaname='Message' tag='SPAN'/>
+[2] <nav up='2'/>
+[3] <webctrl idx='2' tag='SPAN'/>
+
+Search failed at selector tag:
+[1] <webctrl aaname='Message' tag='SPAN'/>
+
+The closest matches found are:
+[75%] <webctrl aaname='State Master' tag='SPAN'/>
+[75%] <webctrl aaname='Reset' tag='SPAN'/>
+[71%] <webctrl aaname='User Master' tag='SPAN'/>
+[71%] <webctrl aaname='Claims Processing' tag='SPAN'/>
+[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
+[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
+[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
+[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
+[68%] <webctrl aaname='MLI Type Master' tag='SPAN'/>
+[68%] <webctrl aaname='User' tag='SPAN'/>

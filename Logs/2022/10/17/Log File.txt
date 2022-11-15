@@ -1,24 +1,38 @@
-17/10/2022 03:06:15 PM : Error : Could not find the UI element corresponding to this selector:
-<webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-role-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;app-role-master-form&gt;form&gt;p-dialog&gt;div&gt;div&gt;div&gt;div&gt;button' tag='BUTTON'/>
-
-The closest matches found are:
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;div&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;div&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;thead&gt;tr&gt;th&gt;div&gt;p-columnfilter&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;thead&gt;tr&gt;th&gt;div&gt;p-columnfilter&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;thead&gt;tr&gt;th&gt;div&gt;p-columnfilter&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;thead&gt;tr&gt;th&gt;div&gt;p-columnfilter&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;tbody&gt;tr&gt;td&gt;p-splitbutton&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;tbody&gt;tr&gt;td&gt;p-splitbutton&gt;div&gt;button' tag='BUTTON'/>
-[50%] <webctrl css-selector='body&gt;app-root&gt;app-main-template&gt;div&gt;div&gt;app-state-master&gt;div&gt;div&gt;div&gt;app-global-datatable&gt;p-table&gt;div&gt;div&gt;table&gt;tbody&gt;tr&gt;td&gt;p-splitbutton&gt;div&gt;button' tag='BUTTON'/>
-17/10/2022 03:23:57 PM : Error : GST State Code already exist
-17/10/2022 03:33:32 PM : Error : GST State Code already exist
-17/10/2022 03:36:59 PM : Error : GST State Code already exist
-17/10/2022 03:42:56 PM : Error : GST State Code already exist
-17/10/2022 04:04:32 PM : Error : GST State Code already exist
-17/10/2022 04:14:05 PM : Error : GST State Code already exist
-17/10/2022 04:19:32 PM : Error : GST State Code already exist
-17/10/2022 04:23:03 PM : Error : GST State Code already exist
-17/10/2022 04:25:45 PM : Error : GST State Code already exist
-17/10/2022 06:18:47 PM : Error : GST State Code already exist
+17/10/2022 03:07:48 PM : Info : Started Execution Of Geography Master Module
+17/10/2022 03:07:48 PM : Info : Build Data Table For Zone Master Has Created
+17/10/2022 03:07:49 PM : Info : Click On Geography Module
+17/10/2022 03:07:49 PM : Info : A2_1_Zone_Master Found
+17/10/2022 03:07:50 PM : Info : Execution Of A2_1_Zone_Master Started
+17/10/2022 03:07:52 PM : Info : Zone Is Already In Active State
+17/10/2022 03:08:24 PM : Info : Zone Already Exists
+17/10/2022 03:08:29 PM : Info : Execution Of A2_1_Zone_Master Ended
+17/10/2022 03:09:07 PM : Info : Started Execution Of Geography Master Module
+17/10/2022 03:09:07 PM : Info : Build Data Table For Zone Master Has Created
+17/10/2022 03:09:07 PM : Info : Click On Geography Module
+17/10/2022 03:09:08 PM : Info : A2_1_Zone_Master Found
+17/10/2022 03:09:08 PM : Info : Execution Of A2_1_Zone_Master Started
+17/10/2022 03:09:10 PM : Info : Zone Is Already In Active State
+17/10/2022 03:14:04 PM : Info : Started Execution Of Geography Master Module
+17/10/2022 03:14:04 PM : Info : Build Data Table For Zone Master Has Created
+17/10/2022 03:14:05 PM : Info : Click On Geography Module
+17/10/2022 03:14:06 PM : Info : A2_1_Zone_Master Found
+17/10/2022 03:14:06 PM : Info : Execution Of A2_1_Zone_Master Started
+17/10/2022 03:14:08 PM : Info : Zone Is Already In Active State
+17/10/2022 03:14:57 PM : Info : Zone Created Successfully
+17/10/2022 03:15:24 PM : Info : Execution Of A2_1_Zone_Master Ended
+17/10/2022 06:03:36 PM : Info : Scheme Configurator Started
+17/10/2022 06:03:36 PM : Info : Created Build DataTable For Scheme Configurator
+17/10/2022 06:10:03 PM : Info : Scheme Configurator Started
+17/10/2022 06:10:03 PM : Info : Created Build DataTable For Scheme Configurator
+17/10/2022 06:10:13 PM : Info : Start Date 04/10/2010
+17/10/2022 06:10:13 PM : Info : Start Date Day : 04 MonthVal : OCTyear val: 2010
+17/10/2022 06:10:13 PM : Info : 04    OCT    2010
+17/10/2022 06:10:26 PM : Info : End Date 19/08/2030
+17/10/2022 06:10:26 PM : Info : End Date Day : 19MonthVal : AUGyear val: 2030
+17/10/2022 06:10:43 PM : Info : Fee Applicability Status Is Already Yes... No Need To Change The Status
+17/10/2022 06:10:43 PM : Info : NPA Marking Applicable Status Is Already Yes... No Need To Change The Status
+17/10/2022 06:10:43 PM : Info : Renewal Fee After NPA Status Is Already Yes... No Need To Change The Status
+17/10/2022 06:10:44 PM : Info : Moratorium Status Is Already Yes... No Need To Change The Status
+17/10/2022 06:10:48 PM : Info : Portfolio Crystallization Required Status Already Is Yes
+17/10/2022 06:11:19 PM : Info : Portfolio Frequency Is Not Available In Dropdown
+17/10/2022 06:11:33 PM : Info : Ended Scheme Detail...

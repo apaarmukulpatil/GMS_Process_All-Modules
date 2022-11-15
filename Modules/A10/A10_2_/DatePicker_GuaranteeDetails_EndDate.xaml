@@ -117,7 +117,7 @@
                     </ui:CursorPosition>
                   </ui:Click.CursorPosition>
                   <ui:Click.Target>
-                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f5bcf774-dfab-4be3-9e3a-761f2472807c" InformativeScreenshot="cc74a5226f56f73126f899893011d4f1" Selector="&lt;webctrl id='industryTable' tag='TABLE' /&gt;&lt;webctrl tableCol='8' tag='INPUT' colName='End Date' /&gt;">
+                    <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="f5bcf774-dfab-4be3-9e3a-761f2472807c" InformativeScreenshot="cc74a5226f56f73126f899893011d4f1" Selector="&lt;webctrl id='industryTable' tag='TABLE' /&gt;&lt;webctrl tableCol='7' tag='INPUT' colName='End Date' /&gt;">
                       <ui:Target.TimeoutMS>
                         <InArgument x:TypeArguments="x:Int32" />
                       </ui:Target.TimeoutMS>

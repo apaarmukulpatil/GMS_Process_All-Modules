@@ -47,7 +47,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>794,4737</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>761,4447</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>A10_5_Claim_Details_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="66">
@@ -129,7 +129,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="A10_5_Claim_Details" sap:VirtualizedContainerService.HintSize="556,4672" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="A10_5_Claim_Details" sap:VirtualizedContainerService.HintSize="552,4276" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="v_GetTextForClaimLodgementFrequency" />
       <Variable x:TypeArguments="x:String" Name="v_GetTextForBankFormMandatoryForClaimLodgement" />
@@ -146,20 +146,20 @@
         <x:Boolean x:Key="IsPinned">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser For Claim Details" sap:VirtualizedContainerService.HintSize="514,4580" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="8a01440611cb92502530cb4388a7659c" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser For Claim Details" sap:VirtualizedContainerService.HintSize="510,4186" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="8a01440611cb92502530cb4388a7659c" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do For Claim Details" sap:VirtualizedContainerService.HintSize="480,4394" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do For Claim Details" sap:VirtualizedContainerService.HintSize="476,3990" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For  Claim Lodgement Frequency" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="GetValue_1">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For  Claim Lodgement Frequency" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="GetValue_1">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="99f42990-06cb-4143-90bd-ab06861480b0" InformativeScreenshot="047921421d953a2a26552d1386d73c5e" Selector="&lt;webctrl tag='LABEL' aaname='Claim Lodgement Frequency' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='SPAN' class='side ng-star-inserted' isleaf='1' innertext='*' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -177,7 +177,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="Claim Lodgement Frequency Is &quot;Yes&quot;" Condition="[v_GetTextForClaimLodgementFrequency.ToLower.Equals(in_ClaimLodgementFrequency.ToLower)]" DisplayName="Check If Claim Lodgement Frequency Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_1">
+            <If sap2010:Annotation.AnnotationText="Claim Lodgement Frequency Is &quot;Yes&quot;" Condition="[v_GetTextForClaimLodgementFrequency.ToLower.Equals(in_ClaimLodgementFrequency.ToLower)]" DisplayName="Check If Claim Lodgement Frequency Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -259,7 +259,7 @@
                 </If>
               </If.Else>
             </If>
-            <Sequence sap2010:Annotation.AnnotationText="Claim Lodgement Frequency" DisplayName="Claim Lodgement Frequency" sap:VirtualizedContainerService.HintSize="438,97" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence sap2010:Annotation.AnnotationText="Claim Lodgement Frequency" DisplayName="Claim Lodgement Frequency" sap:VirtualizedContainerService.HintSize="434,121" sap2010:WorkflowViewState.IdRef="Sequence_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -267,7 +267,7 @@
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Claim Lodgement Frequency" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Claim Lodgement Frequency" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -292,7 +292,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Select Claim Lodgement Frequency" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Select Claim Lodgement Frequency" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -326,7 +326,7 @@
                 </Assign.Value>
               </Assign>
             </Sequence>
-            <If sap2010:Annotation.AnnotationText="Claim Lodgment Locking Period" Condition="[in_ClaimLodgmentLockingPeriod=Nothing]" DisplayName="Check If Claim Lodgment Locking Period Is Nothing" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_3">
+            <If sap2010:Annotation.AnnotationText="Claim Lodgment Locking Period" Condition="[in_ClaimLodgmentLockingPeriod=Nothing]" DisplayName="Check If Claim Lodgment Locking Period Is Nothing" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -436,7 +436,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Eligible Claim Period" Condition="[in_EligibleClaimPeriod=Nothing]" DisplayName="Check If Eligible Claim Period Is Nothing" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_5">
+            <If sap2010:Annotation.AnnotationText="Eligible Claim Period" Condition="[in_EligibleClaimPeriod=Nothing]" DisplayName="Check If Eligible Claim Period Is Nothing" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -546,7 +546,7 @@
                 </If>
               </If.Else>
             </If>
-            <Sequence DisplayName="Mode Of Claim Lodgement_Claim Details" sap:VirtualizedContainerService.HintSize="438,66" sap2010:WorkflowViewState.IdRef="Sequence_44">
+            <Sequence DisplayName="Mode Of Claim Lodgement_Claim Details" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="Sequence_44">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="str_attrbt" />
                 <Variable x:TypeArguments="x:Boolean" Name="b_APIuncheck" />
@@ -733,7 +733,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ForEach>
             </Sequence>
-            <If sap2010:Annotation.AnnotationText="Number of Months" Condition="[in_NumberOfMonths=Nothing]" DisplayName="Check If Number of Months Is Nothing" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_7">
+            <If sap2010:Annotation.AnnotationText="Number of Months" Condition="[in_NumberOfMonths=Nothing]" DisplayName="Check If Number of Months Is Nothing" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -843,7 +843,7 @@
                 </If>
               </If.Else>
             </If>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Bank Form Mandatory For Claim Lodgement" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="GetValue_2">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Bank Form Mandatory For Claim Lodgement" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="GetValue_2">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3d88e4f2-7c86-4364-b4ec-83e2dfd0d80e" InformativeScreenshot="64e8e0f3965f8f355e9eb36e0311ef71" Selector="&lt;webctrl aaname='Bank Form Mandatory For Claim Lodgement' tag='LABEL' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='SPAN' class='side ng-star-inserted' isleaf='1' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -861,7 +861,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="Bank Form Mandatory For Claim Lodgement Is &quot;Yes&quot;" Condition="[v_GetTextForBankFormMandatoryForClaimLodgement.Equals(&quot;Yes&quot;)]" DisplayName="Check If Bank Form Mandatory For Claim Lodgement Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_8">
+            <If sap2010:Annotation.AnnotationText="Bank Form Mandatory For Claim Lodgement Is &quot;Yes&quot;" Condition="[v_GetTextForBankFormMandatoryForClaimLodgement.Equals(&quot;Yes&quot;)]" DisplayName="Check If Bank Form Mandatory For Claim Lodgement Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="If_8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -897,15 +897,15 @@
                 </ui:Click>
               </If.Else>
             </If>
-            <Sequence sap2010:Annotation.AnnotationText="Frequency of Bank Mandate Verification" DisplayName="Frequency of Bank Mandate Verification" sap:VirtualizedContainerService.HintSize="438,475" sap2010:WorkflowViewState.IdRef="Sequence_15">
+            <Sequence sap2010:Annotation.AnnotationText="Frequency of Bank Mandate Verification" DisplayName="Frequency of Bank Mandate Verification" sap:VirtualizedContainerService.HintSize="434,121" sap2010:WorkflowViewState.IdRef="Sequence_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Frequency of Bank Mandate Verification" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Frequency of Bank Mandate Verification" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_5" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -929,7 +929,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DelayMS="2000" DisplayName="Select Frequency of Bank Mandate Verification" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click AlterIfDisabled="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DelayBefore="2000" DelayMS="2000" DisplayName="Select Frequency of Bank Mandate Verification" sap:VirtualizedContainerService.HintSize="338,116" sap2010:WorkflowViewState.IdRef="Click_6" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -953,7 +953,7 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:Click>
-              <Assign DisplayName="Actual Frequency Of Bank Mandate Verification" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_38">
+              <Assign DisplayName="Actual Frequency Of Bank Mandate Verification" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_38">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[out_ActualFrequencyOfBankMandateVerification]</OutArgument>
                 </Assign.To>
@@ -962,7 +962,7 @@
                 </Assign.Value>
               </Assign>
             </Sequence>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Payout Cap" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="GetValue_3">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Payout Cap" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="GetValue_3">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="2e2d125b-6943-44b8-bc28-b2e562bc2d2b" InformativeScreenshot="66a1cfc2bdfd112491063b9857c5beaa" Selector="&lt;webctrl aaname='Payout Cap (If Required)' tag='LABEL' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='SPAN' isleaf='1' idx='3' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -980,7 +980,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="Payout Cap Is &quot;Yes&quot;" Condition="[v_GetTextForPayoutCap.ToLower.Equals(in_SelectPayoutCap.ToLower)]" DisplayName="Check If Payout Cap Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_9">
+            <If sap2010:Annotation.AnnotationText="Payout Cap Is &quot;Yes&quot;" Condition="[v_GetTextForPayoutCap.ToLower.Equals(in_SelectPayoutCap.ToLower)]" DisplayName="Check If Payout Cap Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1062,7 +1062,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Payout Cap (If Required)" Condition="[in_PayoutCapInMultiples=Nothing]" DisplayName="Check If Payout Cap (In Multiples) Is Nothing" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_11">
+            <If sap2010:Annotation.AnnotationText="Payout Cap (If Required)" Condition="[in_PayoutCapInMultiples=Nothing]" DisplayName="Check If Payout Cap (In Multiples) Is Nothing" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_11">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1172,7 +1172,7 @@
                 </If>
               </If.Else>
             </If>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For First Loss" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="GetValue_4">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For First Loss" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="GetValue_4">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="163d32b3-d114-42b4-9710-18535caa3294" InformativeScreenshot="1a783060a462f31b7b24a056c7e06f7e" Selector="&lt;webctrl aaname='First Loss' tag='LABEL' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='SPAN' isleaf='1' idx='3' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -1190,7 +1190,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="First Loss Is &quot;Yes&quot;" Condition="[v_GetTextForFirstLoss.ToLower.Equals(in_SelectFirstLoss.ToLower)]" DisplayName="Check If First Loss Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_12">
+            <If sap2010:Annotation.AnnotationText="First Loss Is &quot;Yes&quot;" Condition="[v_GetTextForFirstLoss.ToLower.Equals(in_SelectFirstLoss.ToLower)]" DisplayName="Check If First Loss Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1271,7 +1271,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="First Loss (In %)" Condition="[in_FirstLossInPercent=Nothing]" DisplayName="Check If First Loss (In %) Is Nothing" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_14">
+            <If sap2010:Annotation.AnnotationText="First Loss (In %)" Condition="[in_FirstLossInPercent=Nothing]" DisplayName="Check If First Loss (In %) Is Nothing" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1381,7 +1381,7 @@
                 </If>
               </If.Else>
             </If>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Legal Action" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="GetValue_5">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Legal Action" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="GetValue_5">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="163d32b3-d114-42b4-9710-18535caa3294" InformativeScreenshot="c7c24329195c6c312707a894d062ef90" Selector="&lt;webctrl aaname='Legal Action' tag='LABEL' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='SPAN' isleaf='1' class='side ng-star-inserted' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -1399,7 +1399,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="Legal Action Is &quot;Yes&quot;" Condition="[v_GetTextForLegalAction.ToLower.Equals(in_LegalAction.ToLower)]" DisplayName="Check If Legal Action Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_15">
+            <If sap2010:Annotation.AnnotationText="Legal Action Is &quot;Yes&quot;" Condition="[v_GetTextForLegalAction.ToLower.Equals(in_LegalAction.ToLower)]" DisplayName="Check If Legal Action Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1461,7 +1461,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Auto Approval Of Legal Waiver" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="GetValue_6">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Auto Approval Of Legal Waiver" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="GetValue_6">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="163d32b3-d114-42b4-9710-18535caa3294" InformativeScreenshot="a628af2cb6686f377987371e14830f4a" Selector="&lt;webctrl aaname='Auto Approval Of Legal Waiver' tag='LABEL' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='SPAN' isleaf='1' idx='3' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -1474,12 +1474,12 @@
               </ui:GetValue.Value>
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="Auto Approval Of Legal Waiver Is &quot;Yes&quot;" Condition="[v_GetTextForAutoApprovalOfLegalWaiver.ToLower.Equals(in_SelectAutoApprovalOfLegalWaiver.ToLower)]" DisplayName="Check If Auto Approval Of Legal Waiver Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_16">
+            <If sap2010:Annotation.AnnotationText="Auto Approval Of Legal Waiver Is &quot;Yes&quot;" Condition="[v_GetTextForAutoApprovalOfLegalWaiver.ToLower.Equals(in_SelectAutoApprovalOfLegalWaiver.ToLower)]" DisplayName="Check If Auto Approval Of Legal Waiver Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="If_16">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1488,7 +1488,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Assign DisplayName="Select Auto Approval Of Legal Waiver" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_47">
+                <Assign DisplayName="Select Auto Approval Of Legal Waiver" sap:VirtualizedContainerService.HintSize="262,70" sap2010:WorkflowViewState.IdRef="Assign_47">
                   <Assign.To>
                     <OutArgument x:TypeArguments="x:String">[out_SelectAutoApprovalOfLegalWaiver]</OutArgument>
                   </Assign.To>
@@ -1498,14 +1498,14 @@
                 </Assign>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Click On Yes Button" sap:VirtualizedContainerService.HintSize="304,245.6" sap2010:WorkflowViewState.IdRef="Sequence_57">
+                <Sequence DisplayName="Click On Yes Button" sap:VirtualizedContainerService.HintSize="400,261" sap2010:WorkflowViewState.IdRef="Sequence_57">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Auto Approval Of Legal Waiver" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Auto Approval Of Legal Waiver" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="Click_10" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -1530,7 +1530,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:Click>
-                  <Assign DisplayName="Select Auto Approval Of Legal Waiver" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_48">
+                  <Assign DisplayName="Select Auto Approval Of Legal Waiver" sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_48">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_SelectAutoApprovalOfLegalWaiver]</OutArgument>
                     </Assign.To>
@@ -1541,7 +1541,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Legal Waiver Limit" Condition="[in_LegalWaiverLimit=Nothing]" DisplayName="Check If Legal Waiver Limit Is Nothing" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_18">
+            <If sap2010:Annotation.AnnotationText="Legal Waiver Limit" Condition="[in_LegalWaiverLimit=Nothing]" DisplayName="Check If Legal Waiver Limit Is Nothing" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_18">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1651,7 +1651,7 @@
                 </If>
               </If.Else>
             </If>
-            <Sequence sap2010:Annotation.AnnotationText="Applicable Legal Forum" DisplayName="Applicable Legal Forum" sap:VirtualizedContainerService.HintSize="438,97" sap2010:WorkflowViewState.IdRef="Sequence_25">
+            <Sequence sap2010:Annotation.AnnotationText="Applicable Legal Forum" DisplayName="Applicable Legal Forum" sap:VirtualizedContainerService.HintSize="434,121" sap2010:WorkflowViewState.IdRef="Sequence_25">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1659,7 +1659,7 @@
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Applicable Legal Forum" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Applicable Legal Forum" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Click_11" KeyModifiers="None" MouseButton="BTN_LEFT">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -1678,7 +1678,7 @@
                   </ui:Target>
                 </ui:Click.Target>
               </ui:Click>
-              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Select Applicable Legal Forum" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+              <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Select Applicable Legal Forum" sap:VirtualizedContainerService.HintSize="338,61" sap2010:WorkflowViewState.IdRef="Click_12" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                 <ui:Click.CursorPosition>
                   <ui:CursorPosition Position="Center">
                     <ui:CursorPosition.OffsetX>
@@ -1697,7 +1697,7 @@
                   </ui:Target>
                 </ui:Click.Target>
               </ui:Click>
-              <Assign DisplayName="Actual Applicable Legal Forum" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_49">
+              <Assign DisplayName="Actual Applicable Legal Forum" sap:VirtualizedContainerService.HintSize="338,70" sap2010:WorkflowViewState.IdRef="Assign_49">
                 <Assign.To>
                   <OutArgument x:TypeArguments="x:String">[out_ActualApplicableLegalForum]</OutArgument>
                 </Assign.To>
@@ -1706,7 +1706,7 @@
                 </Assign.Value>
               </Assign>
             </Sequence>
-            <If sap2010:Annotation.AnnotationText="Legal Forum Claim Amount Limit (from)" Condition="[in_LegalForumClaimAmountLimitFrom=Nothing]" DisplayName="Check If Legal Forum Claim Amount Limit Is Nothing" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_20">
+            <If sap2010:Annotation.AnnotationText="Legal Forum Claim Amount Limit (from)" Condition="[in_LegalForumClaimAmountLimitFrom=Nothing]" DisplayName="Check If Legal Forum Claim Amount Limit Is Nothing" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="If_20">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1715,20 +1715,20 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Nothing" sap:VirtualizedContainerService.HintSize="304,338.4" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                <Sequence DisplayName="Nothing" sap:VirtualizedContainerService.HintSize="400,352" sap2010:WorkflowViewState.IdRef="Sequence_26">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_27" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Not Entered Legal Forum Claim Amount Limit</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                     </ui:InvokeWorkflowFile.Arguments>
@@ -1744,7 +1744,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <If Condition="[CInt(in_LegalForumClaimAmountLimitFrom.Length)&gt;11]" DisplayName="Check If Legal Forum Claim Amount Limit Contains More Than 11 Digits" sap:VirtualizedContainerService.HintSize="652,497.6" sap2010:WorkflowViewState.IdRef="If_19">
+                <If Condition="[CInt(in_LegalForumClaimAmountLimitFrom.Length)&gt;11]" DisplayName="Check If Legal Forum Claim Amount Limit Contains More Than 11 Digits" sap:VirtualizedContainerService.HintSize="845,511" sap2010:WorkflowViewState.IdRef="If_19">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1752,14 +1752,14 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence DisplayName="More Than 10 Letters" sap:VirtualizedContainerService.HintSize="304,338.4" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                    <Sequence DisplayName="More Than 10 Letters" sap:VirtualizedContainerService.HintSize="400,344" sap2010:WorkflowViewState.IdRef="Sequence_27">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_25" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Entered More Than 11 Letters In Legal Forum Claim Amount Limit</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
@@ -1781,14 +1781,14 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence DisplayName="Less Than 10 Letters" sap:VirtualizedContainerService.HintSize="304,245.6" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                    <Sequence DisplayName="Less Than 10 Letters" sap:VirtualizedContainerService.HintSize="400,251" sap2010:WorkflowViewState.IdRef="Sequence_28">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Legal Forum Claim Amount Limit" EmptyField="True" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="[in_LegalForumClaimAmountLimitFrom]">
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Legal Forum Claim Amount Limit" EmptyField="True" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="[in_LegalForumClaimAmountLimitFrom]">
                         <ui:TypeInto.Target>
                           <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="769f0b716f51db190d883e6133cca633" Selector="&lt;webctrl aaname='Legal Forum Claim Amount Limit(from) ' tableRow='1' tag='TH' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tableRow='2' tag='INPUT' tableCol='3' /&gt;" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
@@ -1816,7 +1816,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Legal Forum Claim Amount Limit(To) " Condition="[in_LegalForumClaimAmountLimitTo=Nothing]" DisplayName="Check If Legal Forum Claim Amount Limit(To)  Is Nothing" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_22">
+            <If sap2010:Annotation.AnnotationText="Legal Forum Claim Amount Limit(To) " Condition="[in_LegalForumClaimAmountLimitTo=Nothing]" DisplayName="Check If Legal Forum Claim Amount Limit(To)  Is Nothing" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="If_22">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1926,7 +1926,7 @@
                 </If>
               </If.Else>
             </If>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Waiting Period From First Claim Lodgement" sap:VirtualizedContainerService.HintSize="438,51" sap2010:WorkflowViewState.IdRef="GetValue_7">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Waiting Period From First Claim Lodgement" sap:VirtualizedContainerService.HintSize="434,61" sap2010:WorkflowViewState.IdRef="GetValue_7">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="3d88e4f2-7c86-4364-b4ec-83e2dfd0d80e" InformativeScreenshot="ea0a4d73a70d0daab93232b305781ef6" Selector="&lt;webctrl tag='LABEL' aaname='Waiting Period From First Claim Lodgement' /&gt;&lt;nav up='3' /&gt;&lt;webctrl aaname='Yes' tag='SPAN' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -1944,7 +1944,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="Waiting Period From First Claim Lodgement Is &quot;Yes&quot;" Condition="[v_GetTextForWaitingPeriodFromFirstClaimLodgement.ToLower.Equals(in_SelectWaitingPeriodFromFirstClaimLodgement.ToLower)]" DisplayName="Check If Waiting Period From First Claim Lodgement Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_23">
+            <If sap2010:Annotation.AnnotationText="Waiting Period From First Claim Lodgement Is &quot;Yes&quot;" Condition="[v_GetTextForWaitingPeriodFromFirstClaimLodgement.ToLower.Equals(in_SelectWaitingPeriodFromFirstClaimLodgement.ToLower)]" DisplayName="Check If Waiting Period From First Claim Lodgement Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="If_23">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2026,7 +2026,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Duration from Date of Decree" Condition="[in_DurationFromDateOfDecree=Nothing]" DisplayName="Check If Duration from Date of Decree Is Nothing" sap:VirtualizedContainerService.HintSize="438,82" sap2010:WorkflowViewState.IdRef="If_25">
+            <If sap2010:Annotation.AnnotationText="Duration from Date of Decree" Condition="[in_DurationFromDateOfDecree=Nothing]" DisplayName="Check If Duration from Date of Decree Is Nothing" sap:VirtualizedContainerService.HintSize="434,92" sap2010:WorkflowViewState.IdRef="If_25">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -2136,7 +2136,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Duration from first claim lodgement" Condition="[in_DurationFromFirstClaimLodgement=Nothing]" DisplayName="Check If Duration from first claim lodgement Is Nothing" sap:VirtualizedContainerService.HintSize="438,93" sap2010:WorkflowViewState.IdRef="If_27">
+            <If sap2010:Annotation.AnnotationText="Duration from first claim lodgement" Condition="[in_DurationFromFirstClaimLodgement=Nothing]" DisplayName="Check If Duration from first claim lodgement Is Nothing" sap:VirtualizedContainerService.HintSize="434,103" sap2010:WorkflowViewState.IdRef="If_27">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -2246,7 +2246,7 @@
                 </If>
               </If.Else>
             </If>
-            <TryCatch DisplayName="Claim Details Success Message" sap:VirtualizedContainerService.HintSize="438,608" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Claim Details Success Message" sap:VirtualizedContainerService.HintSize="434,193" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -2254,14 +2254,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <TryCatch.Try>
-                <Sequence DisplayName="Claim Details Success Message" sap:VirtualizedContainerService.HintSize="376,380" sap2010:WorkflowViewState.IdRef="Sequence_66">
+                <Sequence DisplayName="Claim Details Success Message" sap:VirtualizedContainerService.HintSize="400,408" sap2010:WorkflowViewState.IdRef="Sequence_66">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Next Button" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
+                  <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click On Next Button" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="Click_14" KeyModifiers="None" MouseButton="BTN_LEFT">
                     <ui:Click.CursorPosition>
                       <ui:CursorPosition Position="Center">
                         <ui:CursorPosition.OffsetX>
@@ -2286,7 +2286,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:Click>
-                  <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Attach Browser For Claim Details Message" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="5fbf3852-51f9-421d-8fd3-616c5db2e9be" Version="V2">
+                  <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" DisplayName="Attach Browser For Claim Details Message" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" InteractionMode="DebuggerApi" ScopeGuid="5fbf3852-51f9-421d-8fd3-616c5db2e9be" Version="V2">
                     <uix:NApplicationCard.Body>
                       <ActivityAction x:TypeArguments="x:Object">
                         <ActivityAction.Argument>
@@ -2323,7 +2323,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </uix:NApplicationCard>
-                  <If Condition="[v_GetTextForClaimDetailsMessage.ToLower.Equals(&quot;record successfully added&quot;)]" DisplayName="Check If Scheme Detail Successfully Recorded Or Not" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_36">
+                  <If Condition="[v_GetTextForClaimDetailsMessage.ToLower.Equals(&quot;record successfully added&quot;)]" DisplayName="Check If Scheme Detail Successfully Recorded Or Not" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="If_36">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -2508,7 +2508,7 @@
                 </Sequence>
               </TryCatch.Try>
               <TryCatch.Catches>
-                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,22.4" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+                <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="400,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2519,14 +2519,14 @@
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Exception - Success Message" sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_67">
+                    <Sequence DisplayName="Exception - Success Message" sap:VirtualizedContainerService.HintSize="400,80" sap2010:WorkflowViewState.IdRef="Sequence_67">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">Mandatory Fields Has Not Entered By User Hence Doesn't Added The Claim Details SuccessFully</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Error</InArgument>
@@ -2537,12 +2537,12 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:InvokeWorkflowFile>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <scg:Dictionary x:TypeArguments="x:String, Argument" />
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <Assign DisplayName="Claim Details Message" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_59">
+                      <Assign DisplayName="Claim Details Message" sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_59">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Boolean">[out_ClaimDetaislMessage]</OutArgument>
                         </Assign.To>
@@ -2550,7 +2550,7 @@
                           <InArgument x:TypeArguments="x:Boolean">False</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign DisplayName="Claim Details Status" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_60">
+                      <Assign DisplayName="Claim Details Status" sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_60">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[out_ClaimDetailsStatus]</OutArgument>
                         </Assign.To>
@@ -2558,7 +2558,7 @@
                           <InArgument x:TypeArguments="x:String">Fail</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <Assign DisplayName="Claim Details Next Button Disabled" sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_61">
+                      <Assign DisplayName="Claim Details Next Button Disabled" sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_61">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:Boolean">[out_ClaimDetailsNextButtonDisabled]</OutArgument>
                         </Assign.To>
@@ -2566,7 +2566,7 @@
                           <InArgument x:TypeArguments="x:Boolean">True</InArgument>
                         </Assign.Value>
                       </Assign>
-                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click To Dashboard" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                      <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click To Dashboard" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="Click_19" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                         <ui:Click.CursorPosition>
                           <ui:CursorPosition Position="Center">
                             <ui:CursorPosition.OffsetX>

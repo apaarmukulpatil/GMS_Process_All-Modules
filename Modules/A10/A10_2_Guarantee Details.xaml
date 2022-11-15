@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="A10_2_Guarantee_Details" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="A10_2_Guarantee_Details" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_InternalRatingAsPerMLI" Type="InArgument(x:String)" />
     <x:Property Name="out_ActualInternalRatingAsPerMLI" Type="OutArgument(x:String)" />
@@ -41,7 +41,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>869,2461</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>2192,3705</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>A10_2_Guarantee_Details_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="34">
@@ -82,7 +82,7 @@
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="30">
+    <sco:Collection x:TypeArguments="AssemblyReference">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -113,7 +113,8 @@
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
       <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
-    </scg:List>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+    </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <sap:WorkflowViewStateService.ViewState>
     <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -121,7 +122,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Sequence DisplayName="A10_2_Guarantee_Details" sap:VirtualizedContainerService.HintSize="476,2396" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="A10_2_Guarantee_Details" sap:VirtualizedContainerService.HintSize="2202,3640" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="v_GetTextForInternalRatingAsPerMLI" />
       <Variable x:TypeArguments="x:String" Name="v_GetTextForITPANApplicability" />
@@ -143,20 +144,20 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" BrowserType="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" DisplayName="Attach Browser For Guarantee Details" sap:VirtualizedContainerService.HintSize="434,2304" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d8264bf39d1826383e55cb97d7e62b3f" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" BrowserType="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" DisplayName="Attach Browser For Guarantee Details" sap:VirtualizedContainerService.HintSize="2160,3550" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="d8264bf39d1826383e55cb97d7e62b3f" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Guarantee Details " sap:VirtualizedContainerService.HintSize="376,2158" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Guarantee Details " sap:VirtualizedContainerService.HintSize="2126,3394" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <If sap2010:Annotation.AnnotationText="Select Constitution Of Borrower Available" Condition="[String.IsNullOrEmpty(in_ConstitutionOfBorrower)]" DisplayName="Check_If_Constitution Of Borrower Available" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="If_19">
+            <If sap2010:Annotation.AnnotationText="Select Constitution Of Borrower Available" Condition="[String.IsNullOrEmpty(in_ConstitutionOfBorrower)]" DisplayName="Check_If_Constitution Of Borrower Available" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_19">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -378,7 +379,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Select Borrower Type Available" Condition="[in_BorrowerType=Nothing]" DisplayName="Check_If_Borrower Type Available" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="If_21">
+            <If sap2010:Annotation.AnnotationText="Select Borrower Type Available" Condition="[in_BorrowerType=Nothing]" DisplayName="Check_If_Borrower Type Available" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_21">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -600,7 +601,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Internal Rating/As per MLI" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_1">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For Internal Rating/As per MLI" sap:VirtualizedContainerService.HintSize="2084,61" sap2010:WorkflowViewState.IdRef="GetValue_1">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="551caadb-7f84-4165-8f13-b0ee32af451d" InformativeScreenshot="c0975f5b9e61f238588c6268517a91be" Selector="&lt;webctrl tag='SPAN' class='side ng-star-inserted' css-selector='body&amp;gt;app-root&amp;gt;app-main-template&amp;gt;div&amp;gt;div&amp;gt;app-scheme-details&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p-tabview&amp;gt;div&amp;gt;div&amp;gt;p-tabpanel&amp;gt;div&amp;gt;app-guarantee-details-form&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-global-toggle&amp;gt;form&amp;gt;div&amp;gt;span' parentclass='full-width ng-star-inserted' idx='1' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -614,11 +615,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="Internal Rating/As per MLI" Condition="[v_GetTextForInternalRatingAsPerMLI.ToLower.Equals(in_SelectInternalRatingAsPerMLI.ToLower)]" DisplayName="Check If Internal Rating/As per MLI Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_1">
+            <If sap2010:Annotation.AnnotationText="Internal Rating/As per MLI" Condition="[v_GetTextForInternalRatingAsPerMLI.ToLower.Equals(in_SelectInternalRatingAsPerMLI.ToLower)]" DisplayName="Check If Internal Rating/As per MLI Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -943,7 +944,7 @@
                 </If>
               </If.Else>
             </If>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For ITPAN Applicability" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_2">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For ITPAN Applicability" sap:VirtualizedContainerService.HintSize="2084,61" sap2010:WorkflowViewState.IdRef="GetValue_2">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="551caadb-7f84-4165-8f13-b0ee32af451d" InformativeScreenshot="40fc8e6f41bd3e2eb74911d542e7716e" Selector="&lt;webctrl aaname='Yes' tag='SPAN' class='side ng-star-inserted' innertext='Yes' parentclass='full-width ng-star-inserted' idx='7' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -957,48 +958,48 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="ITPAN Applicability" Condition="[v_GetTextForITPANApplicability.ToLower.Equals(in_SelectITPANApplicability.ToLower)]" DisplayName="Check If ITPAN Applicability Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_6">
+            <If sap2010:Annotation.AnnotationText="ITPAN Applicability" Condition="[v_GetTextForITPANApplicability.ToLower.Equals(in_SelectITPANApplicability.ToLower)]" DisplayName="Check If ITPAN Applicability Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="2084,1347" sap2010:WorkflowViewState.IdRef="If_6">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="ITPAN Applicability Yes" sap:VirtualizedContainerService.HintSize="663,653" sap2010:WorkflowViewState.IdRef="Sequence_50">
+                <Sequence DisplayName="ITPAN Applicability Yes" sap:VirtualizedContainerService.HintSize="400,261" sap2010:WorkflowViewState.IdRef="Sequence_50">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[String.IsNullOrEmpty(in_ITPANApplicability)]" DisplayName="Check If ITPAN Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="621,461" sap2010:WorkflowViewState.IdRef="If_5">
+                  <If Condition="[String.IsNullOrEmpty(in_ITPANApplicability)]" DisplayName="Check If ITPAN Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="If_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="ITPAN Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="376,304" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <Sequence DisplayName="ITPAN Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="400,322" sap2010:WorkflowViewState.IdRef="Sequence_9">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_59" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_59" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage" />
                             <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel" />
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
-                        <Assign DisplayName="Actual ITPAN Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_4">
+                        <Assign DisplayName="Actual ITPAN Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_4">
                           <Assign.To>
                             <OutArgument x:TypeArguments="x:String">[out_ActualITPANApplicability]</OutArgument>
                           </Assign.To>
@@ -1009,7 +1010,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <If Condition="[CInt(in_ITPANApplicability.Length)&lt;=8]" DisplayName="Check If ITPAN Applicability Has More Than 8 Characters" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_4">
+                      <If Condition="[CInt(in_ITPANApplicability.Length)&lt;=8]" DisplayName="Check If ITPAN Applicability Has More Than 8 Characters" sap:VirtualizedContainerService.HintSize="845,511" sap2010:WorkflowViewState.IdRef="If_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1017,14 +1018,14 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Less Than 8 Characters" sap:VirtualizedContainerService.HintSize="304,243" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <Sequence DisplayName="Less Than 8 Characters" sap:VirtualizedContainerService.HintSize="400,344" sap2010:WorkflowViewState.IdRef="Sequence_10">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter ITPAN Applicability" EmptyField="True" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[in_ITPANApplicability]">
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter ITPAN Applicability" EmptyField="True" sap:VirtualizedContainerService.HintSize="358,144" sap2010:WorkflowViewState.IdRef="TypeInto_2" SimulateType="True" Text="[in_ITPANApplicability]">
                               <ui:TypeInto.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ff3421f2-899c-46a8-9189-daa6c6037f2a" InformativeScreenshot="8550e83f0fe4c0d485988162179626c0" Selector="&lt;webctrl aaname='ITPAN Applicability' tag='LABEL' /&gt;&lt;nav up='4' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
                                   <ui:Target.TimeoutMS>
@@ -1039,7 +1040,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:TypeInto>
-                            <Assign DisplayName="Actual ITPAN Applicability " sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_5">
+                            <Assign DisplayName="Actual ITPAN Applicability " sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_5">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[out_ActualITPANApplicability]</OutArgument>
                               </Assign.To>
@@ -1050,7 +1051,7 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="More Than 8 Characters" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <Sequence DisplayName="More Than 8 Characters" sap:VirtualizedContainerService.HintSize="400,332" sap2010:WorkflowViewState.IdRef="Sequence_11">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1086,7 +1087,7 @@
                       </If>
                     </If.Else>
                   </If>
-                  <Assign DisplayName="Actual Select ITPAN Applicability Yes" sap:VirtualizedContainerService.HintSize="621,60" sap2010:WorkflowViewState.IdRef="Assign_36">
+                  <Assign DisplayName="Actual Select ITPAN Applicability Yes" sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_36">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_ActualSelectITPANApplicability]</OutArgument>
                     </Assign.To>
@@ -1097,7 +1098,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <If Condition="[(v_GetTextForITPANApplicability.ToLower.Equals(&quot;no&quot;) And in_SelectITPANApplicability.ToLower.Equals(&quot;yes&quot;)) Or (v_GetTextForITPANApplicability.ToLower.Equals(&quot;yes&quot;) And in_SelectITPANApplicability.ToLower.Equals(&quot;no&quot;))]" DisplayName="Check If No" sap:VirtualizedContainerService.HintSize="507,223" sap2010:WorkflowViewState.IdRef="If_33">
+                <If Condition="[(v_GetTextForITPANApplicability.ToLower.Equals(&quot;no&quot;) And in_SelectITPANApplicability.ToLower.Equals(&quot;yes&quot;)) Or (v_GetTextForITPANApplicability.ToLower.Equals(&quot;yes&quot;) And in_SelectITPANApplicability.ToLower.Equals(&quot;no&quot;))]" DisplayName="Check If No" sap:VirtualizedContainerService.HintSize="1639,1149" sap2010:WorkflowViewState.IdRef="If_33">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1105,14 +1106,14 @@
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence DisplayName="Select ITPAN Yes" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_72">
+                    <Sequence DisplayName="Select ITPAN Yes" sap:VirtualizedContainerService.HintSize="1332,982" sap2010:WorkflowViewState.IdRef="Sequence_72">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <If Condition="[String.IsNullOrEmpty(in_ITPANApplicability)]" DisplayName="Check If ITPAN Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="If_35">
+                      <If Condition="[String.IsNullOrEmpty(in_ITPANApplicability)]" DisplayName="Check If ITPAN Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="1290,792" sap2010:WorkflowViewState.IdRef="If_35">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1120,19 +1121,24 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="ITPAN Nothing" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_75">
+                          <Sequence DisplayName="ITPAN Nothing" sap:VirtualizedContainerService.HintSize="400,322" sap2010:WorkflowViewState.IdRef="Sequence_75">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_60" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_60" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
-                                <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                                <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">
+                                  <Literal x:TypeArguments="x:String">User Has Not Entered ITPAN Applicability</Literal>
+                                </InArgument>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">
+                                  <Literal x:TypeArguments="x:String">Info</Literal>
+                                </InArgument>
                               </ui:InvokeWorkflowFile.Arguments>
                             </ui:InvokeWorkflowFile>
-                            <Assign DisplayName="Actual ITPAN Nothing" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_58">
+                            <Assign DisplayName="Actual ITPAN Nothing" sap:VirtualizedContainerService.HintSize="358,70" sap2010:WorkflowViewState.IdRef="Assign_58">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:String">[out_ActualITPANApplicability]</OutArgument>
                               </Assign.To>
@@ -1143,7 +1149,7 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <If Condition="[CInt(in_ITPANApplicability.Length)&lt;=8]" DisplayName="Check If ITPAN Applicability Has More Than 8 Characters" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_34">
+                          <If Condition="[CInt(in_ITPANApplicability.Length)&lt;=8]" DisplayName="Check If ITPAN Applicability Has More Than 8 Characters" sap:VirtualizedContainerService.HintSize="845,625" sap2010:WorkflowViewState.IdRef="If_34">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1151,14 +1157,14 @@
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
                             <If.Then>
-                              <Sequence DisplayName="Less Than 8 Characters" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_76">
+                              <Sequence DisplayName="Less Than 8 Characters" sap:VirtualizedContainerService.HintSize="400,397" sap2010:WorkflowViewState.IdRef="Sequence_76">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
-                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click ITPAN Applicability Radio Button" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
+                                <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click ITPAN Applicability Radio Button" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="Click_15" KeyModifiers="None" MouseButton="BTN_LEFT" SimulateClick="True">
                                   <ui:Click.CursorPosition>
                                     <ui:CursorPosition Position="Center">
                                       <ui:CursorPosition.OffsetX>
@@ -1209,7 +1215,7 @@
                               </Sequence>
                             </If.Then>
                             <If.Else>
-                              <Sequence DisplayName="More Than 8 Characters" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_77">
+                              <Sequence DisplayName="More Than 8 Characters" sap:VirtualizedContainerService.HintSize="400,458" sap2010:WorkflowViewState.IdRef="Sequence_77">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1256,7 +1262,7 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Assign DisplayName="Actual Select ITPAN No" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_37">
+                    <Assign DisplayName="Actual Select ITPAN No" sap:VirtualizedContainerService.HintSize="262,70" sap2010:WorkflowViewState.IdRef="Assign_37">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[out_ActualSelectITPANApplicability]</OutArgument>
                       </Assign.To>
@@ -1268,7 +1274,7 @@
                 </If>
               </If.Else>
             </If>
-            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For UAM Applicability" sap:VirtualizedContainerService.HintSize="334,106" sap2010:WorkflowViewState.IdRef="GetValue_3">
+            <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text For UAM Applicability" sap:VirtualizedContainerService.HintSize="2084,61" sap2010:WorkflowViewState.IdRef="GetValue_3">
               <ui:GetValue.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="551caadb-7f84-4165-8f13-b0ee32af451d" InformativeScreenshot="10a5314028690c8f0704a2cfe10ab0c7" Selector="&lt;webctrl aaname='UAM Applicability' tag='LABEL' /&gt;&lt;nav up='3' /&gt;&lt;webctrl tag='SPAN' css-selector='body&amp;gt;app-root&amp;gt;app-main-template&amp;gt;div&amp;gt;div&amp;gt;app-scheme-details&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;p-tabview&amp;gt;div&amp;gt;div&amp;gt;p-tabpanel&amp;gt;div&amp;gt;app-guarantee-details-form&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;app-global-toggle&amp;gt;form&amp;gt;div&amp;gt;span' /&gt;" WaitForReady="COMPLETE">
                   <ui:Target.TimeoutMS>
@@ -1282,11 +1288,11 @@
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:GetValue>
-            <If sap2010:Annotation.AnnotationText="UAM Applicability" Condition="[v_GetTextForUAMApplicability.ToLower.Equals( in_SelectUAMApplicability.ToLower)]" DisplayName="Check If UAM Applicability Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_9">
+            <If sap2010:Annotation.AnnotationText="UAM Applicability" Condition="[v_GetTextForUAMApplicability.ToLower.Equals( in_SelectUAMApplicability.ToLower)]" DisplayName="Check If UAM Applicability Is &quot;Yes&quot;" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1295,14 +1301,14 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="UAM Applicability Yes" sap:VirtualizedContainerService.HintSize="1260,901" sap2010:WorkflowViewState.IdRef="Sequence_51">
+                <Sequence DisplayName="UAM Applicability Yes" sap:VirtualizedContainerService.HintSize="1332,927" sap2010:WorkflowViewState.IdRef="Sequence_51">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <If Condition="[String.IsNullOrEmpty(in_UAMApplicability)]" DisplayName="Check If UAM Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="1218,709" sap2010:WorkflowViewState.IdRef="If_8">
+                  <If Condition="[String.IsNullOrEmpty(in_UAMApplicability)]" DisplayName="Check If UAM Applicability Is Nothing" sap:VirtualizedContainerService.HintSize="1290,737" sap2010:WorkflowViewState.IdRef="If_8">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1310,14 +1316,14 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="UAM Applicability Nothing" sap:VirtualizedContainerService.HintSize="376,456" sap2010:WorkflowViewState.IdRef="Sequence_13">
+                      <Sequence DisplayName="UAM Applicability Nothing" sap:VirtualizedContainerService.HintSize="400,474" sap2010:WorkflowViewState.IdRef="Sequence_13">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Not Entered UAM Applicability</InArgument>
                             <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
@@ -1328,7 +1334,7 @@
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InvokeWorkflowFile>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <scg:Dictionary x:TypeArguments="x:String, Argument" />
                           </ui:InvokeWorkflowFile.Arguments>
@@ -1344,7 +1350,7 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <If Condition="[CInt(in_UAMApplicability.Length)&lt;=8]" DisplayName="Check If UAM Applicability Has More Than 8 Characters" sap:VirtualizedContainerService.HintSize="797,552" sap2010:WorkflowViewState.IdRef="If_7">
+                      <If Condition="[CInt(in_UAMApplicability.Length)&lt;=8]" DisplayName="Check If UAM Applicability Has More Than 8 Characters" sap:VirtualizedContainerService.HintSize="845,570" sap2010:WorkflowViewState.IdRef="If_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1352,14 +1358,14 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <If.Then>
-                          <Sequence DisplayName="Less Than 8 Characters" sap:VirtualizedContainerService.HintSize="376,326" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                          <Sequence DisplayName="Less Than 8 Characters" sap:VirtualizedContainerService.HintSize="400,334" sap2010:WorkflowViewState.IdRef="Sequence_14">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter UAM Applicability" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_3" SimulateType="True" Text="[in_UAMApplicability]">
+                            <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter UAM Applicability" EmptyField="True" sap:VirtualizedContainerService.HintSize="358,144" sap2010:WorkflowViewState.IdRef="TypeInto_3" SimulateType="True" Text="[in_UAMApplicability]">
                               <ui:TypeInto.Target>
                                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="ff3421f2-899c-46a8-9189-daa6c6037f2a" InformativeScreenshot="823e3a0a0e481033de478d2cc885433a" Selector="&lt;webctrl aaname='UAM Applicability' tag='LABEL' /&gt;&lt;nav up='4' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
                                   <ui:Target.TimeoutMS>
@@ -1385,14 +1391,14 @@
                           </Sequence>
                         </If.Then>
                         <If.Else>
-                          <Sequence DisplayName="More Than 8 Characters" sap:VirtualizedContainerService.HintSize="376,395" sap2010:WorkflowViewState.IdRef="Sequence_15">
+                          <Sequence DisplayName="More Than 8 Characters" sap:VirtualizedContainerService.HintSize="400,403" sap2010:WorkflowViewState.IdRef="Sequence_15">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Entered More Than 8 Characters In UAM Applicability</InArgument>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
@@ -1432,7 +1438,7 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <If Condition="[(v_GetTextForUAMApplicability.ToLower.Equals(&quot;no&quot;) And in_SelectUAMApplicability.ToLower.Equals(&quot;yes&quot;)) Or (v_GetTextForUAMApplicability.ToLower.Equals(&quot;yes&quot;) And in_SelectUAMApplicability.ToLower.Equals(&quot;no&quot;))]" DisplayName="Check If UAM Applicability No" sap:VirtualizedContainerService.HintSize="898,986" sap2010:WorkflowViewState.IdRef="If_36">
+                <If Condition="[(v_GetTextForUAMApplicability.ToLower.Equals(&quot;no&quot;) And in_SelectUAMApplicability.ToLower.Equals(&quot;yes&quot;)) Or (v_GetTextForUAMApplicability.ToLower.Equals(&quot;yes&quot;) And in_SelectUAMApplicability.ToLower.Equals(&quot;no&quot;))]" DisplayName="Check If UAM Applicability No" sap:VirtualizedContainerService.HintSize="898,996" sap2010:WorkflowViewState.IdRef="If_36">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
@@ -1614,7 +1620,7 @@
                 </If>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(in_ApplicationTypeOfLoan)]" DisplayName="Check_If_Application Type Of Loan Is Nothing" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="If_24">
+            <If Condition="[String.IsNullOrEmpty(in_ApplicationTypeOfLoan)]" DisplayName="Check_If_Application Type Of Loan Is Nothing" sap:VirtualizedContainerService.HintSize="2084,61" sap2010:WorkflowViewState.IdRef="If_24">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1791,7 +1797,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Tenure(Maximum)" Condition="[in_Tenure=Nothing]" DisplayName="Check If Tenure Is Nothing" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_10">
+            <If sap2010:Annotation.AnnotationText="Tenure(Maximum)" Condition="[in_Tenure=Nothing]" DisplayName="Check If Tenure Is Nothing" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_10">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -1910,7 +1916,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Nature of Industry" Condition="[in_NatureOfIndustry=Nothing]" DisplayName="Check If Nature Of Industry Is Nothing" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_26">
+            <If sap2010:Annotation.AnnotationText="Nature of Industry" Condition="[in_NatureOfIndustry=Nothing]" DisplayName="Check If Nature Of Industry Is Nothing" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_26">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -2072,7 +2078,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Ceiling Limit" Condition="[in_CeilingLimit=Nothing]" DisplayName="Check If Ceiling Limit Is Nothing" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_12">
+            <If sap2010:Annotation.AnnotationText="Ceiling Limit" Condition="[in_CeilingLimit=Nothing]" DisplayName="Check If Ceiling Limit Is Nothing" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -2084,11 +2090,11 @@
                 <Sequence DisplayName="Nothing" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_25">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_31" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Not Entered Ceiling Limit</InArgument>
                       <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
@@ -2099,12 +2105,12 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_32" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_13">
+                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_13">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_CeilingLimit]</OutArgument>
                     </Assign.To>
@@ -2118,55 +2124,21 @@
                 <If Condition="[CInt(in_CeilingLimit.Length)&gt;9]" DisplayName="Check If Ceiling Tenure Contains More Than 8 Digits" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_13">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="304,334" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                    <Sequence DisplayName="Input For Ceilig Limit Is Incorrect" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_26">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_33" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
-                        <ui:InvokeWorkflowFile.Arguments>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Entered More Than 8 Letters In Ceiling Tenure</InArgument>
-                          <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
-                        </ui:InvokeWorkflowFile.Arguments>
-                        <sap:WorkflowViewStateService.ViewState>
-                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                          </scg:Dictionary>
-                        </sap:WorkflowViewStateService.ViewState>
-                      </ui:InvokeWorkflowFile>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_34" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
-                        <ui:InvokeWorkflowFile.Arguments>
-                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
-                        </ui:InvokeWorkflowFile.Arguments>
-                      </ui:InvokeWorkflowFile>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_14">
-                        <Assign.To>
-                          <OutArgument x:TypeArguments="x:String">[out_CeilingLimit]</OutArgument>
-                        </Assign.To>
-                        <Assign.Value>
-                          <InArgument x:TypeArguments="x:String">["User Has Entered More Than 8 Letters In Ceiling Tenure"]</InArgument>
-                        </Assign.Value>
-                      </Assign>
-                    </Sequence>
-                  </If.Then>
-                  <If.Else>
-                    <Sequence sap:VirtualizedContainerService.HintSize="304,243" sap2010:WorkflowViewState.IdRef="Sequence_27">
-                      <sap:WorkflowViewStateService.ViewState>
-                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
-                        </scg:Dictionary>
-                      </sap:WorkflowViewStateService.ViewState>
-                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Ceiling Tenure" EmptyField="True" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="[in_CeilingLimit]">
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Ceiling Tenure" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_13" SimulateType="True" Text="[in_CeilingLimit]">
                         <ui:TypeInto.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="ded782e0180e1bc31d9c8a8a3af9330f" Selector="&lt;webctrl id='industryTable' tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='2' tag='INPUT' colName='Ceiling limit(Maximum)' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="ded782e0180e1bc31d9c8a8a3af9330f" Selector="&lt;webctrl aaname='Ceiling limit(Maximum)' tag='LABEL' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -2178,7 +2150,55 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:TypeInto>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_15">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_33" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Entered More Than 8 Letters In Ceiling Tenure</InArgument>
+                          <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
+                        </ui:InvokeWorkflowFile.Arguments>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:InvokeWorkflowFile>
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_34" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                        <ui:InvokeWorkflowFile.Arguments>
+                          <scg:Dictionary x:TypeArguments="x:String, Argument" />
+                        </ui:InvokeWorkflowFile.Arguments>
+                      </ui:InvokeWorkflowFile>
+                      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_14">
+                        <Assign.To>
+                          <OutArgument x:TypeArguments="x:String">[out_CeilingLimit]</OutArgument>
+                        </Assign.To>
+                        <Assign.Value>
+                          <InArgument x:TypeArguments="x:String">["User Has Entered More Than 8 Letters In Ceiling Tenure"]</InArgument>
+                        </Assign.Value>
+                      </Assign>
+                    </Sequence>
+                  </If.Then>
+                  <If.Else>
+                    <Sequence DisplayName="Sequence_Ceiling Limit(Max)" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_27">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Ceiling Tenure" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_5" SimulateType="True" Text="[in_CeilingLimit]">
+                        <ui:TypeInto.Target>
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="ded782e0180e1bc31d9c8a8a3af9330f" Selector="&lt;webctrl aaname='Ceiling limit(Maximum)' tag='LABEL' /&gt;&lt;nav up='2' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" WaitForReady="COMPLETE">
+                            <ui:Target.TimeoutMS>
+                              <InArgument x:TypeArguments="x:Int32" />
+                            </ui:Target.TimeoutMS>
+                          </ui:Target>
+                        </ui:TypeInto.Target>
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                      </ui:TypeInto>
+                      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_15">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[out_CeilingLimit]</OutArgument>
                         </Assign.To>
@@ -2191,7 +2211,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Upper Limit" Condition="[in_UpperLimit=Nothing]" DisplayName="Check If Upper Limit Is Nothing" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_15">
+            <If sap2010:Annotation.AnnotationText="Upper Limit" Condition="[in_UpperLimit=Nothing]" DisplayName="Check If Upper Limit Is Nothing" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_15">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -2200,11 +2220,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Nothing" sap:VirtualizedContainerService.HintSize="376,397" sap2010:WorkflowViewState.IdRef="Sequence_28">
+                <Sequence DisplayName="Nothing" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_28">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_35" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
@@ -2218,12 +2238,12 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_36" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_36" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_16">
+                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_16">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_UpperLimit]</OutArgument>
                     </Assign.To>
@@ -2234,10 +2254,10 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <If Condition="[CInt(in_UpperLimit.Length)&gt;9]" DisplayName="Check If Upper Limit Contains More Than 8 Digits" sap:VirtualizedContainerService.HintSize="549,400" sap2010:WorkflowViewState.IdRef="If_14">
+                <If Condition="[CInt(in_UpperLimit.Length)&gt;9]" DisplayName="Check If Upper Limit Contains More Than 8 Digits" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_14">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -2245,11 +2265,11 @@
                     <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_29">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_37" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_37" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Entered More Than 8 Letters In Upper Limit</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
@@ -2260,12 +2280,12 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:InvokeWorkflowFile>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_38" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <scg:Dictionary x:TypeArguments="x:String, Argument" />
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_17">
+                      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_17">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[out_UpperLimit]</OutArgument>
                         </Assign.To>
@@ -2276,16 +2296,16 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence sap:VirtualizedContainerService.HintSize="304,243" sap2010:WorkflowViewState.IdRef="Sequence_30">
+                    <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_30">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Upper Limit" EmptyField="True" sap:VirtualizedContainerService.HintSize="262,51" sap2010:WorkflowViewState.IdRef="TypeInto_6" SimulateType="True" Text="[in_UpperLimit]">
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Upper Limit" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_6" SimulateType="True" Text="[in_UpperLimit]">
                         <ui:TypeInto.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="ded782e0180e1bc31d9c8a8a3af9330f" Selector="&lt;webctrl id='industryTable' tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='2' tag='INPUT' colName='Upper Limit' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="ded782e0180e1bc31d9c8a8a3af9330f" Selector="&lt;webctrl id='industryTable' tag='TABLE' /&gt;&lt;webctrl tableCol='4' tableRow='2' tag='INPUT' colName='Upper Limit' /&gt;" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -2297,7 +2317,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:TypeInto>
-                      <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_18">
+                      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_18">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[out_UpperLimit]</OutArgument>
                         </Assign.To>
@@ -2310,7 +2330,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Moratorium Period" Condition="[in_UpperLimit=Nothing]" DisplayName="Check If Moratorium Period Is Nothing" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_17">
+            <If sap2010:Annotation.AnnotationText="Moratorium Period" Condition="[in_UpperLimit=Nothing]" DisplayName="Check If Moratorium Period Is Nothing" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_17">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>
@@ -2319,11 +2339,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Nothing" sap:VirtualizedContainerService.HintSize="376,397" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                <Sequence DisplayName="Nothing" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_31">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_39" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
@@ -2337,12 +2357,12 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_40" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <scg:Dictionary x:TypeArguments="x:String, Argument" />
                     </ui:InvokeWorkflowFile.Arguments>
                   </ui:InvokeWorkflowFile>
-                  <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_19">
+                  <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_19">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_MoratoriumPeriod]</OutArgument>
                     </Assign.To>
@@ -2353,22 +2373,22 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <If Condition="[CInt(in_MoratoriumPeriod.Length)&gt;4]" DisplayName="Check If Moratorium Period Contains More Than 3 Digits" sap:VirtualizedContainerService.HintSize="549,403" sap2010:WorkflowViewState.IdRef="If_16">
+                <If Condition="[CInt(in_MoratoriumPeriod.Length)&gt;4]" DisplayName="Check If Moratorium Period Contains More Than 3 Digits" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_16">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <If.Then>
-                    <Sequence sap:VirtualizedContainerService.HintSize="200,68.8" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                    <Sequence sap:VirtualizedContainerService.HintSize="376,456" sap2010:WorkflowViewState.IdRef="Sequence_32">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="333.6,113.6" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Has Entered More Than 4 Letters In Moratorium Period</InArgument>
                           <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
@@ -2379,12 +2399,12 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:InvokeWorkflowFile>
-                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="333.6,52.8" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
+                      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
                         <ui:InvokeWorkflowFile.Arguments>
                           <scg:Dictionary x:TypeArguments="x:String, Argument" />
                         </ui:InvokeWorkflowFile.Arguments>
                       </ui:InvokeWorkflowFile>
-                      <Assign sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="Assign_20">
+                      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_20">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[out_MoratoriumPeriod]</OutArgument>
                         </Assign.To>
@@ -2395,16 +2415,16 @@
                     </Sequence>
                   </If.Then>
                   <If.Else>
-                    <Sequence sap:VirtualizedContainerService.HintSize="304,245.6" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                    <Sequence sap:VirtualizedContainerService.HintSize="376,326" sap2010:WorkflowViewState.IdRef="Sequence_33">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                          <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Moratorium Period" EmptyField="True" sap:VirtualizedContainerService.HintSize="262.4,52.8" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="[in_MoratoriumPeriod]">
+                      <ui:TypeInto AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" ClickBeforeTyping="True" DisplayName="Enter Moratorium Period" EmptyField="True" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="TypeInto_7" SimulateType="True" Text="[in_MoratoriumPeriod]">
                         <ui:TypeInto.Target>
-                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="63ce25c8884163999f752cb3e618f6b7" Selector="&lt;webctrl id='industryTable' tag='TABLE' /&gt;&lt;webctrl tableCol='6' tableRow='2' tag='INPUT' colName='Moratorium Period(Maximum)' /&gt;" WaitForReady="COMPLETE">
+                          <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="20bba6ed-2352-42e5-8f0b-045f934850d8" InformativeScreenshot="63ce25c8884163999f752cb3e618f6b7" Selector="&lt;webctrl id='industryTable' tag='TABLE' /&gt;&lt;webctrl tableCol='5' tableRow='2' tag='INPUT' colName='Moratorium Period(Maximum)' /&gt;" WaitForReady="COMPLETE">
                             <ui:Target.TimeoutMS>
                               <InArgument x:TypeArguments="x:Int32" />
                             </ui:Target.TimeoutMS>
@@ -2416,7 +2436,7 @@
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                       </ui:TypeInto>
-                      <Assign sap:VirtualizedContainerService.HintSize="262.4,60" sap2010:WorkflowViewState.IdRef="Assign_21">
+                      <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_21">
                         <Assign.To>
                           <OutArgument x:TypeArguments="x:String">[out_MoratoriumPeriod]</OutArgument>
                         </Assign.To>
@@ -2429,7 +2449,7 @@
                 </If>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Select Guarantee Start Date" Condition="[in_GuaranteeStartDate=Nothing]" DisplayName="Check_If_Guarantee Start Date is Available" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_22">
+            <If sap2010:Annotation.AnnotationText="Select Guarantee Start Date" Condition="[in_GuaranteeStartDate=Nothing]" DisplayName="Check_If_Guarantee Start Date is Available" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_22">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2438,11 +2458,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Guarantee_Start Date_Nothing" sap:VirtualizedContainerService.HintSize="376,304" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                <Sequence DisplayName="Guarantee_Start Date_Nothing" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_45">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log FileGuarantee Start Date Nothing" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
@@ -2457,7 +2477,7 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <Assign DisplayName="Actual Guarantee Start Date Is Nothing" sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_30">
+                  <Assign DisplayName="Actual Guarantee Start Date Is Nothing" sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_30">
                     <Assign.To>
                       <OutArgument x:TypeArguments="x:String">[out_ActualGuaranteeStartDate]</OutArgument>
                     </Assign.To>
@@ -2468,17 +2488,17 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence DisplayName="Guarantee Satrt Date Is vailable" sap:VirtualizedContainerService.HintSize="421,295" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                <Sequence DisplayName="Guarantee Satrt Date Is vailable" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_46">
                   <Sequence.Variables>
                     <Variable x:TypeArguments="x:String" Name="v_Year" />
                   </Sequence.Variables>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Date_Conversion_StartDate workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Modules\A10\A10_2_\Date_Conversion_GuaranteeDetails_StartDate.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Date_Conversion_StartDate workflow" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="Modules\A10\A10_2_\Date_Conversion_GuaranteeDetails_StartDate.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <OutArgument x:TypeArguments="x:String" x:Key="o_Month">[v_Month]</OutArgument>
                       <OutArgument x:TypeArguments="x:String" x:Key="o_Day">[v_Day]</OutArgument>
@@ -2487,23 +2507,23 @@
                     </ui:InvokeWorkflowFile.Arguments>
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <If Condition="[DateTime.ParseExact(in_GuaranteeStartDate,&quot;dd-MM-yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture) &gt; DateTime.ParseExact(in_SchemeStartDate.Replace(&quot;/&quot;,&quot;-&quot;),&quot;dd-MM-yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture)]" DisplayName="Check If Guarantee End Date Is Under Scheme End Date" sap:VirtualizedContainerService.HintSize="379,51" sap2010:WorkflowViewState.IdRef="If_40">
+                  <If Condition="[DateTime.ParseExact(in_GuaranteeStartDate,&quot;dd-MM-yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture) &gt; DateTime.ParseExact(in_SchemeStartDate.Replace(&quot;/&quot;,&quot;-&quot;),&quot;dd-MM-yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture)]" DisplayName="Check If Guarantee End Date Is Under Scheme End Date" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_40">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
                         <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Pick Guarantee Start Date" sap:VirtualizedContainerService.HintSize="421,304" sap2010:WorkflowViewState.IdRef="Sequence_88">
+                      <Sequence DisplayName="Pick Guarantee Start Date" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_88">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -2515,7 +2535,7 @@
                           </ui:InvokeWorkflowFile.Arguments>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -2531,10 +2551,10 @@
                       </Sequence>
                     </If.Then>
                     <If.Else>
-                      <Sequence DisplayName="Guarantee Start Date Is Less Than Scheme Start Date" sap:VirtualizedContainerService.HintSize="376,304" sap2010:WorkflowViewState.IdRef="Sequence_89">
+                      <Sequence DisplayName="Guarantee Start Date Is Less Than Scheme Start Date" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_89">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -2545,7 +2565,7 @@
                           </ui:InvokeWorkflowFile.Arguments>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InvokeWorkflowFile>
@@ -2563,7 +2583,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If sap2010:Annotation.AnnotationText="Select Guarantee End Date" Condition="[in_GuaranteeEndDate=Nothing]" DisplayName="Check_If_Guarantee End Date is Available" sap:VirtualizedContainerService.HintSize="334,82" sap2010:WorkflowViewState.IdRef="If_23">
+            <If sap2010:Annotation.AnnotationText="Select Guarantee End Date" Condition="[in_GuaranteeEndDate=Nothing]" DisplayName="Check_If_Guarantee End Date is Available" sap:VirtualizedContainerService.HintSize="2084,92" sap2010:WorkflowViewState.IdRef="If_23">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2572,11 +2592,11 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
               <If.Then>
-                <Sequence DisplayName="Guarantee_End Date_Nothing" sap:VirtualizedContainerService.HintSize="376,304" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                <Sequence DisplayName="Guarantee_End Date_Nothing" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_47">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                   <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="334,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
@@ -2602,14 +2622,14 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap:VirtualizedContainerService.HintSize="708,705" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                <Sequence sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_48">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Date_Conversion_End Date workflow" sap:VirtualizedContainerService.HintSize="666,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Modules\A10\A10_2_\Date_Conversion_GuaranteeDetails_EndDate.xaml">
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Date_Conversion_End Date workflow" sap:VirtualizedContainerService.HintSize="379,112" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="Modules\A10\A10_2_\Date_Conversion_GuaranteeDetails_EndDate.xaml">
                     <ui:InvokeWorkflowFile.Arguments>
                       <OutArgument x:TypeArguments="x:String" x:Key="o_Month">[v_Month]</OutArgument>
                       <OutArgument x:TypeArguments="x:String" x:Key="o_Day">[v_Day]</OutArgument>
@@ -2624,18 +2644,18 @@
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:InvokeWorkflowFile>
-                  <If Condition="[DateTime.ParseExact(in_GuaranteeEndDate,&quot;dd-MM-yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture) &lt; DateTime.ParseExact(in_SchemeEndDate.Replace(&quot;/&quot;,&quot;-&quot;),&quot;dd-MM-yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture)]" DisplayName="Check If Guarantee End Date Is Under Scheme End Date" sap:VirtualizedContainerService.HintSize="666,461" sap2010:WorkflowViewState.IdRef="If_39">
+                  <If Condition="[DateTime.ParseExact(in_GuaranteeEndDate,&quot;dd-MM-yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture) &lt; DateTime.ParseExact(in_SchemeEndDate.Replace(&quot;/&quot;,&quot;-&quot;),&quot;dd-MM-yyyy&quot;,System.Globalization.CultureInfo.InvariantCulture)]" DisplayName="Check If Guarantee End Date Is Under Scheme End Date" sap:VirtualizedContainerService.HintSize="379,51" sap2010:WorkflowViewState.IdRef="If_39">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
-                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
                     <If.Then>
-                      <Sequence DisplayName="Pick Guarantee End Date" sap:VirtualizedContainerService.HintSize="421,304" sap2010:WorkflowViewState.IdRef="Sequence_86">
+                      <Sequence DisplayName="Pick Guarantee End Date" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_86">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -2647,7 +2667,7 @@
                           </ui:InvokeWorkflowFile.Arguments>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -2667,7 +2687,7 @@
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-                            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                            <x:Boolean x:Key="IsPinned">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="334,61" sap2010:WorkflowViewState.IdRef="WriteLine_37" Text="Guarantee End Date Is Greater Than Scheme End Date" />
@@ -2678,7 +2698,7 @@
                           </ui:InvokeWorkflowFile.Arguments>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                              <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
                         </ui:InvokeWorkflowFile>
@@ -2696,7 +2716,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <TryCatch DisplayName="Success Message" sap:VirtualizedContainerService.HintSize="334,51" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+            <TryCatch DisplayName="Success Message" sap:VirtualizedContainerService.HintSize="2084,61" sap2010:WorkflowViewState.IdRef="TryCatch_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsPinned">True</x:Boolean>

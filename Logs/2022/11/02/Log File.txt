@@ -1,242 +1,61 @@
-02/11/2022 12:06:11 PM : Info : Company Master Started
-02/11/2022 12:06:12 PM : Info : Created Build DataTable For Company Master
-02/11/2022 12:06:30 PM : Info : Start Date 02/12/2012
-02/11/2022 12:06:30 PM : Info : Start Date Day : 02 MonthVal : DECyear val: 2012
-02/11/2022 12:06:30 PM : Info : 02    DEC    2012
-02/11/2022 12:06:42 PM : Info : End Date 12/12/2020 00/00/00
-02/11/2022 12:06:42 PM : Info : End Date string Length > 1012/12/2020 00/00/00
-02/11/2022 12:06:47 PM : Info : Status Is Inactive
-02/11/2022 12:07:19 PM : Error : Error Occured While Creating Company HO Master Could not find the UI element corresponding to this selector:
-[1] <webctrl aaname='Message' tag='SPAN'/>
-[2] <nav up='2'/>
-[3] <webctrl idx='2' tag='SPAN'/>
-
-Search failed at selector tag:
-[1] <webctrl aaname='Message' tag='SPAN'/>
-
-The closest matches found are:
-[75%] <webctrl aaname='State Master' tag='SPAN'/>
-[75%] <webctrl aaname='Reset' tag='SPAN'/>
-[71%] <webctrl aaname='User Master' tag='SPAN'/>
-[71%] <webctrl aaname='Claims Processing' tag='SPAN'/>
-[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
-[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
-[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
-[68%] <webctrl aaname='MLI Type Master' tag='SPAN'/>
-[68%] <webctrl aaname='User' tag='SPAN'/>
-[67%] <webctrl aaname='Role Master' tag='SPAN'/>
-02/11/2022 12:10:46 PM : Info : Company Master Started
-02/11/2022 12:10:48 PM : Info : Created Build DataTable For Company Master
-02/11/2022 12:11:25 PM : Info : Start Date 12/01/2020
-02/11/2022 12:11:25 PM : Info : Start Date Day : 12 MonthVal : JANyear val: 2020
-02/11/2022 12:11:25 PM : Info : 12    JAN    2020
-02/11/2022 12:11:37 PM : Info : End Date 12/01/2021
-02/11/2022 12:11:38 PM : Info : End Date Day : 12MonthVal : JANyear val: 2021
-02/11/2022 12:11:50 PM : Info : Status Is Inactive
-02/11/2022 12:12:10 PM : Error : Gst number already exists
-02/11/2022 12:14:37 PM : Error : Please Enter Valid Email
-02/11/2022 12:15:01 PM : Error : Please Enter Valid-PAN No
-02/11/2022 12:15:06 PM : Info : Start Date 12/02/2020
-02/11/2022 12:15:06 PM : Info : Start Date Day : 12 MonthVal : FEByear val: 2020
-02/11/2022 12:15:06 PM : Info : 12    FEB    2020
-02/11/2022 12:15:18 PM : Info : End Date 12/02/2021
-02/11/2022 12:15:18 PM : Info : End Date Day : 12MonthVal : FEByear val: 2021
-02/11/2022 12:15:31 PM : Info : Status Is Inactive
-02/11/2022 12:16:13 PM : Error : Error Occured While Creating Company Branch Master Could not find the UI element corresponding to this selector:
-[1] <webctrl aaname='Message' tag='SPAN'/>
-[2] <nav up='2'/>
-[3] <webctrl idx='2' tag='SPAN'/>
-
-Search failed at selector tag:
-[1] <webctrl aaname='Message' tag='SPAN'/>
-
-The closest matches found are:
-[75%] <webctrl aaname='State Master' tag='SPAN'/>
-[75%] <webctrl aaname='Reset' tag='SPAN'/>
-[71%] <webctrl aaname='User Master' tag='SPAN'/>
-[71%] <webctrl aaname='Claims Processing' tag='SPAN'/>
-[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
-[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
-[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
-[68%] <webctrl aaname='MLI Type Master' tag='SPAN'/>
-[68%] <webctrl aaname='User' tag='SPAN'/>
-[67%] <webctrl aaname='Role Master' tag='SPAN'/>
-02/11/2022 12:29:26 PM : Info : Company Master Started
-02/11/2022 12:30:17 PM : Info : Company Master Started
-02/11/2022 12:30:19 PM : Info : Created Build DataTable For Company Master
-02/11/2022 12:30:56 PM : Info : Start Date 12/01/2020
-02/11/2022 12:30:56 PM : Info : Start Date Day : 12 MonthVal : JANyear val: 2020
-02/11/2022 12:30:56 PM : Info : 12    JAN    2020
-02/11/2022 12:31:08 PM : Info : End Date 12/01/2021
-02/11/2022 12:31:08 PM : Info : End Date Day : 12MonthVal : JANyear val: 2021
-02/11/2022 12:31:21 PM : Info : Status Is Inactive
-02/11/2022 12:37:41 PM : Info : Company Master Started
-02/11/2022 12:37:43 PM : Info : Created Build DataTable For Company Master
-02/11/2022 12:38:20 PM : Info : Start Date 22/01/2020
-02/11/2022 12:38:20 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 12:38:20 PM : Info : 22    JAN    2020
-02/11/2022 12:38:32 PM : Info : End Date 22/01/2021
-02/11/2022 12:38:32 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 12:38:45 PM : Info : Status Is Inactive
-02/11/2022 12:40:01 PM : Info : Start Date 02/02/2020
-02/11/2022 12:40:01 PM : Info : Start Date Day : 02 MonthVal : FEByear val: 2020
-02/11/2022 12:40:01 PM : Info : 02    FEB    2020
-02/11/2022 12:40:13 PM : Info : End Date 22/02/2021
-02/11/2022 12:40:13 PM : Info : End Date Day : 22MonthVal : FEByear val: 2021
-02/11/2022 12:40:26 PM : Info : Status Is Inactive
-02/11/2022 12:56:15 PM : Info : Company Master Started
-02/11/2022 12:56:17 PM : Info : Created Build DataTable For Company Master
-02/11/2022 01:05:42 PM : Info : Company Master Started
-02/11/2022 01:05:44 PM : Info : Created Build DataTable For Company Master
-02/11/2022 01:25:02 PM : Info : Company Master Started
-02/11/2022 01:25:04 PM : Info : Created Build DataTable For Company Master
-02/11/2022 02:28:01 PM : Info : Company Master Started
-02/11/2022 02:28:03 PM : Info : Created Build DataTable For Company Master
-02/11/2022 02:28:41 PM : Info : Start Date 22/01/2020
-02/11/2022 02:28:41 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 02:28:41 PM : Info : 22    JAN    2020
-02/11/2022 02:28:54 PM : Info : End Date 22/01/2021
-02/11/2022 02:28:54 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 02:29:06 PM : Info : Status Is Inactive
-02/11/2022 02:29:22 PM : Error : Company or ShortName already exists
-02/11/2022 02:30:32 PM : Info : Start Date 02/02/2020
-02/11/2022 02:30:32 PM : Info : Start Date Day : 02 MonthVal : FEByear val: 2020
-02/11/2022 02:30:32 PM : Info : 02    FEB    2020
-02/11/2022 02:30:45 PM : Info : End Date 22/02/2021
-02/11/2022 02:30:45 PM : Info : End Date Day : 22MonthVal : FEByear val: 2021
-02/11/2022 02:30:57 PM : Info : Status Is Inactive
-02/11/2022 02:31:44 PM : Error : Could not find the UI element corresponding to this selector:
-[1] <webctrl aaname='Message' tag='SPAN'/>
-[2] <nav up='2'/>
-[3] <webctrl idx='2' tag='SPAN'/>
-
-Search failed at selector tag:
-[1] <webctrl aaname='Message' tag='SPAN'/>
-
-The closest matches found are:
-[75%] <webctrl aaname='State Master' tag='SPAN'/>
-[75%] <webctrl aaname='Reset' tag='SPAN'/>
-[71%] <webctrl aaname='User Master' tag='SPAN'/>
-[71%] <webctrl aaname='Claims Processing' tag='SPAN'/>
-[70%] <webctrl aaname='Role Access Master' tag='SPAN'/>
-[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
-[70%] <webctrl aaname='Scheme Master' tag='SPAN'/>
-[68%] <webctrl aaname='MLI Type Master' tag='SPAN'/>
-[68%] <webctrl aaname='User' tag='SPAN'/>
-[67%] <webctrl aaname='Role Master' tag='SPAN'/>
-02/11/2022 02:32:40 PM : Error : Error Occured While Creating Company Branch Master Could not find the UI element corresponding to this selector:
-<webctrl aaname='Ok' tag='BUTTON'/>
-
-The closest matches found are:
-[62%] <webctrl aaname=' Export  ' tag='BUTTON'/>
-[50%] <webctrl aaname=' ' tag='BUTTON'/>
-[50%] <webctrl aaname=' Add New  ' tag='BUTTON'/>
-[50%] <webctrl aaname='' tag='BUTTON'/>
-[50%] <webctrl aaname='' tag='BUTTON'/>
-[50%] <webctrl aaname='' tag='BUTTON'/>
-[50%] <webctrl aaname='' tag='BUTTON'/>
-[50%] <webctrl aaname='' tag='BUTTON'/>
-[50%] <webctrl aaname='' tag='BUTTON'/>
-[50%] <webctrl aaname=' ' tag='BUTTON'/>
-02/11/2022 02:50:11 PM : Info : Company Master Started
-02/11/2022 02:50:13 PM : Info : Created Build DataTable For Company Master
-02/11/2022 02:50:49 PM : Info : Start Date 22/01/2020
-02/11/2022 02:50:50 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 02:50:50 PM : Info : 22    JAN    2020
-02/11/2022 02:51:02 PM : Info : End Date 22/01/2021
-02/11/2022 02:51:02 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 02:51:15 PM : Info : Status Is Inactive
-02/11/2022 02:51:45 PM : Error : Company or ShortName already exists
-02/11/2022 02:52:37 PM : Info : Start Date 02/02/2020
-02/11/2022 02:52:37 PM : Info : Start Date Day : 02 MonthVal : FEByear val: 2020
-02/11/2022 02:52:37 PM : Info : 02    FEB    2020
-02/11/2022 02:55:29 PM : Info : End Date 22/02/2021
-02/11/2022 02:55:45 PM : Info : End Date Day : 22MonthVal : FEByear val: 2021
-02/11/2022 02:57:33 PM : Info : Status Is Inactive
-02/11/2022 03:00:24 PM : Info : Company Master Started
-02/11/2022 03:00:26 PM : Info : Created Build DataTable For Company Master
-02/11/2022 03:01:03 PM : Info : Start Date 22/01/2020
-02/11/2022 03:01:03 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 03:01:03 PM : Info : 22    JAN    2020
-02/11/2022 03:01:16 PM : Info : End Date 22/01/2021
-02/11/2022 03:01:16 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 03:01:28 PM : Info : Status Is Inactive
-02/11/2022 03:02:00 PM : Error : Company or ShortName already exists
-02/11/2022 03:02:52 PM : Info : Start Date 02/02/2021
-02/11/2022 03:02:52 PM : Info : Start Date Day : 02 MonthVal : FEByear val: 2021
-02/11/2022 03:02:52 PM : Info : 02    FEB    2021
-02/11/2022 03:03:05 PM : Info : End Date 22/02/2021
-02/11/2022 03:03:05 PM : Info : End Date Day : 22MonthVal : FEByear val: 2021
-02/11/2022 03:03:16 PM : Info : Status Is Inactive
-02/11/2022 03:19:33 PM : Info : Company Master Started
-02/11/2022 03:19:35 PM : Info : Created Build DataTable For Company Master
-02/11/2022 03:20:12 PM : Info : Start Date 22/01/2020
-02/11/2022 03:20:12 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 03:20:12 PM : Info : 22    JAN    2020
-02/11/2022 03:20:24 PM : Info : End Date 22/01/2021
-02/11/2022 03:20:24 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 03:20:37 PM : Info : Status Is Inactive
-02/11/2022 03:20:42 PM : Error : Company or ShortName already exists
-02/11/2022 03:21:33 PM : Info : Start Date 02/02/2014
-02/11/2022 03:21:33 PM : Info : Start Date Day : 02 MonthVal : FEByear val: 2014
-02/11/2022 03:21:33 PM : Info : 02    FEB    2014
-02/11/2022 03:21:53 PM : Info : End Date 22/02/2015
-02/11/2022 03:21:53 PM : Info : End Date Day : 22MonthVal : FEByear val: 2015
-02/11/2022 03:22:05 PM : Info : Status Is Inactive
-02/11/2022 03:22:52 PM : Info : Company Master Successfull
-02/11/2022 03:28:37 PM : Info : Company Master Started
-02/11/2022 03:28:39 PM : Info : Created Build DataTable For Company Master
-02/11/2022 03:29:15 PM : Info : Start Date 22/01/2020
-02/11/2022 03:29:16 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 03:29:16 PM : Info : 22    JAN    2020
-02/11/2022 03:29:28 PM : Info : End Date 22/01/2021
-02/11/2022 03:29:28 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 03:29:41 PM : Info : Status Is Inactive
-02/11/2022 03:29:45 PM : Error : Company or ShortName already exists
-02/11/2022 03:30:37 PM : Info : Start Date 02/02/2014
-02/11/2022 03:30:37 PM : Info : Start Date Day : 02 MonthVal : FEByear val: 2014
-02/11/2022 03:30:37 PM : Info : 02    FEB    2014
-02/11/2022 03:30:57 PM : Info : End Date 22/02/2015
-02/11/2022 03:30:57 PM : Info : End Date Day : 22MonthVal : FEByear val: 2015
-02/11/2022 03:31:09 PM : Info : Status Is Inactive
-02/11/2022 03:52:28 PM : Info : Company Master Started
-02/11/2022 03:52:30 PM : Info : Created Build DataTable For Company Master
-02/11/2022 03:53:07 PM : Info : Start Date 22/01/2020
-02/11/2022 03:53:07 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 03:53:07 PM : Info : 22    JAN    2020
-02/11/2022 03:53:19 PM : Info : End Date 22/01/2021
-02/11/2022 03:53:20 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 03:53:32 PM : Info : Status Is Inactive
-02/11/2022 03:53:37 PM : Error : Company or ShortName already exists
-02/11/2022 03:54:28 PM : Info : Start Date 02/02/2014
-02/11/2022 03:54:28 PM : Info : Start Date Day : 02 MonthVal : FEByear val: 2014
-02/11/2022 03:54:28 PM : Info : 02    FEB    2014
-02/11/2022 03:54:48 PM : Info : End Date 22/02/2015
-02/11/2022 03:54:48 PM : Info : End Date Day : 22MonthVal : FEByear val: 2015
-02/11/2022 03:55:01 PM : Info : Status Is Inactive
-02/11/2022 03:55:51 PM : Error : Submit Button Disabled
-02/11/2022 04:05:24 PM : Info : Company Master Started
-02/11/2022 04:05:26 PM : Info : Created Build DataTable For Company Master
-02/11/2022 04:06:03 PM : Info : Start Date 22/01/2020
-02/11/2022 04:06:04 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 04:06:04 PM : Info : 22    JAN    2020
-02/11/2022 04:06:16 PM : Info : End Date 22/01/2021
-02/11/2022 04:06:16 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 04:06:29 PM : Info : Status Is Inactive
-02/11/2022 04:06:33 PM : Error : Company or ShortName already exists
-02/11/2022 04:08:14 PM : Info : Company Master Started
-02/11/2022 04:08:16 PM : Info : Created Build DataTable For Company Master
-02/11/2022 04:08:53 PM : Info : Start Date 22/01/2020
-02/11/2022 04:08:53 PM : Info : Start Date Day : 22 MonthVal : JANyear val: 2020
-02/11/2022 04:08:53 PM : Info : 22    JAN    2020
-02/11/2022 04:09:05 PM : Info : End Date 22/01/2021
-02/11/2022 04:09:06 PM : Info : End Date Day : 22MonthVal : JANyear val: 2021
-02/11/2022 04:09:18 PM : Info : Status Is Inactive
-02/11/2022 04:09:23 PM : Error : Company or ShortName already exists
-02/11/2022 04:10:15 PM : Info : Start Date 02/02/2014
-02/11/2022 04:10:15 PM : Info : Start Date Day : 02 MonthVal : FEByear val: 2014
-02/11/2022 04:10:15 PM : Info : 02    FEB    2014
-02/11/2022 04:10:34 PM : Info : End Date 22/02/2015
-02/11/2022 04:10:34 PM : Info : End Date Day : 22MonthVal : FEByear val: 2015
-02/11/2022 04:10:47 PM : Info : Status Is Inactive
-02/11/2022 04:11:45 PM : Error : Submit Button Disabled
+02/11/2022 11:42:19 AM : Info : User Master Creation Started
+02/11/2022 11:42:48 AM : Info : Start Date 12/04/1996
+02/11/2022 11:42:48 AM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 11:48:55 AM : Info : User Master Creation Started
+02/11/2022 11:49:09 AM : Info : Start Date 12/04/1996
+02/11/2022 11:49:10 AM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 11:51:47 AM : Info : Bank Mapping Doesnot Exists
+02/11/2022 11:52:42 AM : Info : User Master Creation Started
+02/11/2022 11:52:56 AM : Info : Start Date 12/04/1996
+02/11/2022 11:52:56 AM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:04:02 PM : Info : User Master Creation Started
+02/11/2022 12:04:17 PM : Info : Start Date 12/04/1996
+02/11/2022 12:04:17 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:14:10 PM : Info : User Master Creation Started
+02/11/2022 12:14:25 PM : Info : Start Date 12/04/1996
+02/11/2022 12:14:25 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:25:38 PM : Info : User Master Creation Started
+02/11/2022 12:27:30 PM : Info : User Master Creation Started
+02/11/2022 12:27:45 PM : Info : Start Date 12/04/1996
+02/11/2022 12:27:45 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:29:25 PM : Info : User Master Does Not Saved Because Session expired. Please login again
+02/11/2022 12:30:23 PM : Info : MLI User Master Saved Successfully
+02/11/2022 12:30:43 PM : Info : User Master Creation Started
+02/11/2022 12:31:00 PM : Info : Start Date 12/04/1996
+02/11/2022 12:31:00 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:32:23 PM : Info : User Master Does Not Saved Because Session expired. Please login again
+02/11/2022 12:32:39 PM : Info : Company User Master Saved Successfully
+02/11/2022 12:33:35 PM : Info : User Master Creation Started
+02/11/2022 12:43:49 PM : Info : User Master Creation Started
+02/11/2022 12:44:04 PM : Info : Start Date 12/04/1996
+02/11/2022 12:44:04 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:45:27 PM : Info : User Master Does Not Saved Because Two users has registered with same mobile number
+02/11/2022 12:45:38 PM : Info : MLI User Master Saved Successfully
+02/11/2022 12:45:46 PM : Info : User Master Creation Started
+02/11/2022 12:46:00 PM : Info : Start Date 12/04/1996
+02/11/2022 12:46:01 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:47:16 PM : Info : User Master Does Not Saved Because Two users has registered with same mobile number
+02/11/2022 12:47:27 PM : Info : Company User Master Saved Successfully
+02/11/2022 12:49:58 PM : Info : User Master Creation Started
+02/11/2022 12:50:13 PM : Info : Start Date 12/04/1996
+02/11/2022 12:50:13 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:51:31 PM : Info : User Master Does Not Saved Because Conflict With Existing Data. Try Different Username or Email
+02/11/2022 12:51:42 PM : Info : MLI User Master Saved Successfully
+02/11/2022 12:51:50 PM : Info : User Master Creation Started
+02/11/2022 12:52:05 PM : Info : Start Date 12/04/1996
+02/11/2022 12:52:05 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:53:16 PM : Info : User Master Does Not Saved Because Conflict With Existing Data. Try Different Username or Email
+02/11/2022 12:53:27 PM : Info : Company User Master Saved Successfully
+02/11/2022 12:55:10 PM : Info : User Master Creation Started
+02/11/2022 12:55:25 PM : Info : Start Date 12/04/1996
+02/11/2022 12:55:26 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:56:29 PM : Info : User Master Creation Started
+02/11/2022 12:56:44 PM : Info : Start Date 12/04/1996
+02/11/2022 12:56:44 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:58:07 PM : Info : User Master Saved Successfully
+02/11/2022 12:58:14 PM : Info : MLI User Master Saved Successfully
+02/11/2022 12:58:23 PM : Info : User Master Creation Started
+02/11/2022 12:58:42 PM : Info : Start Date 12/04/1996
+02/11/2022 12:58:43 PM : Info : Start Date Day : 12 MonthVal : APRyear val: 1996
+02/11/2022 12:59:57 PM : Info : User Master Saved Successfully
+02/11/2022 01:00:06 PM : Info : Company User Master Saved Successfully
