@@ -17,11 +17,7 @@
       "dataVariationType": "File"
     },
     {
-      "filePath": ".variations\\Input Data_District_Master_A2_1_Zone_Master.json",
-      "dataVariationType": "File"
-    },
-    {
-      "filePath": ".variations\\Input Data MLI_ORG Master_A8_MliOrgMaster.json",
+      "filePath": ".variations\\Input Data_Department Master_A4_User Master.json",
       "dataVariationType": "File"
     }
   ]
