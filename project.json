@@ -42,13 +42,6 @@
     },
     "fileInfoCollection": [
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "08791042-c77c-400f-b2bd-c5e0cf976fad",
-        "dataVariationFilePath": ".variations\\Input Data_Geography Masters_A2_1_Zone_Master.json",
-        "testCaseType": "TestCase",
-        "fileName": "TestCase_2_Geography_Masters.xaml"
-      },
-      {
         "editingStatus": "Publishable",
         "testCaseId": "843a059a-3902-4e0a-9795-221bea3201eb",
         "dataVariationFilePath": ".variations\\Input Data_Login Page_GMS_Login.json",
@@ -70,11 +63,48 @@
         "fileName": "TestCase10_Scheme Configurator.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "7f3d240b-603b-4faa-b7e5-50af772efb45",
         "dataVariationFilePath": ".variations\\User Master Input Data_Module A6 User Master.json",
         "testCaseType": "TestCase",
         "fileName": "TestCase_6_User Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e24a1f82-92e3-4be8-b13a-ce9a88eeb703",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_2_Geography Master.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "08791042-c77c-400f-b2bd-c5e0cf976fad",
+        "dataVariationFilePath": ".variations\\Input Data_Geography Masters_A2_1_Zone_Master.json",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_2_Geography Masters Using Execution File.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5518df19-c04c-489a-847f-19e6ece7e0c1",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_3_Gender Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2974a882-0437-4176-b6b0-8cb3b970a0c2",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_4_User Dept And Role Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1b9ee2d7-a653-4882-a67f-e580bda5eba4",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_5_Company Master.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f48a7c4e-8eb7-43b9-b299-1c1f99d34fef",
+        "testCaseType": "TestCase",
+        "fileName": "TestCase_8_MLI Master.xaml"
       }
     ],
     "modernBehavior": false

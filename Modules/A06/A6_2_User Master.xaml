@@ -65,7 +65,7 @@
   <mva:VisualBasic.Settings>
     <x:Null />
   </mva:VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>800,3425</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1054,4341</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>A6_2_User_Master_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="30">
@@ -131,10 +131,9 @@
       <AssemblyReference>System.ServiceModel</AssemblyReference>
       <AssemblyReference>NPOI</AssemblyReference>
       <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
-      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="A6_2_User_Master" sap:VirtualizedContainerService.HintSize="558,3360" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="A6_2_User_Master" sap:VirtualizedContainerService.HintSize="1064,4276" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="v_GivenGenderExist" />
       <Variable x:TypeArguments="x:String" Name="v_Month" />
@@ -155,19 +154,19 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser_CGTMSE Dashboard" sap:VirtualizedContainerService.HintSize="516,3270" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="197190afe26e7af458f1802040ecbd29" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
+    <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Chrome" DisplayName="Attach Browser_CGTMSE Dashboard" sap:VirtualizedContainerService.HintSize="1022,4186" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="197190afe26e7af458f1802040ecbd29" Selector="&lt;html app='chrome.exe' title='GMS' /&gt;">
       <ui:BrowserScope.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="482,3114" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="988,4030" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_User Icon" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_User Icon" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="Click_1" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -192,7 +191,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_User Master" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click_User Master" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="Click_2" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -217,7 +216,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Add New Button" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
+            <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Add New Button" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="Click_3" KeyModifiers="None" MouseButton="BTN_LEFT">
               <ui:Click.CursorPosition>
                 <ui:CursorPosition Position="Center">
                   <ui:CursorPosition.OffsetX>
@@ -242,7 +241,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <If Condition="[String.IsNullOrEmpty(in_UserMasterFirstName)]" DisplayName="Check If First Name Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_1">
+            <If Condition="[String.IsNullOrEmpty(in_UserMasterFirstName)]" DisplayName="Check If First Name Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -474,7 +473,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterLastName)]" DisplayName="Check If Last Name Is Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_3">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterLastName)]" DisplayName="Check If Last Name Is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_3">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -703,7 +702,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterEmail)]" DisplayName="Check If User Email ID Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_5">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterEmail)]" DisplayName="Check If User Email ID Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_5">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -932,7 +931,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterSelectGender)]" DisplayName="Check If Users Gender Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_7">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterSelectGender)]" DisplayName="Check If Users Gender Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_7">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1184,10 +1183,10 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterDob)]" DisplayName="Check If User DOB Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_9">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterDob)]" DisplayName="Check If User DOB Empty" sap:VirtualizedContainerService.HintSize="946,978" sap2010:WorkflowViewState.IdRef="If_9">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
@@ -1259,16 +1258,16 @@
                 </Sequence>
               </If.Then>
               <If.Else>
-                <Sequence sap:VirtualizedContainerService.HintSize="400,151" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                <Sequence sap:VirtualizedContainerService.HintSize="501,811" sap2010:WorkflowViewState.IdRef="Sequence_20">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <TryCatch DisplayName="Try Catch Select DOB" sap:VirtualizedContainerService.HintSize="358,61" sap2010:WorkflowViewState.IdRef="TryCatch_7">
+                  <TryCatch DisplayName="Try Catch Select DOB" sap:VirtualizedContainerService.HintSize="459,721" sap2010:WorkflowViewState.IdRef="TryCatch_7">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
@@ -1279,7 +1278,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Date_Conversion_UserMasterDOB workflow" sap:VirtualizedContainerService.HintSize="379,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_85" UnSafe="False" WorkflowFileName="Modules\A6\A6_\Date_Conversion_UserMasterDOB.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Date_Conversion_UserMasterDOB workflow" sap:VirtualizedContainerService.HintSize="379,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_85" UnSafe="False" WorkflowFileName="Modules\A06\A6_\Date_Conversion_UserMasterDOB.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <OutArgument x:TypeArguments="x:String" x:Key="o_Month">[v_Month]</OutArgument>
                             <OutArgument x:TypeArguments="x:String" x:Key="o_Day">[v_Day]</OutArgument>
@@ -1287,7 +1286,7 @@
                             <InArgument x:TypeArguments="x:String" x:Key="in_UserMasterDob">[In_UserMasterDob]</InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
-                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DatePicker_UserMasterDOB workflow" sap:VirtualizedContainerService.HintSize="379,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_86" UnSafe="False" WorkflowFileName="Modules\A6\A6_\DatePicker_UserMasterDOB.xaml">
+                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke DatePicker_UserMasterDOB workflow" sap:VirtualizedContainerService.HintSize="379,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_86" UnSafe="False" WorkflowFileName="Modules\A06\A6_\DatePicker_UserMasterDOB.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
                             <InArgument x:TypeArguments="x:String" x:Key="in_Day">[v_Day]</InArgument>
                             <InArgument x:TypeArguments="x:String" x:Key="in_Month">[v_Month]</InArgument>
@@ -1305,10 +1304,10 @@
                       </Sequence>
                     </TryCatch.Try>
                     <TryCatch.Catches>
-                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="406,703" sap2010:WorkflowViewState.IdRef="Catch`1_7">
+                      <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="425,21" sap2010:WorkflowViewState.IdRef="Catch`1_7">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
@@ -1388,7 +1387,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterMobileNumber)]" DisplayName="Check If Mobile No. Is Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_10">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterMobileNumber)]" DisplayName="Check If Mobile No. Is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_10">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1578,7 +1577,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterLandLineCode)]" DisplayName="Check If LandLine Code Is Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_12">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterLandLineCode)]" DisplayName="Check If LandLine Code Is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_12">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1777,7 +1776,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterLandLineNumber)]" DisplayName="Check If LandLine Number Is Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_14">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterLandLineNumber)]" DisplayName="Check If LandLine Number Is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_14">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -1882,7 +1881,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterPincode)]" DisplayName="Check If Pincode Is Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_16">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterPincode)]" DisplayName="Check If Pincode Is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_16">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2226,7 +2225,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterDistrict)]" DisplayName="Check If District Is Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_19">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterDistrict)]" DisplayName="Check If District Is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_19">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2463,7 +2462,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterCity)]" DisplayName="Check If City Is Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_21">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterCity)]" DisplayName="Check If City Is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_21">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2624,7 +2623,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterDesignation)]" DisplayName="Check If Designation Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_23">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterDesignation)]" DisplayName="Check If Designation Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_23">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -2829,7 +2828,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterSelectDepartment)]" DisplayName="Check If Department Is Empty" sap:VirtualizedContainerService.HintSize="440,62" sap2010:WorkflowViewState.IdRef="If_25">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterSelectDepartment)]" DisplayName="Check If Department Is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_25">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3066,7 +3065,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterLevel)]" DisplayName="Check If Input For Level is Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_27">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterLevel)]" DisplayName="Check If Input For Level is Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_27">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3271,7 +3270,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterEmployeeCode)]" DisplayName="Check If Employee Code Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_29">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterEmployeeCode)]" DisplayName="Check If Employee Code Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_29">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3432,7 +3431,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterUserType)]" DisplayName="Check If User Type Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_31">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterUserType)]" DisplayName="Check If User Type Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_31">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -3672,7 +3671,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[In_UserMasterUserType.ToLower.Contains(&quot;companyuser&quot;)]" DisplayName="Check If User Type Is Companyuser" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_34">
+            <If Condition="[In_UserMasterUserType.ToLower.Contains(&quot;companyuser&quot;)]" DisplayName="Check If User Type Is Companyuser" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_34">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -5338,7 +5337,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterRole)]" DisplayName="Check If UserMaster Role" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_45">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterRole)]" DisplayName="Check If UserMaster Role" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_45">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -5566,7 +5565,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[String.IsNullOrEmpty(In_UserMasterComments)]" DisplayName="Check If User Master Comments Empty" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_48">
+            <If Condition="[String.IsNullOrEmpty(In_UserMasterComments)]" DisplayName="Check If User Master Comments Empty" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_48">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -5759,7 +5758,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <If Condition="[In_UserMasterStatus.ToLower.ToString=(&quot;no&quot;)]" DisplayName="Check If Status Is Inactive" sap:VirtualizedContainerService.HintSize="440,61" sap2010:WorkflowViewState.IdRef="If_50">
+            <If Condition="[In_UserMasterStatus.ToLower.ToString=(&quot;no&quot;)]" DisplayName="Check If Status Is Inactive" sap:VirtualizedContainerService.HintSize="946,61" sap2010:WorkflowViewState.IdRef="If_50">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -5823,7 +5822,7 @@
                 </Sequence>
               </If.Else>
             </If>
-            <TryCatch DisplayName="Try Catch Submit Data" sap:VirtualizedContainerService.HintSize="440,700" sap2010:WorkflowViewState.IdRef="TryCatch_8">
+            <TryCatch DisplayName="Try Catch Submit Data" sap:VirtualizedContainerService.HintSize="946,700" sap2010:WorkflowViewState.IdRef="TryCatch_8">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -5890,12 +5889,8 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_88" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">
-                              <Literal x:TypeArguments="x:String">User Master Saved Successfully</Literal>
-                            </InArgument>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">
-                              <Literal x:TypeArguments="x:String">Info</Literal>
-                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">User Master Saved Successfully</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                         <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click Ok Button" sap:VirtualizedContainerService.HintSize="358,116" sap2010:WorkflowViewState.IdRef="Click_130" KeyModifiers="None" MouseButton="BTN_LEFT">
@@ -5963,12 +5958,8 @@
                         </sap:WorkflowViewStateService.ViewState>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Log File workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_89" UnSafe="False" WorkflowFileName="Framework Files\Log File.xaml">
                           <ui:InvokeWorkflowFile.Arguments>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">
-                              <mva:VisualBasicValue x:TypeArguments="x:String" ExpressionText="&quot;User Master Does Not Saved Because &quot;+v_UserMasterSuccessMsg" />
-                            </InArgument>
-                            <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">
-                              <Literal x:TypeArguments="x:String">Info</Literal>
-                            </InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_LogMessage">["User Master Does Not Saved Because "+v_UserMasterSuccessMsg]</InArgument>
+                            <InArgument x:TypeArguments="x:String" x:Key="in_LogLevel">Info</InArgument>
                           </ui:InvokeWorkflowFile.Arguments>
                         </ui:InvokeWorkflowFile>
                         <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Invoke Screenshots workflow" sap:VirtualizedContainerService.HintSize="358,122" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_90" UnSafe="False" WorkflowFileName="Framework Files\Screenshots.xaml">
